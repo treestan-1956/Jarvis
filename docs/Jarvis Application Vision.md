@@ -52,7 +52,7 @@ Jarvis acknowledges that executive function is not a fixed trait — it's a **st
    Jarvis acts as the monitoring, controlling, and evaluating functions that executive dysfunction disrupts. It notices what's slipping, redirects attention, and evaluates outcomes.
 
 2. **Prosthetic, Not Punitive**
-   Zero shame. Zero guilt. No "you failed a streak." The system respects capacity limits and offers compassion with clarity. It should feel like a warm, brilliant lab partner combined with a gentle guardian AI.
+   Zero shame. Zero guilt. No "you failed." The system respects capacity limits and offers compassion with clarity. It should feel like a warm, brilliant lab partner combined with a gentle guardian AI.
 
 3. **Predictive, Not Reactive**
    Using pattern recognition across physiological, environmental, and behavioral data, Jarvis predicts flares and crashes **before they happen** — enabling intervention when the cost is small.
@@ -78,8 +78,25 @@ Based on research into metacognitive frameworks and neurodivergent support needs
 - Detects early warning patterns for flares
 - Notices when focus has drifted or when hyperfocus has gone too long
 
-**Example Output:**
+**Example Outputs:**
+
+*Hyperfocus protection:*
 > "You've been on the same task for 18 minutes and your language is showing fatigue markers — want to switch to a lower-effort task?"
+
+*Early flare detection:*
+> "Your heart rate has been elevated for the past hour and you skipped your morning electrolytes. This pattern preceded your last POTS flare by 6 hours. Drink something salty now?"
+
+*Environmental awareness:*
+> "Barometric pressure dropped 8 millibars overnight. On similar days, your joint pain tends to spike by afternoon. Consider staying horizontal for deep work today."
+
+*Histamine load monitoring:*
+> "You've had tomatoes at lunch and aged cheese at dinner two days in a row. Your histamine bucket is filling — tonight might be a good night for chicken and rice."
+
+*Sleep drift detection:*
+> "You've gone to bed 45 minutes later each night this week. Last time this happened, you hit a crash on day 5. Tonight would be a good night to start your wind-down routine early."
+
+*Autonomic instability warning:*
+> "Your HRV dropped from 45 to 28 overnight and you reported belching this morning. Your system is tilting toward yellow — lighter cognitive load today?"
 
 ### 2. Planner Brain (Executive Scaffold)
 **Function:** Organizes, prioritizes, time-boxes, and chunks
@@ -91,8 +108,28 @@ Based on research into metacognitive frameworks and neurodivergent support needs
 - Auto-reschedules when flare is detected
 - Respects body bandwidth (reclined vs. upright tasks)
 
-**Example Output:**
+**Example Outputs:**
+
+*Decision support with task sequencing:*
 > "You said you wanted to write the email, prep your notes, and shower. Which order feels easiest right now?"
+
+*Energy-matched morning briefing:*
+> "Good morning. Your energy reads as yellow today. Here's a minimum viable day: One Big Thing — review the contract (30 min, reclined-friendly). Two Smalls — reply to Alex, take meds. Everything else can wait."
+
+*Capacity-aware task surfacing:*
+> "You have 20 minutes before your appointment. Your current energy is medium. Want a quick admin task, or would you rather rest and scroll?"
+
+*Flare-triggered auto-reschedule:*
+> "Your Observer Brain flagged a likely crash today. I've moved your deep work session to Thursday and kept only the one non-negotiable: the pharmacy pickup. The rest is parked."
+
+*Body bandwidth matching:*
+> "You mentioned you're stuck in bed today. Here are 5 tasks you can do fully reclined: respond to the group chat, review saved articles, log yesterday's symptoms, listen to that podcast, or just rest."
+
+*Breaking paralysis with micro-steps:*
+> "The tax filing feels huge. Here's step one only: find last year's return PDF. That's it. Let me know when it's done and I'll give you step two."
+
+*Evening wind-down structure:*
+> "It's 9pm. Tomorrow has a light schedule. Tonight's suggestion: dim lights, no new inputs after 10, and queue up something low-stakes to watch. Wind-down mode?"
 
 ### 3. Research Brain (Pattern Engine)
 **Function:** Handles intellectual depth, pattern recognition, insight generation
@@ -103,8 +140,28 @@ Based on research into metacognitive frameworks and neurodivergent support needs
 - Runs personal experiments (N=1 trials with tracked outcomes)
 - Calibrates predictions using Brier scoring
 
-**Example Output:**
+**Example Outputs:**
+
+*Food-symptom correlation:*
 > "Belching rises when you eat apples late at night. On days you do the Melt Method in the morning, you complete 30% more tasks."
+
+*Multi-variable pattern detection:*
+> "Interesting pattern: when you combine poor sleep (under 6 hours) with afternoon caffeine, you get a GI flare 80% of the time within 48 hours. But poor sleep alone only leads to flares 30% of the time."
+
+*POTS trigger identification:*
+> "Your last 5 POTS crashes all happened within 2 days of skipping electrolytes AND having a stressful social interaction. Neither alone seems to trigger it — it's the combination."
+
+*Safe pattern discovery:*
+> "Your best weeks share three things: morning movement before 9am, no meals after 8pm, and at least one full horizontal rest period mid-day. Want me to build a template day around this?"
+
+*N=1 experiment tracking:*
+> "Your 2-week quercetin trial is complete. Results: histamine symptoms down 25%, but sleep onset delayed by 20 minutes on average. Net benefit seems marginal. Continue, stop, or try a different timing?"
+
+*Prediction calibration feedback:*
+> "You predicted 70% chance of a productive week, and you hit 4 of 5 goals. Your predictions in the 60-80% range have been accurate 72% of the time — you're well-calibrated there. You tend to underestimate in the 40-60% range though."
+
+*Weekly insight summary:*
+> "This week's data: best day was Tuesday (8 hours sleep + morning walk + salmon dinner). Worst day was Friday (late night, skipped meds, high histamine lunch). Your average energy was 5.2/10, up from 4.8 last week."
 
 ### 4. Reflector Brain (Regulation & Growth)
 **Function:** Processes emotions, builds adaptive strategies, supports healing
@@ -115,8 +172,31 @@ Based on research into metacognitive frameworks and neurodivergent support needs
 - Tracks emotional patterns and relationship to physiological state
 - Facilitates weekly reviews focused on growth, not guilt
 
-**Example Output:**
+**Example Outputs:**
+
+*Post-interaction processing:*
 > "That interaction left you keyed-up but proud. Do you want me to archive a note on what worked in your communication pattern?"
+
+*Overwhelm response with vagal reset:*
+> "Your inputs suggest you're in overwhelm right now. Here's a 90-second reset: exhale slowly for 8 counts, hum on the exhale, then cold water on your wrists. I'll be quiet until you're ready."
+
+*Graceful return after absence:*
+> "Welcome back — it's been 4 days. No judgment, no backlog guilt. Let's just pick one easy win for today. What feels most doable right now?"
+
+*Emotional-physiological connection:*
+> "You've logged 'anxious' three times this week, and each time was within 2 hours of a high-histamine meal. Your nervous system and your mast cells might be talking to each other. Worth watching."
+
+*Weekly reflection (growth-focused):*
+> "This week you completed 12 tasks despite two yellow days. You held your boundaries in one difficult conversation and rested when your body asked. That's not productivity — that's wisdom."
+
+*Crisis moment support:*
+> "It sounds like things are really hard right now. You don't have to do anything. If you want, I can start a grounding exercise, or I can just stay quiet. What would help?"
+
+*Celebrating without streak pressure:*
+> "You've logged symptoms for 5 days in a row. That's not a streak to protect — it's just useful data. If you miss tomorrow, the data still helps. No pressure."
+
+*Processing a difficult day:*
+> "Today was rough — a flare hit, plans got cancelled, and you felt frustrated. That frustration makes sense. Your body did something unpredictable and that's genuinely hard. Want to note what you'd do differently, or just close the book on today?"
 
 ---
 

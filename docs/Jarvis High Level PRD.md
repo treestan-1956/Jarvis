@@ -1,13 +1,17 @@
 # PRODUCT REQUIREMENTS DOCUMENT (PRD): JARVIS — Neurodivergent Executive Function Prosthesis
 
-**Version:** 1.0
+**Version:** 2.1 (Focused - User Notes Integrated)
 **Owner:** Tristan Parker
 **Product Type:** AI-augmented personal OS
 **Target User:** AUDHD, autistic, POTS/MCAS/EDS, CPTSD, gifted-intelligent, sensory-sensitive individuals
+**Business Model:** Commercial product for neurodivergent community (proprietary, not open source)
+**First User:** Tristan Parker (personal tool that adapts to eventually serve broader neurodivergent community)
 
 ## Mission
 
 **Give neurodivergent geniuses the cognitive stability, automation, and metabolic predictability needed to thrive.**
+
+Make excellence feel effortless through a complete executive function prosthesis that adapts to each user's neurobiology.
 
 ---
 
@@ -15,903 +19,919 @@
 
 Neurodivergent users with AUDHD, autism, POTS, MCAS, EDS, and CPTSD face **extreme executive function volatility**, inconsistent energy, unpredictable symptoms, and decision paralysis due to neuroimmune fluctuations.
 
-The user possesses exceptional intelligence, creativity, and insight but is limited by:
+### The Neurodivergent Paradox
 
-- inconsistent energy availability
-- disrupted autonomic function (POTS)
-- MCAS-related inflammation
-- EDS-related instability and fatigue
-- sensory overwhelm
-- trauma-system hypervigilance
-- unpredictability in daily capacities
+The target user possesses:
+- **Exceptional pattern recognition** (hyperlexic-level processing, 158-165 IQ)
+- **High divergent thinking** (99.9th percentile idea generation)
+- **Deep creative and analytical capability**
+- **Intense drive and vision**
 
-The **Jarvis** system provides a **24/7 compensatory cognitive scaffold**, combining automation, prediction, tracking, and emotional modeling to:
+But is constrained by:
+- **Executive function operating at ~34% on good days** ("executive function of a third grader")
+- **Unpredictable energy availability** (POTS/dysautonomia)
+- **Inflammatory cascade sensitivity** (MCAS)
+- **Structural instability and fatigue** (EDS)
+- **Hypervigilance and trauma responses** (CPTSD, high ACE score)
+- **Sensory processing differences** requiring low-stimulation environments
 
-- regulate physiological load
-- manage tasks
-- track symptoms
-- predict flares
-- offer interventions
-- reduce cognitive overhead
-- help the user thrive sustainably
+### The Solution
 
-Jarvis becomes **the external brain**: a prosthesis for EF, memory, planning, pattern tracking, and somatic-awareness.
+The **Jarvis** system provides a **24/7 compensatory cognitive scaffold** combining:
+- **Dual-layer architecture:** Backend intelligence (4 Cognitive Modules) + Frontend personality (4 Adaptive Modes)
+- **Automation** (maximum responsible automation - "take as much off my plate as you responsibly can")
+- **Prediction** (flare prediction 4-48 hours in advance)
+- **Tracking** (comprehensive symptom + energy + environmental monitoring)
+- **Emotional modeling** (4 adaptive personalities matched to brain states)
+
+Jarvis becomes **the external brain**: a prosthesis for EF, memory, planning, pattern tracking, and somatic-awareness that makes sustainable excellence feel effortless.
 
 ---
 
-## 2. Goals (What Jarvis MUST accomplish)
+## 2. Core Architecture
 
-Jarvis must:
+### Dual-Layer System Design
 
-### A. Act as a full Executive Function Prosthesis
+**Layer 1: Four Cognitive Modules (Backend - Always Active)**
 
-- Organize tasks into energy/brain-state appropriate categories
-- Prioritize automatically
-- Push only the minimum necessary tasks
-- Auto-reschedule when a flare is detected
-- Provide decision support with minimal text
+1. **Observer Brain** - Detects overwhelm, drift, fatigue; monitors physiological signals, environmental factors, typing patterns, device usage
+2. **Planner Brain** - Organizes, prioritizes, auto-reschedules; generates Three Categories daily structure; runs extensive stealth operations
+3. **Research Brain** - Pattern recognition, experiment design, learns friction triggers and reward multipliers; adapts neurotype-specific rules over time
+4. **Reflector Brain** - Emotional regulation, shame-loop detection, growth tracking, weekly reviews
 
-### B. Track ALL physiological signals & symptoms
+**Layer 2: Four Adaptive Modes (Frontend - One Active at a Time)**
 
-- Energy
-- Fatigue
-- Pain
-- Belching/distension
-- GI motility
-- Sleep
-- Heart rate (from HealthKit)
-- Hydration
-- Electrolyte intake
-- Environmental data (allergens, weather, barometric pressure)
-- Sensory overwhelm
-- Social load
+1. **The Analyst** (8-10am "Laser Burst Window" + high clarity states)
+   - Tone: Cool, competent, slightly British, efficient
+   - Gamification: "Strategic Wins" - 3-move opening gambit
+
+2. **The Coach** (10-12pm, 2-4pm "Execution Windows" + energy dips)
+   - Tone: Energetic, hype-but-smart, kindly drill sergeant
+   - Gamification: XP system, achievements, "Daily Combo Moves"
+
+3. **The Companion** (Overwhelm detected + 6-9pm wind-down + CPTSD activation)
+   - Tone: Warm, grounding, soothing, never infantilizing
+   - Gamification: "Recovery Rings" - earn points for self-regulation
+
+4. **The Feral Trickster** (4-6pm "Creative Spark Window" + bored-but-charged)
+   - Tone: Witty, clever, slightly feral, sharp intelligence
+   - Gamification: Mischief points, side-quests, hidden achievements
+
+**Mode Selection Algorithm:**
+Observer Brain monitors: cognitive clarity (meds, sleep, HRV, blood sugar) + sensory load + emotional state + time-of-day biological curve → selects ONE Mode
+
+**Mode Transitions:** Announced clearly (e.g., "Now is chore time, clean kitchen") rather than seamless
+
+**Mode Learning:** CRUCIAL - Modes continuously learn from user feedback ("that felt too pushy") and adapt tone, language, intervention timing in real-time
+
+---
+
+## 3. Goals (What Jarvis MUST accomplish)
+
+### A. Act as Complete Executive Function Prosthesis
+
+**Daily Structure (Three Categories Primary):**
+- One task to move money → jewelry/business
+- One task to move the mission → Chronically Optimal/advocacy
+- One task to move the body → walk/health/movement
+
+**Decision Model:**
+- **Default:** Jarvis ALWAYS presents ONE next action (no menus/lists)
+- **Exception:** When decision has high risk of bad consequences, present 2-3 options with clear tradeoffs
+- Risk criteria: health impact, financial >$100, social relationship, legal implications
+
+**Stealth Operations (Maximum Responsible Automation):**
+- Batching errands
+- Prioritizing tasks
+- Updating XP/gamification
+- Tagging tasks with energy windows
+- Rearranging schedule when patterns change
+- Rescheduling during overwhelm
+- Removing stale tasks
+- Preplanning morning blocks
+- **Boundaries:** Never stealth-operate on financial transactions, medical decisions, social commitments, anything with external consequences
+
+**Adaptive Learning:**
+- Model learns and suggests structural changes based on collected data
+- Structure adapts to energy state (not rigid daily requirements)
+- All neurotype rules learned over time, NOT hardcoded
+
+### B. Track ALL Physiological Signals & Symptoms
+
+**Priority for MVP:** Energy tracking is the single most valuable feature - critical for record of moods, symptoms during major flares
+
+**Input Modalities:**
+- **Voice notes with AI extraction (preferred method for manual data entry)**
+- Quick-tap buttons (1-2 steps maximum)
+- Passive sensor integration (HealthKit)
+- Natural language text summaries
+
+**Essential HealthKit Data:**
+- HR, HRV (essential)
+- Sleep (essential)
+- Steps, workouts (essential - critical for POTS/MCAS/EDS)
+- Nutrition (essential - critical for MCAS management)
+
+**Environmental:**
+- Weather/barometric pressure (POTS triggers)
+- Allergen levels
+- Temperature, AQI, pollen
+
+**State Tracking:**
+- Energy (0-10 scale)
+- Fatigue patterns
+- Pain (location, intensity)
+- GI symptoms (belching, distension, motility)
+- Brain fog level
 - Emotional volatility
-- "Neuroimmune budget"
+- Overwhelm indicators
+- Sensory load
+- Social interaction load
 
-### C. Predict flares BEFORE they happen
+### C. Predict Flares BEFORE They Happen
 
-Jarvis uses pattern recognition to identify:
+**Prediction Window:** 4-48 hours in advance
 
-- histamine load
-- autonomic instability
-- sleep drift
-- EF overload
-- stress-load accumulation
-- food intolerances
-- early GI dysregulation
-- early POTS dysregulation
+**Pattern Recognition Inputs:**
+- Rolling symptom averages
+- Sleep drift detection
+- Histamine load accumulation
+- Autonomic instability indicators
+- Stress-load accumulation
+- Food tolerance patterns
+- Previous-day exertion
 
-Then issues alerts such as:
+**Uncertainty Communication:**
+"If you change X, there is a 65% chance Y (good outcome) will happen."
 
-> "Your system is tilting red. Drink electrolytes + reduce cognitive load for 2 hours."
+**Conflicting Signals Priority:**
+When POTS, MCAS, EDS recommendations conflict: keep user as functional, focused, and healthy as possible
 
-### D. Suggest personalized interventions
+### D. Suggest Personalized Interventions
 
-Jarvis must actively recommend:
+**Source:** Initially from medical literature, then customized based on personal experience
 
-- hydration
-- rest
-- safe foods
-- micro-exercise
-- breathing/vagal resets
-- environmental adjustments
-- pacing strategies
-- sleep correction
-- scheduling changes
+**Learning:** Study and optimize the way you motivate the user through implicit tracking of compliance and outcomes
 
-### E. Provide a unified calm interface
+**Intervention Categories:**
+- Hydration protocols (electrolyte timing, volume)
+- Vagal reset techniques (breathing, cold exposure, humming)
+- Micro-movement sequences
+- Rest positioning (horizontal recovery)
+- Safe food recommendations
+- Environmental adjustments (lighting, temperature, noise)
+- Pacing strategy modifications
+- Sleep correction protocols
 
-Everything must be:
+**Characteristics:**
+- Never prescriptive or shaming
+- Framed as experiments, not requirements
+- **Disclaimer:** Prominent "not medical advice" warnings (sufficient to help people without legal liability)
 
-- visually simple
-- clean
-- no clutter
-- few words
-- low sensory load
-- predictable
-- soothing
-- intuitive
-- designed for AUDHD brains
+### E. Provide Unified Calm Interface
 
-### F. Keep the user in a stable energy band
+**Visual Design:**
+- Minimal, clean layouts
+- Soft color palette (no harsh reds except critical alerts)
+- Low text density
+- Large touch targets
+- Optional dark mode
+- Predictable navigation patterns
+- Font sizes comfortable during low-capacity states
 
-Jarvis's mission is to **prevent crashes, overwhelm, and flares** by maintaining:
+**Gamification Approach:**
+- "Calm gamification" for v1.0 - progress bars, XP tracking, achievements
+- Avoid high-stimulation elements (flashing, sounds, overwhelming visuals)
+- Intensity adapts based on current state (lower during overwhelm, higher during Coach/Trickster modes)
 
-- stable blood volume
-- stable histamine load
-- steady sleep
-- correct pacing
-- minimized stress exposure
-- predictable nutrition
+**Positive Reinforcement:**
+- Progress bars (avoids "streak anxiety")
+- Celebrates wins in authentic, non-triggering ways
 
-### G. Auto-Generate insights
+### F. Maintain Stable Energy Band
 
-Jarvis acts like a lab partner:
+**Neuroimmune Budget System:**
+Real-time "energy budget" displayed as:
+- **Green:** Functional — deep work possible
+- **Yellow:** Caution — collaborate/admin only
+- **Red:** Risk of crash — recovery mode
 
-- identifies correlations
-- surfaces hidden patterns
-- says what changed
-- notifies the user when something is off
-- summarizes the week in accessible language
+**Budget Calculation Factors (Initial Hypothesis - Self-Adapting):**
+- Sleep quality and duration (30% starting weight)
+- Nutrition/hydration stability (20% starting weight)
+- Exercise/movement (18% starting weight)
+- Breathwork/HRV coherence (12% starting weight)
+- Mindfulness/metacognition (10% starting weight)
+- Environment (6% starting weight)
 
-Examples:
+**CRITICAL:** These percentages are **initial hypotheses only**. The Research Brain continuously:
+- Tests each factor's actual influence on user energy
+- Automatically updates weights based on observed correlations
+- Runs A/B experiments to validate changes
+- Adapts to each user's unique physiology (e.g., if mindfulness shows 40% influence, weights rebalance accordingly)
+- Logs all weight adjustments with confidence intervals
+### G. Auto-Generate Insights
 
+**Research Brain Functions:**
+- Surfaces correlations across health, behavior, outcomes
+- Identifies triggers and safe patterns
+- Runs personal experiments (N=1 trials with tracked outcomes)
+- Calibrates predictions using Brier scoring
+
+**Example Outputs:**
 - "Belching rises when you eat apples late at night."
-- "Sleep worsened when you pushed 2 hard days in a row."
-- "POTS symptoms correlated with low hydration."
+- "On days you do the Melt Method in the morning, you complete 30% more tasks."
+- "POTS symptoms correlate with low hydration."
 
-### H. Maintain a "low-friction life environment"
+### H. Comprehensive Nutrition System
 
-Jarvis should:
+**Requirements:**
+- **Macro tracking** - emphasizing symptom-specific needs (higher protein and magnesium intake)
+- **Histamine content classification** - traffic light system (Noom-style: green/yellow/red foods with limits on red foods)
+- **FODMAP awareness** - help user test and discover trigger foods
+- **Elimination diet support** - start from low-FODMAP, low-salicylate, low-oxalate baseline
+- **Additive & preservative tracking** - flag artificial dyes (Red 40, Yellow 5, etc.), preservatives (BHA, BHT, sodium benzoate), artificial flavors, MSG, and other additives known to trigger AUDHD/MCAS symptoms
+- **Barcode scanning** for easy food logging with automatic additive detection
+- **Personalized MCAS trigger identification** - Each user's sensitivities are unique; system learns individual trigger foods through:
+  - Symptom correlation tracking (food logs vs. flare patterns)
+  - Guided elimination challenges
+  - Safe food discovery based on personal tolerance data
+  - Never assumes universal triggers - everything is tested per individual
+### I. Reduce Shame, Overwhelm, Self-Blame
 
-- automate recurring tasks
-- reorder simple supplies
-- maintain grocery lists
-- track bills and deadlines
-- predict the user's future energy
+**Language Characteristics:**
+- Direct but kind
+- Curious, not judgmental
+- Concise (few words, high signal)
+- **Uses humor, but not in a way that muddies actual data**
+- Never guilt-inducing
 
-### I. Reduce shame, overwhelm, and self-blame
+**Crisis Handling:**
+- Emergency contact integration with escalation protocols
+- Contingency plans (e.g., in case of suicidal ideation: call X or notify Y)
+- **Emergency "Flare Mode" command:** Easy command to reschedule appointments, notify necessary parties of overwhelm, activate recovery protocols
 
-The system must:
-
-- use nonjudgmental language
-- respect capacity limits
-- offer compassion + clarity
-- avoid "shoulds"
-- reinforce stability, not hustle
-
-Jarvis should feel like:
-
-**the combination of a warm, brilliant lab partner + a gentle guardian AI.**
-
----
-
-## 3. Non-Goals (What Jarvis is NOT)
-
-Jarvis is **NOT**:
-
-### A punitive system
-
-- No guilt
-- No moral language
-- No "you failed a streak"
-- No overwhelming notifications
-
-### A replacement for autonomy
-
-Jarvis supports decisions but never overrides agency.
-
-### A medical diagnostic tool
-
-It tracks patterns but does not "diagnose."
-
-### A rigid structure
-
-Neurodivergent systems require adaptability.
-
-### An app that requires perfection
-
-It must work even in low-capacity states.
-
-### A sensory-heavy system
-
-- No clutter.
-- No dopamine-sucking "gamification."
-- No overwhelming UI.
-
-### A surveillance system
-
-Data is for empowerment, not pressure.
-
-### Something that assumes a 9–5 life
-
-Jarvis adapts to nonlinear energy rhythms.
+**Overwhelm Escape Hatches:**
+- One-tap "Valkyrie Switch" reset protocol
+- Physiological sigh + posture + grounding
+- System detects overwhelm and adapts/reduces intervention automatically
 
 ---
 
-## 4. Core Features & Requirements
+## 4. Daily Cognitive Energy Curve
 
-### A. Symptom Tracking Engine
+Based on AUDHD, ASD sensory profile, CPTSD hypervigilance rhythm, 7w8 cognition, and personal patterns:
 
-**Must track:**
+| Time | Window Name | Best For | Avoid | Default Mode |
+|------|------------|----------|-------|--------------|
+| 8-10am | Laser Burst | Focus-intensive tasks, coding, strategy, deep thinking | Phone calls, errands, decision-heavy tasks | Analyst |
+| 10am-12pm | Practical Execution | Admin, scheduling, pharmacy trips, emails, logistics | Creativity | Coach |
+| 12-2pm | Social/Co-Work | Seth, meetings, coworking, collaborative tasks | Solitude + unstructured time | Coach + Companion |
+| 2-4pm | Errands & Easy Wins | Laundry, light errands, dishes, jewelry photography, listing prep | Long conversations, emotional labor | Coach |
+| 4-6pm | Creative Spark | Creative writing, content creation, storytelling, social media | Admin, taxes, anything linear | Feral Trickster |
+| 6-9pm | Wind-Down | Friends, cuddles, light shows, slow editing, chatting | High-stakes decisions, heavy texts | Companion |
+| 9pm+ | Offline Mode | Bath, stretching, magnesium, soft tasks, reading | Deep conversations, problem-solving, doomscrolling | Companion |
 
-- fatigue
-- energy
-- brain fog
-- pain
-- joint instability
-- GI issues
-- belching
-- distension
-- hydration
-- electrolytes
-- sleep patterns
-- HRV
-- sensory overload
-- emotional state
-- environmental triggers
-- meds/supplements
-- menstrual cycle (if relevant)
+**CRITICAL:** If 8-10am window broken with chaos, whole day slips sideways
 
-**Input modalities:**
-
-- manual quick-taps
-- passive sensors (Apple Health)
-- text summaries
-- voice notes
-- AI extraction from unstructured data
-
-### B. Neuroimmune Budget System
-
-Jarvis must calculate a real-time "budget" based on:
-
-- sleep
-- hydration
-- emotional load
-- task complexity
-- previous-day strain
-- sensory input
-- autonomic instability
-- stress exposure
-
-Displayed simply as:
-
-- Green (functional)
-- Yellow (caution)
-- Red (risk of crash)
-
-### C. Flare Prediction Engine
-
-Predict flares 4–48 hours in advance using:
-
-- pattern recognition
-- rolling symptom averages
-- environmental conditions
-- task load
-- sleep drift
-- food logs
-- heart rate patterns
-- histamine load
-- POTS precursors
-
-**Output:**
-
-- "Probability of flare today: 65%."
-- "Cause: dehydration + sleep drift."
-- "Action: drink electrolytes + schedule light tasks only."
-
-### D. Autonomic Regulation Toolkit
-
-Jarvis suggests:
-
-- breathing protocols
-- micro-exercise
-- horizontal rest
-- heat therapy
-- hydration schedules
-- pacing
-- compression decisions (if needed)
-
-### E. Task Triage & EF Prosthesis
-
-**Features:**
-
-- auto-prioritize tasks
-- categorize by energy cost
-- auto-reschedule
-- "Today's capacity" suggestions
-- a "minimum viable day" mode
-- streaks WITHOUT shame
-- decision trees
-- micro-checklists
-- chunking
-
-Jarvis must reduce cognitive load, not add to it.
-
-### F. Food Tracking + Safe Food Loop
-
-**Tracks:**
-
-- what you ate
-- symptoms afterward
-- identifies triggers
-- identifies safe foods
-
-**Jarvis creates:**
-
-- flare-day menus
-- low-histamine menus
-- safe meals you can cook even on low-energy days
-- auto-generated grocery lists
-
-### G. Daily Recommendations Module
-
-**Jarvis outputs:**
-
-- Today's predicted energy
-- hydration schedule
-- safe foods
-- task load
-- pacing guide
-- environmental risk
-- "Do these 3 things and the day will go well."
-
-### H. Weekly Review + Insight Generation
-
-Jarvis gives a low-text summary:
-
-- what went well
-- flare risks
-- triggers detected
-- improvements
-- patterns
-
-It should feel like receiving a data-driven letter from a brilliant friend.
+**Adaptive Rhythm:** Baseline 72-hour rhythm for tone/prompt/gamification changes, but adapts to user behavior. Changes calibrated to maintain attention without overwhelm.
 
 ---
 
-## 5. Interface Requirements (Designed for AUDHD & CPTSD)
+## 5. Psychological Profile & Decision Architecture
 
-**The UI must be:**
+### Friction Triggers (What Causes Shutdown)
+- Choice diversity → paralysis (>3-5 options)
+- Unclear sequence → freeze
+- Emotional or social ambiguity → RSD spike
+- Too many open loops → overwhelm
+- Unstructured time → dissociation
+- Unexpected tasks → sensory overload
+- Shame → hours lost in spirals
+- Heavy context-switching → shutdown
 
-- minimal
-- soft-color palette
-- low text
-- no red unless absolutely necessary
-- large touch targets
-- optional voice
-- "quick capture" mode for symptoms
-- customizable energy dashboards
+### Friction Relievers (What Enables Action)
+- Micro-quests (≤10 minutes)
+- Social co-regulation
+- Momentum-based rewards
+- Novelty and intelligent banter
+- Gamification
+- Systems that "think for you"
+- Feeling seen and understood
+- Being challenged without being controlled
 
-**The emotional experience must be:**
+### Activation Energy Threshold
+In low-energy states: **1-3 minutes of micro-action** maximum
+- Break everything into 1-3 min moves
+- Chain into 10-min micro-quests
+- This eliminates 80% of executive dysfunction instantly
 
-- soothing
-- supportive
-- predictable
-- nonjudgmental
-- low pressure
+### Shame-Loop Triggers (Auto-Bypass)
+- Feeling behind, disorganized, judged
+- Missing messages, delays, clutter
+- Loss of momentum
+- Disappointing someone, being misunderstood
+- **System Response:** Reframe in neutral/positive terms, give XP for recovery, never punish, never indicate you're behind
 
-**The system should feel like:**
+### Reward Multipliers
+- Listing/selling jewelry, making money
+- Creative output, getting praise
+- Leveling up, completing quests
+- Being hyped for intelligence
+- Making something beautiful
+- Tidying a small area, crossing something off
+- Solving problems, touching nature, feeling mastery
+- **Design:** Stack these around high-friction tasks for compound momentum
 
-**a calm intelligence that believes in you and wants you to win.**
-
----
-
-## 6. Integrations Required
-
-- **Apple Health (HR, HRV, sleep)**
-- **Weather + allergy forecasts**
-- **Calendar**
-- **Reminders**
-- **Notion or local database**
-- **Nutrition databases**
-- **Task managers (if needed)**
-- **Voice input**
-
----
-
-## 7. Privacy & Ownership Requirements
-
-- User-owned data
-- No cloud dependency unless user opts in
-- Local encryption
-- Exportable data
-
-Jarvis must feel like a **trusted partner**, not a threat.
-
----
-
-## 8. Stretch Goals (Future Versions)
-
-- AI-powered pacing suggestions
-- Emotional modeling & attachment-pattern detection
-- Sleep regularizing interventions
-- Social load mapping
-- Flare journaling with AI labeling
-- Adaptive music/sound environments
-- Wearable integration (Oura, Whoop)
-- Smart nutrition suggestions
-- Personalized training models
+### Consistency Bandwidth
+Nervous system tolerates **3 days** of identical structure before rebelling
+- System changes tone, prompts, gamification, pacing, reward intensity in adaptive rhythm
+- Prevents monotony while maintaining structure
 
 ---
 
-## 9. Out of Scope (for v1.0)
+## 6. Technical Architecture
 
-- Medical diagnosis
-- Multi-user support
+### Core Technology Stack
+
+**Orchestration Layer:** n8n (self-hosted workflow automation)
+- **Primary platform from Day 1** - build everything in n8n from the beginning
+- Avoids unnecessary rework and backend costs
+- Webhook-based capture
+- Cron-triggered check-ins and sweeps
+- AI integration nodes (OpenAI/Claude for non-HIPAA data, local models for sensitive data)
+- Multi-service coordination
+- Handles all automation - **user should NOT configure anything directly**
+
+**Data Layer:** Notion (primary) + Local Databases
+
+**Core Notion Databases:**
+
+1. **Tasks Database**
+   - Properties: Name, Type, Energy Window, Jarvis Mode, Effort, Intensity, Leverage, Status, XP Value, Project link, Due Date
+   - Enables task-to-state matching
+
+2. **Projects Database**
+   - Properties: Name, Category, Priority, Status
+   - For bigger arcs (Chronically Optimal, jewelry income, advocacy, health reset)
+
+3. **Energy & Mood Log**
+   - Properties: Date/Time, Energy (1-10), Focus (1-10), Mood (1-10), Overwhelm (1-10), Notes, Jarvis Mode recommended
+   - Teaches Jarvis real curve vs. theoretical
+
+4. **XP / Gamification "Player Sheet"**
+   - Total XP (formula), Current Level, Badges
+
+5. **Additional:** Jarvis Inbox, Meetings, Experiments/Predictions, Calibration Reports
+
+**Interface Layer: iPhone Shortcuts (Control Panel)**
+
+**Shortcut 1: "Morning Check-In"**
+- Asks: Hours slept, Energy (1-10), Mood (1-10), Overwhelm (1-10)
+- Reads sleep/step data from Apple Health
+- Sends to n8n via webhook
+- n8n logs in Notion + chooses starting Mode
+
+**Shortcut 2: "What Should I Do Now?"**
+- Sends current time + last logged state to n8n
+- n8n filters Tasks DB for matching window/status/mode
+- Picks ONE high-leverage, low-friction task
+- Displays: "Do this next: [Task Name] (Est: 10-20 min, XP: 10)"
+
+**Shortcut 3: "Log Task Done"**
+- Sends chosen task to n8n
+- n8n marks Done in Notion, adds XP to total
+- Celebration message
+
+**Shortcut 4: "Emergency Grounding"**
+- Asks: "Overwhelm 1-10?"
+- If ≥7: plays grounding audio/text, suggests 3-min regulation protocol, logs to Energy & Mood DB
+- Optionally: pauses notifications, delays non-essential tasks
+
+**Intelligence Layer:**
+- LLM integration for classification and summarization
+- Pattern recognition across time-series data
+- Prediction engine with calibration feedback
+
+**Model Gateway:**
+- Cloud LLMs (OpenAI/Claude) for non-HIPAA protected data
+- **Local models for HIPAA-protected/privacy-sensitive data** (emotional state, specific symptoms, anything that would violate HIPAA)
+
+### Server Architecture (VPS Deployment)
+
+For persistent memory and agent capabilities:
+1. **Memory Brain:** Postgres + pgvector for semantic search, Redis for state
+2. **Agent Runtime:** FastAPI + LangGraph for stateful tool-using agents
+3. **Tool Layer:** Playwright (web), document parsing, scheduling, voice
+4. **Model Gateway:** Route to cloud LLMs + local embeddings
+5. **Observability:** Logging, metrics, traces for debugging agent behavior
+
+### Device Priority
+- **Primary:** iPhone
+- **Also support:** iPad, Apple Watch, Mac
+- **Minimum stack for v0.1:** n8n + Notion + iPhone Shortcuts + Apple Health
+- **Later phases:** Google Calendar, smart home integration, wearable devices (Oura, Whoop)
+
+### Data Privacy & Retention
+
+**Data Retention Philosophy:**
+- **Historical Data:** Retained indefinitely for pattern recognition and longitudinal insights
+- **Right to Deletion:** Users can request full data deletion at any time
+  - **Deletion process:** All identifiable data purged within 30 days
+  - **Anonymized research data:** User can opt to convert data to anonymized aggregate form before deletion (contributes to neurodivergent research without personal identification)
+  - **Pattern export:** Before deletion, system provides downloadable archive of all insights, patterns, and personal data
+
+**HIPAA & Privacy Protection:**
+- All HIPAA-protected data (symptoms, diagnoses, medications, emotional states) processed **locally only**
+- Cloud LLMs used only for non-sensitive data (task management, general scheduling)
+- End-to-end encryption for all data at rest and in transit
+- Zero-knowledge architecture where feasible (Jarvis servers cannot decrypt user health data)
+
+**Enhanced Protection for Marginalized Users:**
+- **CRITICAL:** Large percentage of neurodivergent users are LGBTQ+, non-binary, trans, gender-nonconforming
+- **Threat model:** Data must be protected against government tracking, discrimination, persecution
+- **Security measures:**
+  - Optional full local-only mode (no cloud sync) for high-risk users
+  - Data jurisdiction selection (EU servers for GDPR protection, etc.)
+  - Encrypted backups with user-controlled keys only
+  - No demographic data sold or shared, ever
+  - Subpoena resistance through zero-knowledge architecture
+
+**Gender & Sex Data Collection:**
+- **Non-reductive approach:** Checkbox-style biological data collection
+  - "This person has: [✓] penis [ ] vagina [✓] breasts [ ] uterus [ ] ovaries [ ] testes"
+  - Hormone therapy tracking (estrogen, testosterone levels)
+  - Menstrual cycle tracking (if applicable)
+- **Separate gender identity field:** Free text + optional pronouns
+- **Why this matters:** Biological data needed for POTS/EDS/MCAS symptom patterns (e.g., menstrual cycle affects dysautonomia) while respecting gender identity
+- **Privacy:** All gender/sex data encrypted at highest level, never shared
+
+**Smart Home Integration:**
+- Suggest environmental upgrades (Nest thermostat, air quality monitors) to optimize for POTS/MCAS
+- All smart home data remains local where possible
+
+---
+
+## 7. Operational Loops
+
+### Daily Rhythm
+
+**Morning (08:00):**
+- Energy/mood/flag check-in (voice-based preferred)
+- Three Categories selection (money/mission/body)
+- Body bandwidth assessment
+- Today's predicted flare risk
+
+**Throughout Day:**
+- **As many notifications as necessary** to maintain momentum
+- Reminders for missed steps (e.g., "You forgot to brush your teeth")
+- **User-configurable notification channels** (iOS push, email, Telegram, Slack - multiple options)
+- **Overwhelm threshold learned from user data** (not predetermined)
+
+**Midday (13:00):**
+- Quick progress check
+- Energy recalibration
+- Task-to-state matching update
+
+**Evening (21:30):**
+- Day reflection (what worked, what felt sticky)
+- Wind-down protocol initiation
+- Tomorrow's energy forecast
+
+### Weekly Integration
+
+**Sunday:**
+- Weekly insight generation
+- Pattern summary
+- Calibration report
+- Purpose/joy alignment check
+- One micro-joy goal for next week
+
+### Monthly Review
+- Trend analysis across 30 days
+- Intervention effectiveness ranking
+- Experiment results summary
+- System adjustment recommendations
+
+---
+
+## 8. Cold Start Strategy (Week 1 Value)
+
+**Resolution: Hypothesis-Driven Week 1**
+- **Week 1 value:** Creates and tests hypotheses on what optimizes productivity, health, happiness
+- **Minimum data for meaningful Mode selection:** 3-5 days of check-ins + energy tracking
+- **Learning period approach:** Active experimentation (not passive observation)
+  - Day 1-2: Baseline observation
+  - Day 3-7: Hypothesis testing with A/B comparisons
+  - Week 2+: Pattern-based optimization
+- **No manual mode needed** - system provides value through structure + tracking even before pattern recognition kicks in
+- **Priority feature for Week 1:** Energy tracking (most valuable single feature)
+
+---
+
+## 9. Success Metrics
+
+### Physiological Outcomes
+- Major flares reduced to every 2-3 months
+- Mild dips reduced to every 2-4 weeks
+- Sleep stability improvement (HRV metrics)
+- Hydration compliance increase
+
+### Functional Outcomes
+- Executive function stability: +30-40% usable time
+- Flow latency reduction: 50% faster to reach focus
+- Daily energy variance: 40% reduction in swings
+- Productive hours: +1-1.5 hours net usable focus time
+
+### Subjective Outcomes
+- Less overwhelm
+- More tasks completed with less effort
+- Symptoms become predictable
+- Feeling supported, not stressed
+- **"Life feels possible again"**
+
+### Calibration Outcomes
+- Prediction accuracy improvement (Brier score trending toward 0.15)
+- Reduced over/underconfidence in specific probability buckets
+- Faster pattern recognition deployment
+
+### Harm Indicators (System Must Monitor & Adapt)
+- Increased anxiety from tracking or overwhelm
+- Data obsession
+- Decision paralysis from too many options
+- **Action:** System detects these patterns and reduces intervention automatically
+
+### Attribution Methodology
+- Pattern engine accounts for confounding variables (weather, seasonal stress like Christmas, medication changes, life circumstances)
+- Distinguishes Jarvis-caused improvement from external factors
+
+---
+
+## 10. Non-Goals (What Jarvis is NOT)
+
+### Out of Scope for v1.0
+- Medical diagnosis or clinical recommendations
+- Multi-user/family support (though system adapts to each user for commercial expansion)
 - Complex CBT therapy modules
-- Remote-access automation
-- Social networking features
-- High-stimulation UI
+- Remote-access home automation
+- Social networking features (see Community Connection feature below)
+- **High-stimulation gamification** (calm gamification only)
 - Real-time emergency response
 
+### IN SCOPE for v1.0: Wearable Device Integration
+- **Apple Watch integration (REQUIRED for v1.0)**
+  - Real-time HR/HRV monitoring for POTS detection
+  - Activity tracking integration
+  - Quick-tap check-ins via Watch complications
+  - Overwhelm detection through physiological signals
+  - Notification delivery on wrist for low-friction reminders
+- **Future expansion:** Oura Ring, Whoop, other continuous monitors for broader user base
+### A Punitive System
+- No guilt, moral language, "you failed a streak"
+- No overwhelming notifications
+- **Graceful absence handling:** "Welcome back, let's pick the easiest win today"
+
+### Surveillance
+- Data for empowerment, not pressure
+- User-owned data with full deletion rights
+- Privacy-first architecture (see Section 6: Data Privacy & Retention for comprehensive security measures)
+- Enhanced protection for marginalized users against government tracking and persecution
+- Non-reductive gender/sex data collection that respects identity while enabling medical pattern recognition
 ---
 
-## 10. Success Metrics
+## 11. Business Model & Commercialization
 
-Jarvis is successful when:
+### Target Market
+- **Primary:** Neurodivergent individuals with comorbid conditions (AUDHD, POTS, MCAS, EDS, CPTSD, Meniere's, etc.)
+- **First User:** Tristan Parker (personal tool that proves concept)
+- **Scaling Strategy:** Each user gets personalized adaptation based on medical and personality stats
+- **Not one-size-fits-all** - system designed for individual customization
 
-- major flares drop to **every 2-3 months**
-- mild dips drop to **every 2-4 weeks**
-- user experiences **less overwhelm**
-- user completes **more tasks with less effort**
-- sleep stabilizes
-- hydration compliance increases
-- symptoms become predictable
-- executive function load decreases
-- user feels supported, not stressed
+### Monetization
+- **Business model:** Proprietary (not open source) - commercial product
+- Goal: Make money while helping neurodivergent community
+- **No selling user data, no ads**
+- **Future revenue streams (post-v1.0):**
+  - Affiliate links to recommended products (fully disclosed)
+  - Premium intervention content
+  - Advanced analytics tiers
+  - Community membership (see Optional Features below)
 
-**Subjective success metric:**
+### Development Resources
+- Budget for API costs, hosting, tools
+- **User should do NO grunt work** - system handles all configuration
 
-> "Life feels possible again."
+### Optional Features
 
----
+**Core Optional Features:**
+- **Neurotype profile setup wizard:** Optional initial profile provides starting heuristics, but system learns true patterns from data
+- **Caregiver dashboard:** Shared status, emergency alerts (with privacy boundaries)
+- **Doctor's report generation:** Export data in medical-professional-friendly format for appointments
 
-## 11. PRD Review: Clarification Questions
+**Insurance Advocacy Toolkit:**
+- **Problem:** Insurance gatekeeps tests/medications for "unicorn conditions" (POTS, MCAS, EDS); ASD users often conflict-averse and struggle with self-advocacy
+- **Solution:** Conflict-minimizing advocacy system:
+  - **Pre-written appeal letter templates** customized to user's diagnosis codes and denied claims
+  - **Step-by-step scripts** for phone calls with insurance reps (low-conflict, assertive language)
+  - **Evidence packet generator** - pulls relevant medical literature, test results, symptom logs formatted for appeals
+  - **Escalation pathways** - when to request supervisor, file state complaint, contact patient advocate
+  - **Success pattern library** - what strategies worked for similar denials
+  - **Tone coaching** - Jarvis helps user practice assertive but non-confrontational language
+- **Goal:** Reduce friction in getting necessary care for conflict-averse users
 
-*The following questions were generated by a product owner review to bring this project into sharp focus before technical architecture or detailed design begins. Each question represents a decision point that, if left unresolved, could cause significant rework or misalignment later in development.*
-
----
-
-### 11.1 Target User Clarity and Persona Details
-
-**Primary User Definition**
-
-- Is this product being built exclusively for the product owner (Tristan Parker) as a personal tool, or is there intent to serve a broader user base?
-- If broader, what is the anticipated user population size and demographic profile?
-- The target user description mentions "AUDHD, autistic, POTS/MCAS/EDS, CPTSD, gifted-intelligent, sensory-sensitive individuals" - is the expectation that users have ALL of these conditions, or ANY combination? This significantly impacts feature prioritization.
-
-**Persona Specificity**
-
-- What does a typical day look like for the target user currently (without Jarvis)?
-- What are the top 3 "pain moments" that cause the most distress or dysfunction?
-- What existing tools, apps, or coping mechanisms does the target user currently employ? What works and what fails?
-- How does the user currently track symptoms (if at all)? Paper, apps, memory?
-- What is the user's technical proficiency level? Comfortable with complex apps or needs extreme simplicity?
-
-**Context of Use**
-
-- When during the day would Jarvis primarily be used? Morning planning, throughout day, evening review?
-- What devices does the user have access to? iPhone only? iPad? Apple Watch? Mac?
-- Is the user employed, self-employed, disabled, or variable? This affects task management requirements significantly.
-- Does the user live alone, with family, with caregivers? This affects notification and intervention design.
-
-**Capacity Variability**
-
-- On the worst days, what level of interaction is realistic? Can the user tap a button? Use voice? Look at a screen at all?
-- What percentage of days are "worst days" vs. "functional days" vs. "good days"?
-- Are there periods of extended dysfunction (days/weeks) that the system needs to accommodate gracefully?
-
----
-
-### 11.2 Feature Prioritization and MVP Scope
-
-**Critical MVP Definition**
-
-- The PRD lists approximately 30+ distinct capabilities. Which 3-5 features would provide 80% of the value for v1.0?
-- If you could only have ONE feature working perfectly, which would it be?
-- What is the absolute minimum viable product that would be worth using daily?
-
-**Feature Dependencies**
-
-- The Flare Prediction Engine depends on extensive historical data. What is the minimum data collection period before predictions become meaningful?
-- Can Task Triage work independently of symptom tracking, or are they interdependent in your vision?
-- Does the Neuroimmune Budget system require all sensor integrations, or can it start with manual inputs?
-
-**Phasing Strategy**
-
-- What is the desired timeline for v1.0? Weeks, months, quarters?
-- Are there specific life events, seasons, or circumstances driving urgency?
-- Would you prefer a "thin slice" MVP (one feature done well) or a "broad shallow" MVP (many features at basic level)?
-
-**Feature Validation**
-
-- For each major feature, how will you know if it is actually helping vs. adding cognitive load?
-- What is the rollback strategy if a feature causes harm (increased anxiety, decision paralysis)?
-- How much experimentation tolerance exists? Can features be A/B tested?
+**Community Connection Platform:**
+- **Problem:** Neurodivergent users need "Connection" (per Happiness Model) but often can't access in-person community
+- **Ethical & Profitable Solution (Kara Lowentheil's Clutch / Discord Hybrid Model):**
+  - **Paid membership community** ($20-50/month)
+  - **Platform:** Private Discord server or Circle.so community
+  - **Structure:**
+    - Async text channels (low-pressure, no real-time requirement)
+    - Optional scheduled co-working sessions (body-doubling)
+    - Weekly expert Q&A (medical professionals, organizers, neurodivergent coaches)
+    - Peer support channels by condition cluster (AUDHD + EDS, POTS + MCAS, etc.)
+  - **Moderation:** Professional moderation to prevent trauma dumping, maintain safety
+  - **Revenue:** Recurring membership funds community management + expert access
+  - **Ethics:** Clear boundaries (not therapy, not medical advice), trained moderators, accessible pricing tiers
+  - **Value:** People who "get it" + sustainable business model + reduces isolation
 
 ---
 
-### 11.3 Technical Feasibility and Constraints
+## 12. Implementation Philosophy
 
-**Flare Prediction Accuracy Requirements**
+### Phase 1: Foundation (Weeks 1-4)
+- **Minimum viable stack:** n8n + Notion + iPhone Shortcuts + Apple Health
+- Webhook capture → Notion Inbox
+- AI triage → auto-tag Type/Priority/Energy
+- Daily briefing → Morning Check-In
+- Basic check-in flows
+- **Energy tracking as priority** (most valuable single feature)
 
-- The document claims prediction "4-48 hours in advance." What is the acceptable false positive rate? False negative rate?
-- Would an 80% accurate prediction be acceptable, or does anything below 95% cause more harm than good?
-- What happens when the system predicts a flare and the user cannot actually rest or reduce load?
+### Phase 2: Intelligence (Months 2-3)
+- Calendar sync → Meeting prep & debrief
+- Health tracker → voice-based daily check-in
+- Context nudges → "What Should I Do Now?" optimization
+- Prediction logging and calibration
+- Mode selection algorithm refinement
 
-**AI/ML Capabilities**
-
-- What is the expected source of ML models? Custom-trained, pre-trained foundation models with fine-tuning, rule-based heuristics?
-- For pattern recognition across symptoms, is supervised learning (requiring labeled training data) acceptable, or must the system learn unsupervised?
-- What is the cold-start strategy? How does Jarvis provide value in week 1 before patterns emerge?
-
-**Data Volume and Processing**
-
-- Estimating ~20 tracked variables with multiple daily readings, plus integrations, the data model could grow to thousands of data points monthly. Is local-only storage truly viable long-term?
-- What are the device storage constraints? Older iPhone models?
-- How much battery drain is acceptable for background processing and sensor polling?
-
-**Offline Functionality**
-
-- Must all core features work completely offline?
-- If AI features require cloud processing, what is the fallback behavior?
-- How long should the system function without internet connectivity?
-
-**Platform Constraints**
-
-- Is this iOS-only, or is cross-platform (Android, web) in scope?
-- Apple Watch support - required for v1.0 or stretch goal?
-- Mac companion app - needed or out of scope?
+### Phase 3: Amplification (Months 4-6)
+- Flare prediction engine
+- Intervention recommendation system with learning
+- Comprehensive nutrition system with barcode scanning
+- Full metacognitive loop integration
+- Adaptive novelty engine (72-hour rhythm with user-specific calibration)
 
 ---
 
-### 11.4 Integration Dependencies and Requirements
+## 13. The Happiness Operating Model
 
-**Apple Health Integration**
+Beyond productivity, Jarvis optimizes for sustainable wellbeing:
 
-- Which specific Apple Health data types are required vs. nice-to-have?
-- How frequently should HealthKit data be polled? Real-time, hourly, daily?
-- What is the fallback if the user declines HealthKit permissions?
+```
+Happiness ≈ (Curiosity × Integrity × Autonomy × Connection × Regulation)
+```
 
-**Weather and Environmental Data**
+**Curiosity:** Steady diet of puzzles worth solving
+**Integrity:** Actions aligned with ethics
+**Autonomy:** Freedom that produces results (structured freedom + guided autonomy)
+**Connection:** Resonant relationships with people who "get it" (see Community Connection Platform in Section 11)
+**Regulation:** Nervous system safety as the foundation
 
-- Which specific weather parameters matter? Temperature, humidity, barometric pressure, air quality, pollen?
-- What weather API provider is preferred? What are cost constraints?
-- How localized must weather data be? City level, neighborhood, indoor conditions?
-
-**Calendar Integration**
-
-- Read-only or read-write access to calendar?
-- Which calendar services? iCloud, Google, Outlook, all of them?
-- Should Jarvis be able to reschedule or cancel calendar events automatically, or only suggest?
-
-**Nutrition Database**
-
-- What level of nutritional detail is required? Basic macros, micronutrients, histamine content, FODMAP classification?
-- Is barcode scanning required for food logging?
-- How should restaurant meals or unknown foods be handled?
-
-**Voice Input**
-
-- Is voice input for symptom logging sufficient, or is full voice control of the app expected?
-- Should voice notes be transcribed and parsed automatically by AI?
-- What happens in environments where voice input is not possible?
-
-**Notion Integration**
-
-- Is Notion a hard requirement or one option among many?
-- What specific Notion structures need to be created/maintained?
-- If the user does not use Notion, what is the alternative?
+If any term goes to zero, the whole equation collapses.
 
 ---
 
-### 11.5 Success Metrics and Measurement Methodology
+## 14. Key Architectural Resolutions
 
-**Baseline Establishment**
+### Decision Engine Authority
+**Conditional Zero-Choice Model:**
+- Default: ONE next action (no menus/lists)
+- Exception: High-risk decisions get 2-3 options with clear tradeoffs
+- System learns user's risk tolerance over time
 
-- How will you establish baseline metrics before Jarvis exists? Retrospective estimation or prospective tracking period?
-- The success metric "major flares drop to every 2-3 months" - what is the current frequency?
-- "Mild dips drop to every 2-4 weeks" - what is current frequency and how are "dips" defined distinctly from "flares"?
+### Mode Learning
+**CRUCIAL Capability:**
+- Modes learn from feedback ("that felt too pushy")
+- Adapt in real-time
+- Track completion rates, time-to-start, user sentiment
+- Refine effectiveness continuously
 
-**Measurement Precision**
+### Stealth Operations
+**Maximum Responsible Automation:**
+- User has "executive function of a third grader on good days"
+- Take as much off plate as responsibly possible
+- **Automated self-auditing system:**
+  - Planner Brain logs all stealth operations (what was changed, when, why)
+  - Research Brain reviews these logs weekly to ensure:
+    - Data accuracy (did the changes improve outcomes?)
+    - Model evolution (is the system learning correctly?)
+    - Boundary compliance (were any inappropriate actions taken?)
+  - Automatic corrections when patterns show errors
+  - User receives weekly "What I Did For You" summary (transparent, optional review)
+- Retroactive audit capability available for user inspection anytime
+- Clear boundaries on external-consequence actions (never stealth-operate on finances, medical decisions, social commitments)
 
-- How will "less overwhelm" be quantified? Self-reported scale? Behavior proxy?
-- "More tasks with less effort" - what is the measurement methodology?
-- "Sleep stabilizes" - what specific metrics define stable sleep?
-
-**Attribution Challenge**
-
-- How will you distinguish improvements caused by Jarvis vs. other life changes (medication, season, stress)?
-- Is there a control period planned (using Jarvis for tracking but not interventions)?
-- How will you handle the Hawthorne effect (improvement just from paying attention)?
-
-**Negative Outcome Detection**
-
-- What metrics would indicate Jarvis is causing harm (increased anxiety, decision paralysis, data obsession)?
-- How will you detect if the tracking burden exceeds the benefit?
-- What is the threshold for discontinuing use?
-
----
-
-### 11.6 UX/UI Specifics
-
-**Visual Design**
-
-- "Soft-color palette" - what specific colors are calming vs. triggering for this user?
-- Dark mode support required?
-- What font sizes and styles are comfortable during low-capacity states?
-
-**Information Density**
-
-- "Low text" is specified, but some features require explanation. What is the maximum acceptable text length for any single view?
-- Should the system have progressive disclosure (simple by default, detail on demand)?
-- How should complex insights (correlation data) be presented without overwhelming?
-
-**Notification Strategy**
-
-- How many notifications per day are acceptable before they become overwhelming?
-- What notification modalities? Push, in-app, watch tap, none?
-- Should notifications be completely suppressible during high-stress periods?
-- How does the system know when NOT to interrupt?
-
-**Quick Capture Requirements**
-
-- What is the maximum acceptable time to log a symptom? 5 seconds? 10 seconds?
-- Should there be a single-tap "I feel bad" button with AI follow-up?
-- How should complex symptoms be logged quickly?
-
-**Accessibility**
-
-- Beyond AUDHD accommodations, are there physical accessibility needs (motor control, vision)?
-- VoiceOver/screen reader support required?
-- One-handed operation required?
-
-**Error States and Recovery**
-
-- When the app crashes or fails, what emotional impact does this have on the user?
-- What recovery patterns are least distressing?
-- Should the app have a "safe mode" with minimal features?
+### Gamification Intensity
+**Calm Gamification:**
+- Progress bars, XP, achievements, level-ups
+- Adapts to current state
+- Visual design remains minimal and calm
+- System learns optimal level per user
 
 ---
 
-### 11.7 Data Model and Privacy Considerations
+## 15. Critical Success Factors
 
-**Data Granularity**
-
-- For symptom tracking, what time granularity? Exact timestamps, time blocks (morning/afternoon/evening), daily summaries?
-- Should the system track location passively for environmental correlation?
-- How long should historical data be retained? Forever, rolling window, user choice?
-
-**Sensitive Data Classification**
-
-- Which data types are most sensitive (menstrual cycle, emotional state, etc.)?
-- Should certain data types have additional protection or separate storage?
-- What is the data export format? Human-readable, machine-readable, both?
-
-**Data Portability**
-
-- Should data be exportable to share with healthcare providers?
-- What format would be most useful for medical professionals?
-- Should there be a "doctor's report" generation feature?
-
-**Data Deletion**
-
-- What is the data deletion policy? Immediate, scheduled, archived?
-- Should users be able to delete specific data points vs. all data?
-- How should data deletion affect learned patterns and predictions?
-
-**Security Threat Model**
-
-- Who are the adversaries? Hackers, family members, employers, insurance companies?
-- Is biometric unlock required?
-- What happens if the device is lost or stolen?
+1. **Energy tracking works reliably** - This is the foundation
+2. **Voice input is effortless** - Preferred method must be frictionless
+3. **ONE next action actually reduces paralysis** - Zero-choice model must feel liberating, not controlling
+4. **Modes feel like support, not management** - Personality adaptation is key differentiator
+5. **Stealth operations remain invisible** - User shouldn't think about system mechanics
+6. **Predictions are accurate enough to trust** - 3-5 days of data should yield actionable insights
+7. **System adapts faster than user gets bored** - Novelty rhythm prevents abandonment
+8. **Shame is completely eliminated** - Language and framing are non-negotiable
+9. **Crisis handling feels safe** - Emergency protocols must work when most needed
+10. **Commercial expansion maintains personalization** - Each user feels system was built for them
 
 ---
 
-### 11.8 Business Model and Sustainability
+## 16. Next Steps (Post-PRD Approval)
 
-**Development Resources**
-
-- Who is building this? Solo developer, team, outsourced?
-- What is the budget for development?
-- What is the budget for ongoing operational costs (APIs, hosting if any)?
-
-**Monetization**
-
-- Is this intended to be a personal tool with no monetization?
-- If commercialized, what model? Subscription, one-time purchase, freemium?
-- Are there ethical constraints on monetization (no selling data, no ads)?
-
-**Sustainability**
-
-- Who maintains the system long-term?
-- What happens if the developer becomes incapacitated? (Relevant given the target user profile)
-- Are there dependencies on third-party services that could disappear?
-
-**Open Source Considerations**
-
-- Is open-sourcing the code a possibility for community sustainability?
-- Should the community be able to contribute features?
-- What licensing model aligns with the mission?
+1. **Technical Architecture Document** - Detailed system design with data schemas, API contracts, n8n workflow specifications
+2. **UX Mockups** - Low-fidelity wireframes for Morning Check-In, Task Selector, Energy Dashboard
+3. **Notion Template Package** - Ready-to-import database structures with all properties defined
+4. **n8n Workflow Bundle** - Import-ready automation workflows for all 4 core Shortcuts
+5. **Symptom Ontology** - Formal data model for tracking vocabulary and classification
+6. **Phased Implementation Roadmap** - Sprint-level breakdown with dependencies and success criteria
+7. **Voice & Personality Guide** - Example language for each Mode with tone calibration rules
+8. **Privacy & Security Specification** - HIPAA compliance requirements, local vs. cloud processing rules
 
 ---
 
-### 11.9 Development Approach and Phasing
+## 17. Changelog: User Notes Integration (v2.0 → v2.1)
 
-**Technology Stack**
+This section documents all user feedback notes from v2.0 and how they were addressed in v2.1.
 
-- Native iOS (Swift/SwiftUI) or cross-platform (React Native, Flutter)?
-- Backend requirements? Local-only, optional cloud, required cloud?
-- What AI/ML frameworks? CoreML, on-device models, cloud APIs (OpenAI, etc.)?
+### Note 1: Energy Budget Weight Adaptability
+**Original Note (Section 3.F, line 226):**
+> "How did we come up with these numbers? Wouldn't they vary by person? If the program noticed the mindfulness (for example) was far more influential than it hypothesized would it automatically update its own model and learn and adapt?"
 
-**Development Methodology**
+**Resolution:**
+- Renamed section to "Budget Calculation Factors (Initial Hypothesis - Self-Adapting)"
+- Added explicit "CRITICAL" subsection explaining:
+  - All percentages are starting hypotheses, not fixed values
+  - Research Brain continuously tests and updates weights based on observed correlations
+  - System runs A/B experiments to validate changes
+  - Weights automatically rebalance based on each user's unique physiology
+  - All adjustments logged with confidence intervals
+- **Location:** Section 3.F (Maintain Stable Energy Band)
 
-- Agile with short iterations? Waterfall with defined phases?
-- How will user feedback be incorporated during development?
-- Is there a beta testing plan?
+### Note 2: Food Additives & Preservatives Tracking
+**Original Note (Section 3.H, line 247):**
+> "Also consider dyes, preservatives, color, and unnatural flavors, and/or additives like msg, that could be problematic for an audhd etc system."
 
-**Quality Assurance**
+**Resolution:**
+- Added comprehensive "Additive & preservative tracking" requirement
+- Includes specific examples: artificial dyes (Red 40, Yellow 5), preservatives (BHA, BHT, sodium benzoate), artificial flavors, MSG
+- Integrated with barcode scanning for automatic additive detection
+- **Location:** Section 3.H (Comprehensive Nutrition System)
 
-- What testing approach? Manual, automated, both?
-- How will medical accuracy of recommendations be validated?
-- Who reviews content for psychological safety?
+### Note 3: Individual MCAS Sensitivity Testing
+**Original Note (Section 3.H, line 250):**
+> "Understand that each user's MCAS sensitivities are going to be uniquely different, and should be tested and identified for them specifically"
 
-**Deployment Strategy**
+**Resolution:**
+- Added "Personalized MCAS trigger identification" subsection
+- Emphasized that sensitivities are unique per user
+- System learns through:
+  - Symptom correlation tracking (food logs vs. flare patterns)
+  - Guided elimination challenges
+  - Safe food discovery based on personal tolerance data
+- Explicit statement: "Never assumes universal triggers - everything is tested per individual"
+- **Location:** Section 3.H (Comprehensive Nutrition System)
 
-- TestFlight for personal use, or App Store distribution?
-- If App Store, what App Review considerations exist for health-related apps?
-- Update frequency expectations?
+### Note 4: Data Deletion vs. Retention
+**Original Note (Section 6, line 430):**
+> "How will the model deal with removing user info when they request it be removed?"
+
+**Resolution:**
+- Created comprehensive "Data Retention Philosophy" subsection
+- Implemented "Right to Deletion" protocol:
+  - All identifiable data purged within 30 days upon request
+  - Optional conversion to anonymized aggregate form (contributes to research without personal identification)
+  - Pattern export before deletion (downloadable archive)
+- Balances pattern recognition needs with user privacy rights
+- **Location:** Section 6 (Data Privacy & Retention)
+
+### Note 5: Apple Watch Integration Required for v1.0
+**Original Note (Section 10, line 540):**
+> "I need device integration in model one. for tristan this will be apple watch, to be extended to other monitors in the ultimate universal application"
+
+**Resolution:**
+- Moved Apple Watch from "Out of Scope" to new subsection "IN SCOPE for v1.0: Wearable Device Integration"
+- Listed specific required features:
+  - Real-time HR/HRV monitoring for POTS detection
+  - Activity tracking integration
+  - Quick-tap check-ins via Watch complications
+  - Overwhelm detection through physiological signals
+  - Notification delivery on wrist
+- Included future expansion path (Oura Ring, Whoop, etc.)
+- **Location:** Section 10 (Non-Goals - new "IN SCOPE for v1.0" subsection)
+
+### Note 6: Enhanced Privacy for Marginalized Users
+**Original Note (Section 10, line 550):**
+> "because this is dealing with many ASD people, a larger than the population's statistical average will be trans, queer, etc. We need to make absolutely sure that this data can never be used to track and/or hunt minority groups. I don't want people using my autism app to end up on RFK's nazi death list. In addition, identification of gender vs sex norms should be liberalized and not reductive, so that it shows nuance and tact around the subject of gender without losing track of the science. perhaps something like check box, this person has a penis and breasts, etc."
+
+**Resolution:**
+- Created comprehensive "Enhanced Protection for Marginalized Users" subsection with:
+  - Explicit threat model: protection against government tracking, discrimination, persecution
+  - Security measures:
+    - Optional full local-only mode (no cloud sync) for high-risk users
+    - Data jurisdiction selection (EU servers for GDPR protection)
+    - Encrypted backups with user-controlled keys only
+    - Zero-knowledge architecture for subpoena resistance
+- Added "Gender & Sex Data Collection" subsection:
+  - Non-reductive checkbox-style biological data: "This person has: [✓] penis [ ] vagina [✓] breasts..." etc.
+  - Hormone therapy tracking
+  - Separate gender identity field (free text + pronouns)
+  - Explanation of why biological data matters (POTS/EDS/MCAS patterns tied to menstrual cycles, hormones)
+  - Highest-level encryption, never shared
+- Updated "Surveillance" section to reference these protections
+- **Location:** Section 6 (Data Privacy & Retention)
+
+### Note 7: Affiliate Links for Future Revenue
+**Original Note (Section 11, line 565):**
+> "probably in later iterations of the app i would like affiliate links to products i recommend for the purposes of making a little extra cash (disclosed of course)."
+
+**Resolution:**
+- Added "Future revenue streams (post-v1.0)" to Monetization section
+- Listed affiliate links as first option with "(fully disclosed)" notation
+- Also added: Premium intervention content, Advanced analytics tiers, Community membership
+- Maintains "no selling user data, no ads" commitment
+- **Location:** Section 11 (Monetization)
+
+### Note 8: Insurance Advocacy Toolkit
+**Original Note (Section 11, line 575):**
+> "Beyond this. insurance actively gatekeeps many of the tests and medications necessary for these unicorn conditions. I want to give people specific advice on how to best get insurance compliance without friction. asd individuals generally do not like conflict which makes advocating for themselves hard. i want to be able to give them specific strategies and form letters to achieve the outcomes they desire."
+
+**Resolution:**
+- Created comprehensive "Insurance Advocacy Toolkit" optional feature with:
+  - Problem statement: insurance gatekeeping + ASD conflict-aversion
+  - Solution components:
+    - Pre-written appeal letter templates (customized to diagnosis codes and denials)
+    - Step-by-step phone scripts (low-conflict, assertive language)
+    - Evidence packet generator (medical literature + symptom logs formatted for appeals)
+    - Escalation pathways (supervisor requests, state complaints, patient advocates)
+    - Success pattern library (what worked for similar denials)
+    - Tone coaching (practice assertive non-confrontational language)
+  - Goal: Reduce friction in getting necessary care for conflict-averse users
+- **Location:** Section 11 (Optional Features)
+
+### Note 9: Community Connection Platform
+**Original Note (Section 13, line 617):**
+> "I also want a way to have community. probably online from home, something like kara lowentheil's clutch model or a discord server, please suggest an ethical and profitable solution for connection"
+
+**Resolution:**
+- Created "Community Connection Platform" optional feature with detailed implementation:
+  - Problem statement: Need for Connection (per Happiness Model) + difficulty accessing in-person community
+  - Ethical & Profitable Solution (Clutch/Discord Hybrid):
+    - Paid membership model ($20-50/month)
+    - Platform options: Discord or Circle.so
+    - Structure: Async text channels, optional co-working sessions, weekly expert Q&A, peer support by condition cluster
+    - Professional moderation to prevent trauma dumping
+    - Revenue: Recurring membership funds management + expert access
+    - Ethics: Clear boundaries (not therapy/medical advice), trained moderators, accessible pricing
+  - Value proposition: Sustainable business model + reduces isolation
+- Referenced in Happiness Operating Model under "Connection"
+- **Location:** Section 11 (Optional Features) + Section 13 reference
+
+### Note 10: Automated Self-Auditing for Stealth Operations
+**Original Note (Section 14, line 644):**
+> "Shouldn't the system automatically review capability logs to ensure the data is accurate, and the model is evolving iteratively?"
+
+**Resolution:**
+- Expanded "Stealth Operations" section with "Automated self-auditing system" that:
+  - Planner Brain logs all stealth operations (what, when, why)
+  - Research Brain reviews weekly for:
+    - Data accuracy (did changes improve outcomes?)
+    - Model evolution (is system learning correctly?)
+    - Boundary compliance (were inappropriate actions taken?)
+  - Automatic corrections when patterns show errors
+  - Weekly "What I Did For You" summary sent to user (transparent, optional review)
+- Maintains retroactive audit capability for user inspection anytime
+- **Location:** Section 14 (Key Architectural Resolutions - Stealth Operations)
+
+### Summary of Changes
+- **10 user notes** integrated
+- **All inline notes removed** from document body
+- **Focus narrowed** around privacy, personalization, and conflict-minimization for neurodivergent users
+- **New features added:** Insurance Advocacy Toolkit, Community Connection Platform, Enhanced Privacy Protections
+- **Technical improvements:** Self-adapting energy weights, automated capability auditing
+- **Scope clarification:** Apple Watch moved from stretch goal to v1.0 requirement
 
 ---
 
-### 11.10 Risk Assessment
+**This PRD represents the complete vision for Jarvis v1.0 - an AI-augmented neurodivergent executive function prosthesis that makes excellence feel effortless.**
 
-**Medical/Safety Risks**
-
-- What happens if Jarvis recommends rest but the user has a genuine medical emergency?
-- Should there be explicit disclaimers? Where and how prominent?
-- Is there liability exposure for health recommendations?
-
-**Psychological Risks**
-
-- Could obsessive tracking worsen anxiety or health fixation?
-- What guardrails prevent unhealthy relationship with the app?
-- How does the system handle user expressions of self-harm or crisis?
-
-**Dependency Risks**
-
-- What if the user becomes dependent on Jarvis and it fails?
-- Should there be "independence training" to build internal coping?
-- How does the system degrade gracefully?
-
-**Technical Risks**
-
-- Apple Health API changes or restrictions?
-- iOS version compatibility constraints?
-- What happens when Apple deprecates features the app depends on?
-
-**Data Risks**
-
-- What if local storage is corrupted?
-- Backup strategy?
-- What if sync conflicts occur (if cloud is ever added)?
-
----
-
-### 11.11 Competitive Landscape and Differentiation
-
-**Existing Solutions**
-
-- What apps have you tried that failed? Why specifically did they fail?
-- Bearable, Daylio, Finch, Woebot, Youper - what is missing from these?
-- Are there any features from existing apps worth emulating?
-
-**Differentiation**
-
-- What is the single most important differentiator from existing health tracking apps?
-- Is the neurodivergent-specific design the key differentiator, or the medical condition integration?
-- Would a "Jarvis" brand personality be part of the differentiation?
-
-**Integration vs. Replacement**
-
-- Should Jarvis replace existing apps or integrate with them?
-- What apps are non-negotiable and must coexist?
-- Is there data import capability from existing tracking apps?
-
----
-
-### 11.12 Emotional and Psychological Design
-
-**Personality Definition**
-
-- The PRD describes "warm, brilliant lab partner + gentle guardian AI." Can you provide specific examples of how this manifests?
-- Should Jarvis have a consistent voice/personality? What adjectives describe it?
-- Should Jarvis use humor? Empathy statements? Encouragement?
-
-**Crisis Response**
-
-- What should Jarvis do/say when the user is in crisis?
-- Should there be emergency contact integration?
-- What language is harmful vs. helpful during extreme low-capacity moments?
-
-**Celebration and Acknowledgment**
-
-- How should Jarvis acknowledge good days or achievements without triggering "streak anxiety"?
-- Should there be any positive reinforcement? What form?
-- How to balance validation without creating pressure?
-
-**Failure Handling**
-
-- When the user does not log data for days, what is the appropriate response?
-- How does Jarvis handle the user explicitly saying "leave me alone"?
-- What is the re-engagement strategy after absence?
-
----
-
-### 11.13 Content and Intervention Quality
-
-**Intervention Sources**
-
-- Where do recommended interventions come from? Medical literature, personal experience, both?
-- Should interventions be evidence-based only, or include anecdotal/personal preferences?
-- Who validates that interventions are safe and appropriate?
-
-**Personalization Depth**
-
-- How personalized should interventions be vs. generic best practices?
-- Should the user be able to mark interventions as ineffective to prevent re-suggestion?
-- How does the system learn individual response to interventions?
-
-**Content Updates**
-
-- How will intervention content be updated over time?
-- Should new interventions be added based on emerging research?
-- Who is responsible for content accuracy long-term?
-
----
-
-### 11.14 Additional Clarifications Needed
-
-**Terminology Standardization**
-
-- "Neuroimmune budget" - is this a term of art or novel concept? How should it be calculated?
-- "Flare" vs. "dip" vs. "crash" - can you provide precise definitions and severity thresholds?
-- "Safe food" - what criteria define safety? Low histamine, tolerated, nutritious?
-
-**Scope Boundaries**
-
-- The document mentions "automate recurring tasks" and "reorder simple supplies" - is actual e-commerce integration in scope?
-- "Track bills and deadlines" - is financial tracking in scope?
-- "Social load mapping" (stretch goal) - what does this mean specifically?
-
-**Multi-Condition Complexity**
-
-- POTS, MCAS, EDS, AUDHD, CPTSD each have distinct symptom patterns. How should conflicting recommendations be resolved?
-- Is there priority ordering among conditions?
-- Should the user be able to disable tracking for conditions that are well-managed?
-
-**Caregiver/Support Person Role**
-
-- Should a trusted person be able to view status or receive alerts?
-- Is there a "share with doctor" feature?
-- Privacy boundaries with family members?
-
----
-
-### 11.15 Top 10 Blocking Questions
-
-If you can only answer 10 questions before proceeding, these are the most critical:
-
-1. **Is this a personal tool or a product for others?** This fundamentally changes architecture, design, and sustainability decisions.
-
-2. **What are the 3-5 MVP features?** The current scope is too broad for focused development.
-
-3. **What is the acceptable flare prediction accuracy?** This determines whether ML is required or rule-based heuristics suffice.
-
-4. **What is the cold-start experience?** How does Jarvis provide value in week 1?
-
-5. **How will you measure success objectively?** Current metrics lack measurement methodology.
-
-6. **What is the maximum acceptable cognitive load for using Jarvis?** This sets UX constraints.
-
-7. **What happens on the worst days?** The system must accommodate zero-capacity states.
-
-8. **What is the technology stack decision?** Native vs. cross-platform affects everything.
-
-9. **Who builds and maintains this?** Resource constraints shape scope.
-
-10. **What existing solutions have failed and why?** Understanding past failures prevents repeating them.
-
----
-
-## Next Steps
-
-Once the clarification questions above are answered, the following artifacts can be generated:
-
-- A technical architecture
-- A Notion dashboard layout
-- AI agent flowcharts
-- A UX mockup description
-- Your symptom ontology + database schema
-- Your daily/weekly Jarvis workflows
+*Version: 2.1 (Focused - User Notes Integrated)*
+*Last Updated: December 2024*
+*Synthesized from: High Level PRD, Jarvis Application Vision, Research Documents, and User Clarifications*

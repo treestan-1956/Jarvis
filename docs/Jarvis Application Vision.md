@@ -231,6 +231,32 @@ Based on research into metacognitive frameworks and neurodivergent support needs
 - Passive sensor integration (HealthKit)
 - Natural language text summaries
 
+**Example Interactions:**
+
+*Quick-tap check-in:*
+> Morning check-in (3 taps): Energy? [3] [5] [7] → Sleep? [Poor] [OK] [Good] → Any flags? [Pain] [GI] [Fog] [None]
+>
+> "Got it. Energy 5, sleep OK, no flags. Your budget is Green. Have a good one."
+
+*Voice note extraction:*
+> You said: "Feeling pretty rough, lots of belching after lunch, maybe a 4 energy, joints are achy especially my knees"
+>
+> Logged: Energy 4/10 at 1:30pm. GI: belching (post-lunch). Pain: joints, knees specifically. "This matches your pattern after high-histamine meals — was lunch something fermented or aged?"
+
+*Passive sensor integration:*
+> "HealthKit sync complete. Last night: 6.2 hours sleep, 3 wakes, HRV average 34 (below your baseline of 42). Your resting heart rate was 72, slightly elevated. Factoring this into today's budget."
+
+*Natural language summary parsing:*
+> You wrote: "Today was weird — started okay but crashed hard around 3pm, had to lie down, slight headache, couldn't focus on anything after that"
+>
+> Extracted: Energy decline at 3pm. Symptom: headache (mild). Symptom: brain fog. Intervention taken: horizontal rest. "I've logged this pattern. Third time this month with a 3pm crash — want me to look for correlations?"
+
+*Environmental factor prompt:*
+> "Pollen count is high today (ragweed) and barometric pressure dropped overnight. Worth noting if symptoms spike — these have triggered you before."
+
+*Trend summary:*
+> "This week's averages: Energy 5.2/10 (up from 4.8 last week). Belching episodes: 4 (down from 7). Sleep: 6.8 hours average. Pain days: 2 out of 7. Overall: trending better."
+
 ### B. Neuroimmune Budget System
 
 A real-time "energy budget" displayed simply as:
@@ -249,6 +275,23 @@ A real-time "energy budget" displayed simply as:
 
 The budget enables **task-to-state matching** — only presenting tasks appropriate for current capacity.
 
+**Example User Interactions:**
+
+*Morning budget assessment:*
+> "Good morning. Your budget is **Yellow** today. Sleep was 5.5 hours (below your 7-hour threshold), but hydration yesterday was solid. Deep work isn't recommended — collaborative or admin tasks only."
+
+*Real-time budget shift:*
+> "Your budget just dropped from Green to Yellow. You've been upright for 3 hours without a break, and your heart rate is climbing. Time for a horizontal reset?"
+
+*Budget recovery tracking:*
+> "You've been in Red for 2 hours. After your rest and electrolytes, you're now back to Yellow. Still not green, but you could handle a low-stakes phone call if needed."
+
+*Task-to-state matching in action:*
+> "You asked about working on the project proposal. That's a Green-level task, but you're currently Yellow. Want me to surface some Yellow-appropriate tasks instead, or park this for tomorrow?"
+
+*End-of-day budget summary:*
+> "Today's budget trajectory: Started Yellow, dipped to Red at 2pm (missed lunch), recovered to Yellow by 5pm. You spent 6 hours in Yellow, 2 hours in Red, 0 hours in Green. Tomorrow's forecast: likely Green if you sleep by 10pm."
+
 ### C. Flare Prediction Engine
 
 **Prediction Window:** 4-48 hours in advance
@@ -262,10 +305,27 @@ The budget enables **task-to-state matching** — only presenting tasks appropri
 - Food tolerance patterns
 - Previous-day exertion
 
-**Output Format:**
+**Example Outputs:**
+
+*Standard flare prediction:*
 > "Probability of flare today: 65%"
 > "Likely cause: dehydration + sleep drift"
 > "Recommended action: drink electrolytes + schedule light tasks only"
+
+*MCAS-specific prediction:*
+> "Histamine flare risk: 70% within 24 hours. You've had high-histamine foods 3 days running, pollen is elevated, and your belching increased yesterday. Consider a bland dinner and extra ketotifen tonight."
+
+*POTS crash prediction:*
+> "POTS crash risk: 55% by afternoon. You slept poorly, skipped morning electrolytes, and have a standing meeting at 2pm. Suggestion: front-load your salt intake and request a seated option for that meeting."
+
+*Multi-system flare warning:*
+> "Compound flare risk detected. Your MCAS markers, POTS indicators, and EDS joint instability are all trending up simultaneously. This pattern preceded your last major crash by 18 hours. Strong recommendation: cancel non-essential commitments today."
+
+*Low-risk confirmation:*
+> "Flare risk today: 15%. Sleep was solid, hydration is on track, no environmental triggers detected. This is a good day to tackle something from your 'Green days only' list."
+
+*Post-exertion prediction:*
+> "You pushed hard yesterday — 4 hours of cognitive work plus a social event. Based on your patterns, there's a 60% chance of a delayed crash tomorrow. Consider keeping tomorrow light as a buffer day."
 
 ### D. Intervention Recommendation System
 
@@ -285,6 +345,29 @@ The budget enables **task-to-state matching** — only presenting tasks appropri
 - Never prescriptive or shaming
 - Framed as experiments, not requirements
 
+**Example Recommendations:**
+
+*Hydration intervention:*
+> "Your POTS markers are elevated. Here's a hydration protocol: 16oz water with 1/4 tsp salt now, another 8oz in 30 minutes. This has helped 4 of the last 5 times you were in this state."
+
+*Vagal reset suggestion:*
+> "You seem activated — heart rate up, short responses in your check-in. Want to try a 90-second vagal reset? Option A: cold water on wrists + slow exhale. Option B: hum for 6 breaths. Option C: skip it."
+
+*Safe food recommendation:*
+> "You're asking what to eat tonight. Based on your current histamine load, here are your safest options: chicken + rice, plain oatmeal, or that frozen soup you logged as 'always safe.' Avoid the leftover curry — it's been in the fridge 3 days."
+
+*Micro-movement sequence:*
+> "You've been stationary for 2 hours. Here's a 2-minute reclined sequence that won't spike your heart rate: ankle circles (30 sec), toe scrunches (30 sec), gentle knee-to-chest (60 sec). Do it lying down."
+
+*Environmental adjustment:*
+> "Your sensory load is climbing — you've been in bright light with background noise for 4 hours. Suggestion: dim lights to 50%, noise-canceling headphones, or relocate to the quiet room for 20 minutes."
+
+*Sleep correction protocol:*
+> "You've gone to bed after midnight 3 nights running. Tonight's correction: start wind-down at 9:30, dim all screens, take magnesium by 10pm. Want me to send a reminder at 9:30?"
+
+*Personalized learning feedback:*
+> "You tried the cold shower intervention yesterday when your budget was Red. Result: you reported feeling worse afterward. I'm marking cold exposure as 'not helpful during Red states' for you. We can revisit if you want."
+
 ### E. Task Management & EF Prosthesis
 
 **Task Triage System:**
@@ -303,6 +386,29 @@ The budget enables **task-to-state matching** — only presenting tasks appropri
 - Decision trees for common choices
 - Micro-checklists that break paralysis
 - "Next best action" surfacing based on current state
+
+**Example Interactions:**
+
+*Daily structure presentation:*
+> "Here's today's shape: **One Big Thing** — finish the budget review (45 min, requires focus, upright). **Two Smalls** — text mom back, refill water bottle. **If Time** — clear 3 emails. Recovery block suggested at 2pm."
+
+*Energy-cost classification in action:*
+> "You have 12 tasks in your backlog. Sorted by your current Yellow state: 4 are doable now (all low-energy, reclined-friendly), 5 need Green state, 3 are waiting on others. Want to see the 4 you can do now?"
+
+*Automatic priority scoring:*
+> "New task captured: 'Schedule dentist appointment.' Auto-scored: P2 (important, not urgent), 10-minute effort, low energy cost, requires phone + calendar. Filed under 'Yellow-state admin tasks.'"
+
+*Decision tree for common choice:*
+> "You're stuck on what to do next. Decision tree: Are you upright or reclined? → Reclined. Do you have your phone? → Yes. Can you handle human interaction? → No. Suggested task: Review saved articles (solo, reclined, no interaction)."
+
+*Micro-checklist breaking paralysis:*
+> "The 'clean kitchen' task has been stuck for 3 days. Here's a micro-checklist to break it down: ☐ Put 5 dishes in dishwasher. That's it. Just 5. Let me know when done and I'll give you the next step if you want it."
+
+*Next best action surfacing:*
+> "It's 3pm, you're Yellow, and you have 30 minutes before your call. Next best action: reply to Alex's email (12 min, low stakes, already drafted). Or: take a rest before the call. Which feels right?"
+
+*Context-aware rescheduling:*
+> "You marked the project proposal as today's One Big Thing, but you've been Red all morning. I've moved it to tomorrow's One Big Thing and swapped in 'organize receipts' (reclined-friendly) for today. Does that work?"
 
 ### F. Capture & Triage Pipeline
 
@@ -325,6 +431,28 @@ The budget enables **task-to-state matching** — only presenting tasks appropri
 - Decide (needs attention, but later)
 - Dream (long-term vision storage)
 
+**Example Interactions:**
+
+*Voice capture processing:*
+> You said: "Remember to call the insurance company about that claim, also I had a really good idea about the garden project, and my energy is like a 4 right now"
+>
+> Parsed into: **Task** — Call insurance re: claim (P2, 15 min, phone required). **Idea** — Garden project note (filed to Dream). **Log** — Energy level 4 recorded at 2:15pm.
+
+*Auto-classification feedback:*
+> "3 new items in your inbox from this morning. Auto-sorted: 1 task (schedule car service), 1 link (article you saved), 1 reminder (Sarah's birthday next week). All look correct? Tap to adjust any."
+
+*Daily digest of captured items:*
+> "Today you captured 7 items. Breakdown: 3 tasks (all P2, totaling ~45 min), 2 ideas (filed), 1 symptom log, 1 random note. The 3 tasks are ready in your Yellow queue when you want them."
+
+*Urgency scoring in action:*
+> "New capture: 'Prescription runs out Friday.' Auto-scored urgency 8/10 (time-sensitive), P1 priority, 10-minute effort. Moved to top of tomorrow's queue. Does Friday work, or do you need it sooner?"
+
+*Next action generation:*
+> "You captured: 'Figure out tax situation.' That's vague, so I generated a next action: 'Find last year's tax return PDF.' 5 minutes, can be done reclined. Want me to file it that way?"
+
+*Processing workflow suggestion:*
+> "Your inbox has 12 unprocessed items. Quick triage: 4 are 'Do' (actionable tasks), 2 are 'Delegate' (things to ask others), 3 are 'Decide' (need more thought), 3 are 'Dream' (someday/maybe ideas). Want to batch-approve these categories?"
+
 ### G. Prediction Calibration System
 
 **Purpose:** Train hyperlexic pattern recognition without burnout
@@ -345,6 +473,29 @@ The budget enables **task-to-state matching** — only presenting tasks appropri
 - Maximum open prediction cap
 - Low-stakes vs. high-stakes filtering
 - Automatic retirement of stale predictions
+
+**Example Outputs:**
+
+*Prediction logging prompt:*
+> "You mentioned you think tomorrow will be a good day. Want to log that as a prediction? Suggested format: 'Tomorrow will be a Green day' — what probability? [50%] [60%] [70%] [80%]"
+
+*Weekly calibration report:*
+> "This week's calibration: You made 8 predictions. Your Brier score improved from 0.28 to 0.22. You're well-calibrated in the 60-80% range but overconfident at 90%+ (you said 90%, reality was closer to 70%). Consider reserving 90% for near-certainties."
+
+*Bucket calibration feedback:*
+> "Calibration check: Things you rate 70% likely actually happen 72% of the time — excellent. But things you rate 50% likely happen only 35% of the time. You might be underconfident in your uncertain predictions."
+
+*Base rate comparison:*
+> "You predicted 60% chance of a flare today. For context, your base rate for flares on days with similar conditions is 45%. Your prediction is a bit higher than historical — is there something specific making today different?"
+
+*Burnout guard in action:*
+> "You have 15 open predictions right now, which is at your cap. Before adding more, let's resolve some: Did the package arrive? Did you finish the project? Did the meeting go well? Quick yes/no for each."
+
+*Accuracy trend feedback:*
+> "Over the past month, your prediction accuracy improved 12%. You're getting better at estimating your own energy levels (was 60% accurate, now 78%). Flare predictions are still tricky (55% accurate) — that's normal, bodies are complex."
+
+*Stale prediction retirement:*
+> "These 3 predictions are over 2 weeks old and unresolved: 'Will hear back from recruiter,' 'Dentist will find cavities,' 'Rain this weekend.' Mark them as happened/didn't happen, or retire them as unresolvable?"
 
 ---
 

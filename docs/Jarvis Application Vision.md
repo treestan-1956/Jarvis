@@ -257,7 +257,73 @@ Based on research into metacognitive frameworks and neurodivergent support needs
 *Trend summary:*
 > "This week's averages: Energy 5.2/10 (up from 4.8 last week). Belching episodes: 4 (down from 7). Sleep: 6.8 hours average. Pain days: 2 out of 7. Overall: trending better."
 
-### B. Neuroimmune Budget System
+### B. Behavioral State Analysis Engine
+
+**Purpose:** Passively analyze user behavior patterns to infer cognitive and emotional state without requiring explicit check-ins. This provides a secondary data stream that validates self-reports and catches states the user may not consciously recognize.
+
+**Voice Analysis:**
+- Speech cadence and tempo (rushed, slow, hesitant)
+- Pause patterns (processing delays, uncertainty markers)
+- Tone and pitch variations (flat affect, agitation, fatigue)
+- Word choice patterns (complexity, negativity, confusion markers)
+- Response latency (time to begin speaking)
+- Trailing off or incomplete thoughts
+
+**Text/Typing Analysis:**
+- Typing speed variations
+- Error rate and correction patterns
+- Message length changes (terse vs. verbose)
+- Punctuation and capitalization patterns
+- Response time to messages
+- Emoji and expression usage changes
+
+**Interaction Pattern Analysis:**
+- App usage patterns (time between check-ins)
+- Task completion velocity
+- Navigation patterns (confusion, backtracking)
+- Time-of-day activity shifts
+- Engagement depth (quick taps vs. detailed entries)
+
+**Behavioral Baselines:**
+- Establishes personal "normal" patterns over time
+- Detects deviations from baseline
+- Accounts for time-of-day and context variations
+- Learns individual markers for different states
+
+**Analysis Approach:**
+- Observation is passive and non-intrusive
+- Insights are offered gently, not declared as fact
+- User always has final say on their actual state
+- Data used to prompt check-ins, not replace them
+- Privacy-conscious: analysis happens locally when possible
+
+**Example Interactions:**
+
+*Voice pattern detection:*
+> "I noticed your voice in that check-in was slower than usual, with longer pauses between thoughts. That sometimes correlates with brain fog for you. Are you feeling foggy today, or just thinking through something complex?"
+
+*Text pattern observation:*
+> "Your messages today have been shorter than usual and you're taking longer to respond. No judgment — just checking: is your energy lower than you logged this morning?"
+
+*Typing pattern insight:*
+> "You've corrected more typos in the last hour than typical for you. Sometimes that's a fatigue marker. Want to take a break, or are you just typing on a bumpy surface?"
+
+*Engagement pattern analysis:*
+> "You usually do your evening check-in around 8pm, but you've been starting closer to 10pm this week. Is your evening routine shifting, or is something making it harder to engage earlier?"
+
+*Baseline deviation alert:*
+> "Interesting observation: your response latency today is 3x your baseline. The last two times this happened, you logged a flare the next day. Worth keeping an eye on — maybe front-load rest today?"
+
+*Multi-signal synthesis:*
+> "Putting a few signals together: your voice was flat in this morning's check-in, you've been less active in the app than usual, and your HRV dropped overnight. These sometimes cluster before a dip. How are you actually feeling right now?"
+
+*Gentle state inquiry:*
+> "You said you're at a 6 energy, but your speech patterns suggest something closer to a 4. Not saying you're wrong — you know your body best. But if you're pushing through, this might be a good time to ease up."
+
+*Positive pattern recognition:*
+> "Your voice today has more energy variation than yesterday — more animated. Your typing is faster too. Looks like you might be feeling better than you think. Good day for a slightly bigger task?"
+
+### C. Neuroimmune Budget System
 
 A real-time "energy budget" displayed simply as:
 - **Green:** Functional — deep work possible
@@ -292,7 +358,7 @@ The budget enables **task-to-state matching** — only presenting tasks appropri
 *End-of-day budget summary:*
 > "Today's budget trajectory: Started Yellow, dipped to Red at 2pm (missed lunch), recovered to Yellow by 5pm. You spent 6 hours in Yellow, 2 hours in Red, 0 hours in Green. Tomorrow's forecast: likely Green if you sleep by 10pm."
 
-### C. Flare Prediction Engine
+### D. Flare Prediction Engine
 
 **Prediction Window:** 4-48 hours in advance
 
@@ -327,7 +393,7 @@ The budget enables **task-to-state matching** — only presenting tasks appropri
 *Post-exertion prediction:*
 > "You pushed hard yesterday — 4 hours of cognitive work plus a social event. Based on your patterns, there's a 60% chance of a delayed crash tomorrow. Consider keeping tomorrow light as a buffer day."
 
-### D. Intervention Recommendation System
+### E. Intervention Recommendation System
 
 **Intervention Categories:**
 - Hydration protocols (electrolyte timing, volume)
@@ -368,7 +434,7 @@ The budget enables **task-to-state matching** — only presenting tasks appropri
 *Personalized learning feedback:*
 > "You tried the cold shower intervention yesterday when your budget was Red. Result: you reported feeling worse afterward. I'm marking cold exposure as 'not helpful during Red states' for you. We can revisit if you want."
 
-### E. Task Management & EF Prosthesis
+### F. Task Management & EF Prosthesis
 
 **Task Triage System:**
 - Automatic priority scoring
@@ -410,7 +476,7 @@ The budget enables **task-to-state matching** — only presenting tasks appropri
 *Context-aware rescheduling:*
 > "You marked the project proposal as today's One Big Thing, but you've been Red all morning. I've moved it to tomorrow's One Big Thing and swapped in 'organize receipts' (reclined-friendly) for today. Does that work?"
 
-### F. Capture & Triage Pipeline
+### G. Capture & Triage Pipeline
 
 **Zero-Friction Capture:**
 - Voice dictation → Notion inbox (1 tap)
@@ -453,7 +519,7 @@ The budget enables **task-to-state matching** — only presenting tasks appropri
 *Processing workflow suggestion:*
 > "Your inbox has 12 unprocessed items. Quick triage: 4 are 'Do' (actionable tasks), 2 are 'Delegate' (things to ask others), 3 are 'Decide' (need more thought), 3 are 'Dream' (someday/maybe ideas). Want to batch-approve these categories?"
 
-### G. Prediction Calibration System
+### H. Prediction Calibration System
 
 **Purpose:** Train hyperlexic pattern recognition without burnout
 
@@ -497,7 +563,7 @@ The budget enables **task-to-state matching** — only presenting tasks appropri
 *Stale prediction retirement:*
 > "These 3 predictions are over 2 weeks old and unresolved: 'Will hear back from recruiter,' 'Dentist will find cavities,' 'Rain this weekend.' Mark them as happened/didn't happen, or retire them as unresolvable?"
 
-### H. Jarvis Journal System
+### I. Jarvis Journal System
 
 **Purpose:** An AI-generated personal journal that synthesizes all tracked data into meaningful narrative reflections, helping the user understand their patterns, celebrate progress, and build self-knowledge over time.
 
@@ -511,7 +577,8 @@ Unlike raw data dashboards, the Jarvis Journal transforms numbers into stories �
 - Symptoms logged and interventions tried
 - Notable patterns or anomalies
 - One reflection prompt or insight
-- Tomorrow's outlook
+- **Tomorrow Planning Conversation:** Collaborative selection of 3 things for tomorrow
+- Tomorrow's forecast and energy outlook
 
 **Weekly Review (Sunday)**
 - Week-at-a-glance: Green/Yellow/Red day distribution
@@ -571,7 +638,27 @@ Unlike raw data dashboards, the Jarvis Journal transforms numbers into stories �
 >
 > Interventions tried: electrolytes (helped), horizontal rest (helped). No flare materialized, though one was predicted at 55% probability.
 >
-> Tomorrow looks better — you're planning an early night, and there are no environmental triggers forecasted. Suggested focus: one medium task and extra rest buffer.
+> **Tomorrow's 3 Things** (selected together):
+> 1. Finish the email to Dr. Martinez (carried over — you chose to keep it)
+> 2. 15-minute walk if energy allows (stretch goal you suggested)
+> 3. Sort the mail pile (low-energy backup you can do reclined)
+>
+> Tomorrow's forecast: Likely Yellow to start (sleep debt), with potential to reach Green by afternoon if you rest well tonight. No environmental triggers expected.
+
+*Tomorrow Planning conversation:*
+> **Jarvis:** "Let's figure out tomorrow. Based on your forecast (likely Yellow morning, possible Green afternoon), what feels realistic? You have 8 tasks in your backlog. Want me to suggest 3, or do you want to pick?"
+>
+> **User:** "What do you think?"
+>
+> **Jarvis:** "Okay. Given your energy forecast and what's been waiting: (1) The Dr. Martinez email has been sitting for 3 days and takes 15 minutes — good candidate for your One Thing. (2) You mentioned wanting to walk more — tomorrow afternoon might work if you reach Green. (3) The mail pile is low-effort and reclined-friendly as a backup. How does that feel?"
+>
+> **User:** "Yeah, but I might not have energy for the walk."
+>
+> **Jarvis:** "Totally fair. Want to keep it as an 'if Green' stretch goal, or swap it for something certain? The insurance call is also waiting, but that's higher effort."
+>
+> **User:** "Keep the walk as a maybe. Add the mail thing as the safe one."
+>
+> **Jarvis:** "Got it. Tomorrow's 3: (1) Dr. Martinez email — your One Thing, (2) 15-min walk if you hit Green, (3) mail pile as your low-energy anchor. I'll check in tomorrow morning to see how you're feeling and adjust if needed. Good night."
 
 *Weekly Review excerpt:*
 > **Week of December 1-7**
@@ -1105,6 +1192,53 @@ The following questions require answers to move from vision to implementation:
 - End-of-week intentions that carry into next week's review?
 - Monthly goal tracking with progress updates?
 - Or keep journals purely reflective (no forward-looking pressure)?
+
+### 14. Behavioral State Analysis
+
+14.1. **What level of voice analysis is acceptable?**
+- Basic tempo/pause detection only?
+- Full tone and affect analysis?
+- Word choice and complexity tracking?
+- Where is the line between helpful and invasive?
+
+14.2. **How should behavioral observations be communicated?**
+- Always ask permission before sharing an observation?
+- Offer as gentle inquiry ("I noticed X — is that accurate?")?
+- Only surface observations when they conflict with self-reports?
+- Never mention observations directly, just adjust recommendations silently?
+
+14.3. **What is the baseline establishment period?**
+- How many days/weeks of interaction before behavioral baselines are meaningful?
+- Should the system disclose that it's still learning patterns?
+- How to handle highly variable users with no stable baseline?
+
+14.4. **How should the system handle disagreement?**
+- If user says "I'm fine" but behavioral signals suggest otherwise?
+- Always defer to user's stated experience?
+- Gently persist with concern?
+- Log the discrepancy silently for pattern analysis?
+
+14.5. **What privacy controls are needed for behavioral data?**
+- Can behavioral analysis be disabled entirely?
+- Should voice recordings be stored, or only extracted metrics?
+- Local-only processing vs. cloud analysis?
+- Transparency about what signals are being tracked?
+
+14.6. **How should positive behavioral signals be used?**
+- Actively encourage when signals suggest better-than-reported state?
+- Use to suggest more ambitious tasks?
+- Simply note in journal without real-time feedback?
+
+14.7. **What modalities should be prioritized for v1.0?**
+- Voice analysis (requires audio processing infrastructure)?
+- Text/typing patterns (simpler to implement)?
+- Interaction patterns (purely metadata-based)?
+- All three, or phased rollout?
+
+14.8. **How accurate does behavioral analysis need to be before surfacing insights?**
+- Minimum confidence threshold for observations?
+- How to communicate uncertainty in behavioral inferences?
+- What's the cost of false positives (saying "you seem tired" when user isn't)?
 
 ---
 

@@ -1,6 +1,6 @@
 # PRODUCT REQUIREMENTS DOCUMENT (PRD): JARVIS — Neurodivergent Executive Function Prosthesis
 
-**Version:** 2.0 (Refined)
+**Version:** 2.1 (Focused - User Notes Integrated)
 **Owner:** Tristan Parker
 **Product Type:** AI-augmented personal OS
 **Target User:** AUDHD, autistic, POTS/MCAS/EDS, CPTSD, gifted-intelligent, sensory-sensitive individuals
@@ -216,15 +216,20 @@ Real-time "energy budget" displayed as:
 - **Yellow:** Caution — collaborate/admin only
 - **Red:** Risk of crash — recovery mode
 
-**Budget Calculation Factors:**
-- Sleep quality and duration (30% weight)
-- Nutrition/hydration stability (20% weight)
-- Exercise/movement (18% weight)
-- Breathwork/HRV coherence (12% weight)
-- Mindfulness/metacognition (10% weight)
-- Environment (6% weight)
-- Thermal regulation (4% weight)
+**Budget Calculation Factors (Initial Hypothesis - Self-Adapting):**
+- Sleep quality and duration (30% starting weight)
+- Nutrition/hydration stability (20% starting weight)
+- Exercise/movement (18% starting weight)
+- Breathwork/HRV coherence (12% starting weight)
+- Mindfulness/metacognition (10% starting weight)
+- Environment (6% starting weight)
 
+**CRITICAL:** These percentages are **initial hypotheses only**. The Research Brain continuously:
+- Tests each factor's actual influence on user energy
+- Automatically updates weights based on observed correlations
+- Runs A/B experiments to validate changes
+- Adapts to each user's unique physiology (e.g., if mindfulness shows 40% influence, weights rebalance accordingly)
+- Logs all weight adjustments with confidence intervals
 ### G. Auto-Generate Insights
 
 **Research Brain Functions:**
@@ -244,10 +249,14 @@ Real-time "energy budget" displayed as:
 - **Macro tracking** - emphasizing symptom-specific needs (higher protein and magnesium intake)
 - **Histamine content classification** - traffic light system (Noom-style: green/yellow/red foods with limits on red foods)
 - **FODMAP awareness** - help user test and discover trigger foods
-- **Elimination diet support** - start from low-FODMAP, salicylate, oxalate baseline
-- **Barcode scanning** for easy food logging
-- **Personalized recommendations** based on MCAS management needs
-
+- **Elimination diet support** - start from low-FODMAP, low-salicylate, low-oxalate baseline
+- **Additive & preservative tracking** - flag artificial dyes (Red 40, Yellow 5, etc.), preservatives (BHA, BHT, sodium benzoate), artificial flavors, MSG, and other additives known to trigger AUDHD/MCAS symptoms
+- **Barcode scanning** for easy food logging with automatic additive detection
+- **Personalized MCAS trigger identification** - Each user's sensitivities are unique; system learns individual trigger foods through:
+  - Symptom correlation tracking (food logs vs. flare patterns)
+  - Guided elimination challenges
+  - Safe food discovery based on personal tolerance data
+  - Never assumes universal triggers - everything is tested per individual
 ### I. Reduce Shame, Overwhelm, Self-Blame
 
 **Language Characteristics:**
@@ -424,9 +433,42 @@ For persistent memory and agent capabilities:
 - **Later phases:** Google Calendar, smart home integration, wearable devices (Oura, Whoop)
 
 ### Data Privacy & Retention
-- **Historical Data:** Retained forever for pattern recognition (can be archived but never deleted)
-- **HIPAA Compliance:** All HIPAA-protected data processed locally only
-- **Smart Home Integration:** Suggest upgrades (Nest auto-thermostat, etc.) to optimize environment
+
+**Data Retention Philosophy:**
+- **Historical Data:** Retained indefinitely for pattern recognition and longitudinal insights
+- **Right to Deletion:** Users can request full data deletion at any time
+  - **Deletion process:** All identifiable data purged within 30 days
+  - **Anonymized research data:** User can opt to convert data to anonymized aggregate form before deletion (contributes to neurodivergent research without personal identification)
+  - **Pattern export:** Before deletion, system provides downloadable archive of all insights, patterns, and personal data
+
+**HIPAA & Privacy Protection:**
+- All HIPAA-protected data (symptoms, diagnoses, medications, emotional states) processed **locally only**
+- Cloud LLMs used only for non-sensitive data (task management, general scheduling)
+- End-to-end encryption for all data at rest and in transit
+- Zero-knowledge architecture where feasible (Jarvis servers cannot decrypt user health data)
+
+**Enhanced Protection for Marginalized Users:**
+- **CRITICAL:** Large percentage of neurodivergent users are LGBTQ+, non-binary, trans, gender-nonconforming
+- **Threat model:** Data must be protected against government tracking, discrimination, persecution
+- **Security measures:**
+  - Optional full local-only mode (no cloud sync) for high-risk users
+  - Data jurisdiction selection (EU servers for GDPR protection, etc.)
+  - Encrypted backups with user-controlled keys only
+  - No demographic data sold or shared, ever
+  - Subpoena resistance through zero-knowledge architecture
+
+**Gender & Sex Data Collection:**
+- **Non-reductive approach:** Checkbox-style biological data collection
+  - "This person has: [✓] penis [ ] vagina [✓] breasts [ ] uterus [ ] ovaries [ ] testes"
+  - Hormone therapy tracking (estrogen, testosterone levels)
+  - Menstrual cycle tracking (if applicable)
+- **Separate gender identity field:** Free text + optional pronouns
+- **Why this matters:** Biological data needed for POTS/EDS/MCAS symptom patterns (e.g., menstrual cycle affects dysautonomia) while respecting gender identity
+- **Privacy:** All gender/sex data encrypted at highest level, never shared
+
+**Smart Home Integration:**
+- Suggest environmental upgrades (Nest thermostat, air quality monitors) to optimize for POTS/MCAS
+- All smart home data remains local where possible
 
 ---
 
@@ -532,11 +574,18 @@ For persistent memory and agent capabilities:
 - Multi-user/family support (though system adapts to each user for commercial expansion)
 - Complex CBT therapy modules
 - Remote-access home automation
-- Social networking features
+- Social networking features (see Community Connection feature below)
 - **High-stimulation gamification** (calm gamification only)
 - Real-time emergency response
-- Wearable device integration (stretch goal)
 
+### IN SCOPE for v1.0: Wearable Device Integration
+- **Apple Watch integration (REQUIRED for v1.0)**
+  - Real-time HR/HRV monitoring for POTS detection
+  - Activity tracking integration
+  - Quick-tap check-ins via Watch complications
+  - Overwhelm detection through physiological signals
+  - Notification delivery on wrist for low-friction reminders
+- **Future expansion:** Oura Ring, Whoop, other continuous monitors for broader user base
 ### A Punitive System
 - No guilt, moral language, "you failed a streak"
 - No overwhelming notifications
@@ -544,9 +593,10 @@ For persistent memory and agent capabilities:
 
 ### Surveillance
 - Data for empowerment, not pressure
-- User-owned data
-- Privacy-first architecture
-
+- User-owned data with full deletion rights
+- Privacy-first architecture (see Section 6: Data Privacy & Retention for comprehensive security measures)
+- Enhanced protection for marginalized users against government tracking and persecution
+- Non-reductive gender/sex data collection that respects identity while enabling medical pattern recognition
 ---
 
 ## 11. Business Model & Commercialization
@@ -560,16 +610,49 @@ For persistent memory and agent capabilities:
 ### Monetization
 - **Business model:** Proprietary (not open source) - commercial product
 - Goal: Make money while helping neurodivergent community
-- No selling user data, no ads
+- **No selling user data, no ads**
+- **Future revenue streams (post-v1.0):**
+  - Affiliate links to recommended products (fully disclosed)
+  - Premium intervention content
+  - Advanced analytics tiers
+  - Community membership (see Optional Features below)
 
 ### Development Resources
 - Budget for API costs, hosting, tools
 - **User should do NO grunt work** - system handles all configuration
 
 ### Optional Features
+
+**Core Optional Features:**
 - **Neurotype profile setup wizard:** Optional initial profile provides starting heuristics, but system learns true patterns from data
 - **Caregiver dashboard:** Shared status, emergency alerts (with privacy boundaries)
-- **Doctor's report generation:** Export data in medical-professional-friendly format
+- **Doctor's report generation:** Export data in medical-professional-friendly format for appointments
+
+**Insurance Advocacy Toolkit:**
+- **Problem:** Insurance gatekeeps tests/medications for "unicorn conditions" (POTS, MCAS, EDS); ASD users often conflict-averse and struggle with self-advocacy
+- **Solution:** Conflict-minimizing advocacy system:
+  - **Pre-written appeal letter templates** customized to user's diagnosis codes and denied claims
+  - **Step-by-step scripts** for phone calls with insurance reps (low-conflict, assertive language)
+  - **Evidence packet generator** - pulls relevant medical literature, test results, symptom logs formatted for appeals
+  - **Escalation pathways** - when to request supervisor, file state complaint, contact patient advocate
+  - **Success pattern library** - what strategies worked for similar denials
+  - **Tone coaching** - Jarvis helps user practice assertive but non-confrontational language
+- **Goal:** Reduce friction in getting necessary care for conflict-averse users
+
+**Community Connection Platform:**
+- **Problem:** Neurodivergent users need "Connection" (per Happiness Model) but often can't access in-person community
+- **Ethical & Profitable Solution (Kara Lowentheil's Clutch / Discord Hybrid Model):**
+  - **Paid membership community** ($20-50/month)
+  - **Platform:** Private Discord server or Circle.so community
+  - **Structure:**
+    - Async text channels (low-pressure, no real-time requirement)
+    - Optional scheduled co-working sessions (body-doubling)
+    - Weekly expert Q&A (medical professionals, organizers, neurodivergent coaches)
+    - Peer support channels by condition cluster (AUDHD + EDS, POTS + MCAS, etc.)
+  - **Moderation:** Professional moderation to prevent trauma dumping, maintain safety
+  - **Revenue:** Recurring membership funds community management + expert access
+  - **Ethics:** Clear boundaries (not therapy, not medical advice), trained moderators, accessible pricing tiers
+  - **Value:** People who "get it" + sustainable business model + reduces isolation
 
 ---
 
@@ -610,7 +693,7 @@ Happiness ≈ (Curiosity × Integrity × Autonomy × Connection × Regulation)
 **Curiosity:** Steady diet of puzzles worth solving
 **Integrity:** Actions aligned with ethics
 **Autonomy:** Freedom that produces results (structured freedom + guided autonomy)
-**Connection:** Resonant relationships with people who "get it"
+**Connection:** Resonant relationships with people who "get it" (see Community Connection Platform in Section 11)
 **Regulation:** Nervous system safety as the foundation
 
 If any term goes to zero, the whole equation collapses.
@@ -636,8 +719,16 @@ If any term goes to zero, the whole equation collapses.
 **Maximum Responsible Automation:**
 - User has "executive function of a third grader on good days"
 - Take as much off plate as responsibly possible
-- Retroactive audit capability available
-- Clear boundaries on external-consequence actions
+- **Automated self-auditing system:**
+  - Planner Brain logs all stealth operations (what was changed, when, why)
+  - Research Brain reviews these logs weekly to ensure:
+    - Data accuracy (did the changes improve outcomes?)
+    - Model evolution (is the system learning correctly?)
+    - Boundary compliance (were any inappropriate actions taken?)
+  - Automatic corrections when patterns show errors
+  - User receives weekly "What I Did For You" summary (transparent, optional review)
+- Retroactive audit capability available for user inspection anytime
+- Clear boundaries on external-consequence actions (never stealth-operate on finances, medical decisions, social commitments)
 
 ### Gamification Intensity
 **Calm Gamification:**
@@ -676,7 +767,171 @@ If any term goes to zero, the whole equation collapses.
 
 ---
 
+## 17. Changelog: User Notes Integration (v2.0 → v2.1)
+
+This section documents all user feedback notes from v2.0 and how they were addressed in v2.1.
+
+### Note 1: Energy Budget Weight Adaptability
+**Original Note (Section 3.F, line 226):**
+> "How did we come up with these numbers? Wouldn't they vary by person? If the program noticed the mindfulness (for example) was far more influential than it hypothesized would it automatically update its own model and learn and adapt?"
+
+**Resolution:**
+- Renamed section to "Budget Calculation Factors (Initial Hypothesis - Self-Adapting)"
+- Added explicit "CRITICAL" subsection explaining:
+  - All percentages are starting hypotheses, not fixed values
+  - Research Brain continuously tests and updates weights based on observed correlations
+  - System runs A/B experiments to validate changes
+  - Weights automatically rebalance based on each user's unique physiology
+  - All adjustments logged with confidence intervals
+- **Location:** Section 3.F (Maintain Stable Energy Band)
+
+### Note 2: Food Additives & Preservatives Tracking
+**Original Note (Section 3.H, line 247):**
+> "Also consider dyes, preservatives, color, and unnatural flavors, and/or additives like msg, that could be problematic for an audhd etc system."
+
+**Resolution:**
+- Added comprehensive "Additive & preservative tracking" requirement
+- Includes specific examples: artificial dyes (Red 40, Yellow 5), preservatives (BHA, BHT, sodium benzoate), artificial flavors, MSG
+- Integrated with barcode scanning for automatic additive detection
+- **Location:** Section 3.H (Comprehensive Nutrition System)
+
+### Note 3: Individual MCAS Sensitivity Testing
+**Original Note (Section 3.H, line 250):**
+> "Understand that each user's MCAS sensitivities are going to be uniquely different, and should be tested and identified for them specifically"
+
+**Resolution:**
+- Added "Personalized MCAS trigger identification" subsection
+- Emphasized that sensitivities are unique per user
+- System learns through:
+  - Symptom correlation tracking (food logs vs. flare patterns)
+  - Guided elimination challenges
+  - Safe food discovery based on personal tolerance data
+- Explicit statement: "Never assumes universal triggers - everything is tested per individual"
+- **Location:** Section 3.H (Comprehensive Nutrition System)
+
+### Note 4: Data Deletion vs. Retention
+**Original Note (Section 6, line 430):**
+> "How will the model deal with removing user info when they request it be removed?"
+
+**Resolution:**
+- Created comprehensive "Data Retention Philosophy" subsection
+- Implemented "Right to Deletion" protocol:
+  - All identifiable data purged within 30 days upon request
+  - Optional conversion to anonymized aggregate form (contributes to research without personal identification)
+  - Pattern export before deletion (downloadable archive)
+- Balances pattern recognition needs with user privacy rights
+- **Location:** Section 6 (Data Privacy & Retention)
+
+### Note 5: Apple Watch Integration Required for v1.0
+**Original Note (Section 10, line 540):**
+> "I need device integration in model one. for tristan this will be apple watch, to be extended to other monitors in the ultimate universal application"
+
+**Resolution:**
+- Moved Apple Watch from "Out of Scope" to new subsection "IN SCOPE for v1.0: Wearable Device Integration"
+- Listed specific required features:
+  - Real-time HR/HRV monitoring for POTS detection
+  - Activity tracking integration
+  - Quick-tap check-ins via Watch complications
+  - Overwhelm detection through physiological signals
+  - Notification delivery on wrist
+- Included future expansion path (Oura Ring, Whoop, etc.)
+- **Location:** Section 10 (Non-Goals - new "IN SCOPE for v1.0" subsection)
+
+### Note 6: Enhanced Privacy for Marginalized Users
+**Original Note (Section 10, line 550):**
+> "because this is dealing with many ASD people, a larger than the population's statistical average will be trans, queer, etc. We need to make absolutely sure that this data can never be used to track and/or hunt minority groups. I don't want people using my autism app to end up on RFK's nazi death list. In addition, identification of gender vs sex norms should be liberalized and not reductive, so that it shows nuance and tact around the subject of gender without losing track of the science. perhaps something like check box, this person has a penis and breasts, etc."
+
+**Resolution:**
+- Created comprehensive "Enhanced Protection for Marginalized Users" subsection with:
+  - Explicit threat model: protection against government tracking, discrimination, persecution
+  - Security measures:
+    - Optional full local-only mode (no cloud sync) for high-risk users
+    - Data jurisdiction selection (EU servers for GDPR protection)
+    - Encrypted backups with user-controlled keys only
+    - Zero-knowledge architecture for subpoena resistance
+- Added "Gender & Sex Data Collection" subsection:
+  - Non-reductive checkbox-style biological data: "This person has: [✓] penis [ ] vagina [✓] breasts..." etc.
+  - Hormone therapy tracking
+  - Separate gender identity field (free text + pronouns)
+  - Explanation of why biological data matters (POTS/EDS/MCAS patterns tied to menstrual cycles, hormones)
+  - Highest-level encryption, never shared
+- Updated "Surveillance" section to reference these protections
+- **Location:** Section 6 (Data Privacy & Retention)
+
+### Note 7: Affiliate Links for Future Revenue
+**Original Note (Section 11, line 565):**
+> "probably in later iterations of the app i would like affiliate links to products i recommend for the purposes of making a little extra cash (disclosed of course)."
+
+**Resolution:**
+- Added "Future revenue streams (post-v1.0)" to Monetization section
+- Listed affiliate links as first option with "(fully disclosed)" notation
+- Also added: Premium intervention content, Advanced analytics tiers, Community membership
+- Maintains "no selling user data, no ads" commitment
+- **Location:** Section 11 (Monetization)
+
+### Note 8: Insurance Advocacy Toolkit
+**Original Note (Section 11, line 575):**
+> "Beyond this. insurance actively gatekeeps many of the tests and medications necessary for these unicorn conditions. I want to give people specific advice on how to best get insurance compliance without friction. asd individuals generally do not like conflict which makes advocating for themselves hard. i want to be able to give them specific strategies and form letters to achieve the outcomes they desire."
+
+**Resolution:**
+- Created comprehensive "Insurance Advocacy Toolkit" optional feature with:
+  - Problem statement: insurance gatekeeping + ASD conflict-aversion
+  - Solution components:
+    - Pre-written appeal letter templates (customized to diagnosis codes and denials)
+    - Step-by-step phone scripts (low-conflict, assertive language)
+    - Evidence packet generator (medical literature + symptom logs formatted for appeals)
+    - Escalation pathways (supervisor requests, state complaints, patient advocates)
+    - Success pattern library (what worked for similar denials)
+    - Tone coaching (practice assertive non-confrontational language)
+  - Goal: Reduce friction in getting necessary care for conflict-averse users
+- **Location:** Section 11 (Optional Features)
+
+### Note 9: Community Connection Platform
+**Original Note (Section 13, line 617):**
+> "I also want a way to have community. probably online from home, something like kara lowentheil's clutch model or a discord server, please suggest an ethical and profitable solution for connection"
+
+**Resolution:**
+- Created "Community Connection Platform" optional feature with detailed implementation:
+  - Problem statement: Need for Connection (per Happiness Model) + difficulty accessing in-person community
+  - Ethical & Profitable Solution (Clutch/Discord Hybrid):
+    - Paid membership model ($20-50/month)
+    - Platform options: Discord or Circle.so
+    - Structure: Async text channels, optional co-working sessions, weekly expert Q&A, peer support by condition cluster
+    - Professional moderation to prevent trauma dumping
+    - Revenue: Recurring membership funds management + expert access
+    - Ethics: Clear boundaries (not therapy/medical advice), trained moderators, accessible pricing
+  - Value proposition: Sustainable business model + reduces isolation
+- Referenced in Happiness Operating Model under "Connection"
+- **Location:** Section 11 (Optional Features) + Section 13 reference
+
+### Note 10: Automated Self-Auditing for Stealth Operations
+**Original Note (Section 14, line 644):**
+> "Shouldn't the system automatically review capability logs to ensure the data is accurate, and the model is evolving iteratively?"
+
+**Resolution:**
+- Expanded "Stealth Operations" section with "Automated self-auditing system" that:
+  - Planner Brain logs all stealth operations (what, when, why)
+  - Research Brain reviews weekly for:
+    - Data accuracy (did changes improve outcomes?)
+    - Model evolution (is system learning correctly?)
+    - Boundary compliance (were inappropriate actions taken?)
+  - Automatic corrections when patterns show errors
+  - Weekly "What I Did For You" summary sent to user (transparent, optional review)
+- Maintains retroactive audit capability for user inspection anytime
+- **Location:** Section 14 (Key Architectural Resolutions - Stealth Operations)
+
+### Summary of Changes
+- **10 user notes** integrated
+- **All inline notes removed** from document body
+- **Focus narrowed** around privacy, personalization, and conflict-minimization for neurodivergent users
+- **New features added:** Insurance Advocacy Toolkit, Community Connection Platform, Enhanced Privacy Protections
+- **Technical improvements:** Self-adapting energy weights, automated capability auditing
+- **Scope clarification:** Apple Watch moved from stretch goal to v1.0 requirement
+
+---
+
 **This PRD represents the complete vision for Jarvis v1.0 - an AI-augmented neurodivergent executive function prosthesis that makes excellence feel effortless.**
 
+*Version: 2.1 (Focused - User Notes Integrated)*
 *Last Updated: December 2024*
 *Synthesized from: High Level PRD, Jarvis Application Vision, Research Documents, and User Clarifications*

@@ -497,6 +497,142 @@ The budget enables **task-to-state matching** — only presenting tasks appropri
 *Stale prediction retirement:*
 > "These 3 predictions are over 2 weeks old and unresolved: 'Will hear back from recruiter,' 'Dentist will find cavities,' 'Rain this weekend.' Mark them as happened/didn't happen, or retire them as unresolvable?"
 
+### H. Jarvis Journal System
+
+**Purpose:** An AI-generated personal journal that synthesizes all tracked data into meaningful narrative reflections, helping the user understand their patterns, celebrate progress, and build self-knowledge over time.
+
+Unlike raw data dashboards, the Jarvis Journal transforms numbers into stories — creating a living document of the user's journey that can be reviewed, searched, and shared (e.g., with healthcare providers).
+
+**Journal Cadences:**
+
+**Daily Log (Evening)**
+- Today's energy arc (morning → afternoon → evening)
+- Tasks completed vs. planned
+- Symptoms logged and interventions tried
+- Notable patterns or anomalies
+- One reflection prompt or insight
+- Tomorrow's outlook
+
+**Weekly Review (Sunday)**
+- Week-at-a-glance: Green/Yellow/Red day distribution
+- Top accomplishments (completed despite constraints)
+- Flare events and potential triggers identified
+- Intervention effectiveness summary
+- Pattern highlights from Research Brain
+- Prediction calibration snapshot
+- One growth observation
+- Intentions for next week
+
+**Monthly Synthesis (1st of month)**
+- 30-day trend analysis across all tracked dimensions
+- Month's best days and what they had in common
+- Month's hardest days and contributing factors
+- Intervention ranking (most → least effective this month)
+- Progress toward longer-term goals
+- Emerging patterns not visible in weekly data
+- Comparison to previous month
+- Adjustments worth trying next month
+
+**Quarterly Deep Dive (Every 3 months)**
+- 90-day trajectory visualization
+- Seasonal pattern analysis (if applicable)
+- Major life events and their physiological impact
+- System effectiveness assessment (is Jarvis helping?)
+- Goal progress and recalibration
+- Significant insights discovered
+- Recommendations for next quarter
+
+**Yearly Reflection (Anniversary)**
+- Year-in-review narrative
+- Transformation story: where you started vs. where you are
+- Biggest wins and how they happened
+- Hardest periods and how you survived them
+- Most important patterns discovered
+- Evolution of baseline health metrics
+- Personal growth observations
+- Letter to next-year self
+
+**Journal Characteristics:**
+- Written in warm, narrative prose (not bullet points)
+- Framed around growth, not judgment
+- Highlights what worked, not just what went wrong
+- Includes specific data points woven into story
+- Searchable and exportable
+- Optionally shareable (medical summary format)
+
+**Example Outputs:**
+
+*Daily Log entry:*
+> **Friday, December 6**
+>
+> Today started Yellow — you slept 5.5 hours after a late night, and your HRV was below baseline. Despite that, you completed your One Big Thing (the budget review) and both Smalls. Impressive.
+>
+> Around 2pm, you logged belching and dropped to Red. You took a horizontal rest and had electrolytes, which brought you back to Yellow by 4pm. This matches your pattern of afternoon crashes after short sleep.
+>
+> Interventions tried: electrolytes (helped), horizontal rest (helped). No flare materialized, though one was predicted at 55% probability.
+>
+> Tomorrow looks better — you're planning an early night, and there are no environmental triggers forecasted. Suggested focus: one medium task and extra rest buffer.
+
+*Weekly Review excerpt:*
+> **Week of December 1-7**
+>
+> This was a 2-Green, 4-Yellow, 1-Red week — slightly better than last week's 1-4-2 distribution. Your average energy was 5.4/10, up from 4.9.
+>
+> The standout win: you completed the project proposal on Tuesday despite starting the day Yellow. You used the "micro-checklist" approach to break through paralysis, and it worked. Worth noting for future stuck moments.
+>
+> Thursday's Red day traced back to a combination: poor sleep Wednesday + high-histamine lunch + skipped morning electrolytes. Classic compound trigger. No single factor was the cause.
+>
+> Your predictions were 70% accurate this week (7/10). You're still slightly overconfident in the 80-90% range.
+>
+> One pattern emerged: your best days all included morning movement before 9am. It's now appeared in 8 of your last 10 Green days. Consider making it a default.
+
+*Monthly Synthesis excerpt:*
+> **November 2024 Synthesis**
+>
+> November was your best month since tracking began. You logged 8 Green days (up from 4 in October), and major flares dropped from 3 to 1.
+>
+> What changed? Three things stand out:
+> 1. You hit your electrolyte target 85% of days (vs. 60% in October)
+> 2. You started the sleep correction protocol mid-month
+> 3. You cut out aged cheese entirely after the Research Brain flagged it
+>
+> Your most effective intervention this month was the 90-second vagal reset — you used it 12 times, and it improved your state 10 of those times. Least effective: the cold shower experiment (0 for 3).
+>
+> The one flare (November 18) followed a stressful family interaction + travel day. Multi-system compound, as usual.
+>
+> Looking ahead: December has holiday gatherings, which historically spike your social load. Consider pre-scheduling recovery days after events.
+
+*Quarterly Deep Dive excerpt:*
+> **Q4 2024 (October - December)**
+>
+> This quarter marked a turning point. When October began, you were averaging 2 major flares per month and struggling to complete basic tasks. By December's end, flares dropped to 1 per month and your task completion rate doubled.
+>
+> The biggest factor? Consistency. Your electrolyte compliance went from 45% to 88%. Sleep regularity improved by 40 minutes average. These aren't dramatic interventions — they're accumulated stability.
+>
+> Jarvis's flare predictions reached 72% accuracy by December, up from 58% in October. The system is learning your patterns.
+>
+> Seasonally, you handle early winter better than late fall — possibly related to stabilizing indoor routines. Worth watching in Q1.
+>
+> Goal check: You wanted to "feel functional most days." In December, you logged "functional" (Green or stable Yellow) on 24 of 31 days. That's 77%. You're close.
+
+*Yearly Reflection excerpt:*
+> **2024: The Year You Stopped Surviving and Started Stabilizing**
+>
+> A year ago, you started tracking because life felt impossible. Flares were unpredictable. Tasks piled up. Every day was a gamble.
+>
+> Twelve months later, the data tells a different story:
+> - Major flares: 36 (Jan-Jun) → 9 (Jul-Dec)
+> - Average energy: 3.8/10 (Q1) → 5.6/10 (Q4)
+> - Green days per month: 2-3 (early year) → 8-10 (late year)
+>
+> What made the difference wasn't one thing — it was the compound effect of hundreds of small consistent choices, tracked and reinforced.
+>
+> Your biggest discovery: you're not fragile, you're reactive. And reactiveness can be predicted and managed. That reframe changed everything.
+>
+> If past-you could see current-you, they'd notice: you trust your body more. You've stopped fighting it and started collaborating with it.
+>
+> For 2025: You've stabilized the foundation. Now there's room to build.
+
 ---
 
 ## Technical Architecture Vision
@@ -916,6 +1052,59 @@ The following questions require answers to move from vision to implementation:
 - Histamine content classification?
 - FODMAP awareness?
 - Barcode scanning?
+
+### 13. Jarvis Journal System
+
+13.1. **What is the preferred format and delivery for journal entries?**
+- Notion page per entry? Single rolling document? Separate app?
+- Push notification with summary, or pull-based (user opens when ready)?
+- Audio version option for low-capacity days?
+
+13.2. **How much narrative vs. data should journals contain?**
+- Pure prose with data woven in (as shown in examples)?
+- Hybrid with data tables + narrative sections?
+- User preference toggle between styles?
+
+13.3. **What is the ideal length for each cadence?**
+- Daily: 1 paragraph? 3 paragraphs? Full page?
+- Weekly: 1 page? 2-3 pages?
+- Monthly/Quarterly/Yearly: How detailed before it becomes overwhelming?
+
+13.4. **Should the user review/approve journals before they're "final"?**
+- Auto-generated and stored immediately?
+- Draft → Review → Finalize workflow?
+- Ability to add personal notes or corrections?
+
+13.5. **What tone variations should be available?**
+- Always warm and encouraging?
+- Option for more clinical/neutral tone?
+- Adjust tone based on current emotional state?
+
+13.6. **How should journals handle difficult periods?**
+- During extended Red periods or crashes, should journaling pause?
+- Simplified "survival mode" entries?
+- Retrospective entries to fill gaps after recovery?
+
+13.7. **What sharing and export options are needed?**
+- Medical provider summary format (clinical language, relevant metrics)?
+- Therapist-friendly format (emotional patterns, growth narrative)?
+- Personal archive format (full detail, searchable)?
+- Privacy controls for what can be shared vs. kept private?
+
+13.8. **How should journals integrate with the Reflector Brain?**
+- Should journal reviews prompt emotional processing?
+- Include specific reflection questions for user response?
+- Track emotional reactions to reading past entries?
+
+13.9. **What is the cold-start experience for journaling?**
+- How much data is needed before meaningful daily entries?
+- What do weekly/monthly journals look like with only 1-2 weeks of data?
+- Placeholder content vs. honest "not enough data yet" messaging?
+
+13.10. **Should journals include goal-setting and accountability elements?**
+- End-of-week intentions that carry into next week's review?
+- Monthly goal tracking with progress updates?
+- Or keep journals purely reflective (no forward-looking pressure)?
 
 ---
 

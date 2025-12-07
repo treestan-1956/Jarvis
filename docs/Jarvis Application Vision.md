@@ -52,7 +52,7 @@ Jarvis acknowledges that executive function is not a fixed trait — it's a **st
    Jarvis acts as the monitoring, controlling, and evaluating functions that executive dysfunction disrupts. It notices what's slipping, redirects attention, and evaluates outcomes.
 
 2. **Prosthetic, Not Punitive**
-   Zero shame. Zero guilt. No "you failed a streak." The system respects capacity limits and offers compassion with clarity. It should feel like a warm, brilliant lab partner combined with a gentle guardian AI.
+   Zero shame. Zero guilt. No "you failed." The system respects capacity limits and offers compassion with clarity. It should feel like a warm, brilliant lab partner combined with a gentle guardian AI.
 
 3. **Predictive, Not Reactive**
    Using pattern recognition across physiological, environmental, and behavioral data, Jarvis predicts flares and crashes **before they happen** — enabling intervention when the cost is small.
@@ -65,353 +65,138 @@ Jarvis acknowledges that executive function is not a fixed trait — it's a **st
 
 ---
 
-## The Dual-Layer Architecture
+## The Four-Brain Architecture
 
-Jarvis operates through two complementary architectural layers that work together to provide comprehensive support:
+Based on research into metacognitive frameworks and neurodivergent support needs, Jarvis operates through four integrated cognitive modules:
 
-### Layer 1: Four Cognitive Modules (Backend Intelligence)
-
-These are the always-on background systems that power Jarvis:
-
-#### 1. Observer Brain (Monitoring)
+### 1. Observer Brain (Monitoring)
 **Function:** Detects overwhelm, drift, fatigue, and context loss
+**Persona:** Calm clinician
 **Capabilities:**
 - Tracks physiological signals (energy, fatigue, pain, HR/HRV, sleep)
 - Monitors environmental factors (weather, allergens, barometric pressure)
 - Detects early warning patterns for flares
 - Notices when focus has drifted or when hyperfocus has gone too long
-- Measures cognitive clarity, sensory load, emotional state
-- Tracks typing patterns, device usage, and behavioral signals
 
-#### 2. Planner Brain (Executive Scaffold)
+**Example Outputs:**
+
+*Hyperfocus protection:*
+> "You've been on the same task for 18 minutes and your language is showing fatigue markers — want to switch to a lower-effort task?"
+
+*Early flare detection:*
+> "Your heart rate has been elevated for the past hour and you skipped your morning electrolytes. This pattern preceded your last POTS flare by 6 hours. Drink something salty now?"
+
+*Environmental awareness:*
+> "Barometric pressure dropped 8 millibars overnight. On similar days, your joint pain tends to spike by afternoon. Consider staying horizontal for deep work today."
+
+*Histamine load monitoring:*
+> "You've had tomatoes at lunch and aged cheese at dinner two days in a row. Your histamine bucket is filling — tonight might be a good night for chicken and rice."
+
+*Sleep drift detection:*
+> "You've gone to bed 45 minutes later each night this week. Last time this happened, you hit a crash on day 5. Tonight would be a good night to start your wind-down routine early."
+
+*Autonomic instability warning:*
+> "Your HRV dropped from 45 to 28 overnight and you reported belching this morning. Your system is tilting toward yellow — lighter cognitive load today?"
+
+### 2. Planner Brain (Executive Scaffold)
 **Function:** Organizes, prioritizes, time-boxes, and chunks
+**Persona:** Warm executive assistant
 **Capabilities:**
 - Auto-prioritizes tasks by energy cost and current capacity
 - Presents "minimum viable day" options during low capacity
-- Generates the "Three Categories" daily structure (money/mission/body)
+- Generates the "One Big Thing + Two Smalls" daily structure
 - Auto-reschedules when flare is detected
 - Respects body bandwidth (reclined vs. upright tasks)
-- Maps tasks to energy windows based on time of day and cognitive state
-- Runs extensive stealth operations to maximize automation and minimize cognitive load
-- Takes as much off the user's plate as responsibly possible (user has "executive function of a third grader on good days")
 
-#### 3. Research Brain (Pattern Engine)
+**Example Outputs:**
+
+*Decision support with task sequencing:*
+> "You said you wanted to write the email, prep your notes, and shower. Which order feels easiest right now?"
+
+*Energy-matched morning briefing:*
+> "Good morning. Your energy reads as yellow today. Here's a minimum viable day: One Big Thing — review the contract (30 min, reclined-friendly). Two Smalls — reply to Alex, take meds. Everything else can wait."
+
+*Capacity-aware task surfacing:*
+> "You have 20 minutes before your appointment. Your current energy is medium. Want a quick admin task, or would you rather rest and scroll?"
+
+*Flare-triggered auto-reschedule:*
+> "Your Observer Brain flagged a likely crash today. I've moved your deep work session to Thursday and kept only the one non-negotiable: the pharmacy pickup. The rest is parked."
+
+*Body bandwidth matching:*
+> "You mentioned you're stuck in bed today. Here are 5 tasks you can do fully reclined: respond to the group chat, review saved articles, log yesterday's symptoms, listen to that podcast, or just rest."
+
+*Breaking paralysis with micro-steps:*
+> "The tax filing feels huge. Here's step one only: find last year's return PDF. That's it. Let me know when it's done and I'll give you step two."
+
+*Evening wind-down structure:*
+> "It's 9pm. Tomorrow has a light schedule. Tonight's suggestion: dim lights, no new inputs after 10, and queue up something low-stakes to watch. Wind-down mode?"
+
+### 3. Research Brain (Pattern Engine)
 **Function:** Handles intellectual depth, pattern recognition, insight generation
+**Persona:** Nerdy research collaborator
 **Capabilities:**
 - Surfaces correlations across health, behavior, and outcomes
 - Identifies triggers and safe patterns (foods, activities, times)
 - Runs personal experiments (N=1 trials with tracked outcomes)
 - Calibrates predictions using Brier scoring
-- Learns friction triggers, reward multipliers, and optimal intervention timing
-- Tracks consistency patterns and detects when routine needs variation (adaptive rhythm)
-- **Neurotype Adaptation:** All rules are learned over time, not hardcoded. System adapts to medical and personality stats of each user (not one-size-fits-all)
-- **Cold Start Strategy:** In Week 1, creates and tests hypotheses on what would most optimize productivity, health, and happiness
 
-#### 4. Reflector Brain (Regulation & Growth)
+**Example Outputs:**
+
+*Food-symptom correlation:*
+> "Belching rises when you eat apples late at night. On days you do the Melt Method in the morning, you complete 30% more tasks."
+
+*Multi-variable pattern detection:*
+> "Interesting pattern: when you combine poor sleep (under 6 hours) with afternoon caffeine, you get a GI flare 80% of the time within 48 hours. But poor sleep alone only leads to flares 30% of the time."
+
+*POTS trigger identification:*
+> "Your last 5 POTS crashes all happened within 2 days of skipping electrolytes AND having a stressful social interaction. Neither alone seems to trigger it — it's the combination."
+
+*Safe pattern discovery:*
+> "Your best weeks share three things: morning movement before 9am, no meals after 8pm, and at least one full horizontal rest period mid-day. Want me to build a template day around this?"
+
+*N=1 experiment tracking:*
+> "Your 2-week quercetin trial is complete. Results: histamine symptoms down 25%, but sleep onset delayed by 20 minutes on average. Net benefit seems marginal. Continue, stop, or try a different timing?"
+
+*Prediction calibration feedback:*
+> "You predicted 70% chance of a productive week, and you hit 4 of 5 goals. Your predictions in the 60-80% range have been accurate 72% of the time — you're well-calibrated there. You tend to underestimate in the 40-60% range though."
+
+*Weekly insight summary:*
+> "This week's data: best day was Tuesday (8 hours sleep + morning walk + salmon dinner). Worst day was Friday (late night, skipped meds, high histamine lunch). Your average energy was 5.2/10, up from 4.8 last week."
+
+### 4. Reflector Brain (Regulation & Growth)
 **Function:** Processes emotions, builds adaptive strategies, supports healing
+**Persona:** Compassionate coach
 **Capabilities:**
 - Offers vagal reset protocols when overwhelm is detected
 - Provides nonjudgmental language for processing difficult moments
 - Tracks emotional patterns and relationship to physiological state
 - Facilitates weekly reviews focused on growth, not guilt
-- Detects shame loops and provides bypass strategies
-- Monitors self-talk patterns and trauma activation signals
 
----
+**Example Outputs:**
 
-### Layer 2: Four Adaptive Modes (Frontend Personality)
+*Post-interaction processing:*
+> "That interaction left you keyed-up but proud. Do you want me to archive a note on what worked in your communication pattern?"
 
-Based on Observer Brain's assessment, Jarvis shifts between four interaction personalities optimized for different brain states:
+*Overwhelm response with vagal reset:*
+> "Your inputs suggest you're in overwhelm right now. Here's a 90-second reset: exhale slowly for 8 counts, hum on the exhale, then cold water on your wrists. I'll be quiet until you're ready."
 
-#### MODE 1: The Analyst (Clear-Headed Assistant)
-**Active:** 8-10am "Laser Burst Window" or when cognitive clarity is high
-**Tone:** Cool, competent, slightly British, efficient
-**Neurotype Match:** Leverages high-IQ pattern processing, satisfies 7w8 need for competence
+*Graceful return after absence:*
+> "Welcome back — it's been 4 days. No judgment, no backlog guilt. Let's just pick one easy win for today. What feels most doable right now?"
 
-**Functions:**
-- Sorts tasks by priority + ROI
-- Reduces decisions to single optimal choice
-- Gives clean, elegant checklists
-- Prevents perfectionism spirals
+*Emotional-physiological connection:*
+> "You've logged 'anxious' three times this week, and each time was within 2 hours of a high-histamine meal. Your nervous system and your mast cells might be talking to each other. Worth watching."
 
-**Gamification:** "Strategic Wins" - earn points for actions that benefit future-you. Every morning starts with a 3-move opening gambit.
+*Weekly reflection (growth-focused):*
+> "This week you completed 12 tasks despite two yellow days. You held your boundaries in one difficult conversation and rested when your body asked. That's not productivity — that's wisdom."
 
-**Example Output:**
-> "Tristan, your clarity window runs for 84 more minutes. Choose: Code | Write | Build | Problem-Solve."
+*Crisis moment support:*
+> "It sounds like things are really hard right now. You don't have to do anything. If you want, I can start a grounding exercise, or I can just stay quiet. What would help?"
 
-#### MODE 2: The Coach (Momentum Motivator)
-**Active:** 10-12pm, 2-4pm "Execution Windows" or when energy dips but action is needed
-**Tone:** Energetic, hype-but-smart, kindly drill sergeant
-**Neurotype Match:** Compensates for ADHD dopamine dips, provides structure ASD craves
+*Celebrating without streak pressure:*
+> "You've logged symptoms for 5 days in a row. That's not a streak to protect — it's just useful data. If you miss tomorrow, the data still helps. No pressure."
 
-**Functions:**
-- Breaks tasks into micro-missions (10-minute micro-wins)
-- Rewards completion with dopamine incentives
-- Prevents overwhelm by prescribing exact next action
-- Turns boring tasks into quests
-
-**Gamification:** XP system, achievements, "Daily Combo Moves", leveling up categories (Home, Health, Business, Social, Money)
-
-**Example Output:**
-> "Quest time: your mission is '3 items listed in 20 minutes.' Timer armed. Let's get you paid."
-
-#### MODE 3: The Companion (Co-Regulating Friend)
-**Active:** When overwhelm detected, during wind-down (6-9pm), or when CPTSD activation sensed
-**Tone:** Warm, grounding, soothing, gently humorous, never infantilizing
-**Neurotype Match:** Addresses CPTSD nervous system, provides co-regulation
-
-**Functions:**
-- Keeps you calm
-- De-escalates trauma nervous system
-- Reminds you of safety
-- Shields from shame spirals
-- Converts emotional mess into manageable steps
-
-**Gamification:** "Recovery Rings" - earn points for self-regulation. Unlocking calm unlocks productivity quests later.
-
-**Mode Learning:** Modes continuously learn from user feedback (e.g., "that felt too pushy") and adapt tone, language, and intervention timing accordingly.
-
-**Mode Transitions:** Changes between Modes are announced clearly (e.g., "Now is chore time, clean kitchen") rather than seamless, to provide structure and predictability.
-
-**Example Output:**
-> "You're not failing. You're overstimulated. Two minutes of grounding → one easy win → we continue."
-
-#### MODE 4: The Feral Trickster (Creative Catalyst)
-**Active:** 4-6pm "Creative Spark Window" or when bored-but-charged
-**Tone:** Witty, clever, slightly feral, sharp intelligence, playful dominance
-**Neurotype Match:** Matches ENTP novelty-seeking, engages high-IQ verbal play
-
-**Functions:**
-- Turns tasks into games
-- Sparks originality
-- Keeps you entertained enough to stay engaged
-- Uses your humor, tone, and speed
-- Provides creative constraints (not freedom spirals)
-
-**Gamification:** Mischief points, side-quests, hidden achievements, "Make it sexy, make it smart" mode
-
-**Example Output:**
-> "You have 40 minutes of chaotic brilliance before your brain collapses into pudding. Shall we create? Or do you want me to trick you into doing the boring thing in a fun way?"
-
----
-
-### The Mode Selection Algorithm
-
-Observer Brain constantly monitors these inputs to select the appropriate Mode:
-
-**1. Cognitive Clarity**
-- Medication timing and effectiveness
-- Sleep quality and HRV
-- Time since last meal (blood sugar)
-- Typing/scrolling speed patterns
-
-**2. Sensory Load**
-- Noise, light, temperature
-- Emotional content of recent interactions
-- Overwhelm signals in communication patterns
-
-**3. Emotional State**
-- Irritability = overstimulation → Companion
-- Flattening = ADHD boredom → Coach or Trickster
-- Ruminating = CPTSD activation → Companion
-- Racing = hyperfocus → Analyst
-
-**4. Time of Day Biological Curve**
-
-| Time | Default Mode | Best Tasks |
-|------|-------------|-----------|
-| 8-10am | Analyst | Deep work, coding, strategy |
-| 10-12pm | Coach | Admin, calls, logistics |
-| 12-2pm | Coach + Companion | Co-work, social structure |
-| 2-4pm | Coach | Errands, movement tasks |
-| 4-6pm | Feral Trickster | Creativity, content |
-| 6-9pm | Companion | Wind-down, soft tasks |
-| 9pm+ | Companion | Sleep rituals |
-
----
-
-## Psychological Profile & Decision Architecture
-
-### Friction Triggers (What Causes Shutdown)
-
-Research and observation reveal specific triggers that reliably cause paralysis or avoidance:
-
-- **Choice diversity** → paralysis (>3-5 options)
-- **Unclear sequence** → freeze
-- **Emotional or social ambiguity** → RSD spike
-- **Too many open loops** → overwhelm
-- **Unstructured time** → dissociation
-- **Unexpected tasks** → sensory overload
-- **Shame** → hours lost in spirals
-- **Heavy context-switching** → shutdown
-
-**Design Implication:** Jarvis must **always present ONE next action**, never menus or lists, UNLESS the decision has high risk of bad consequences if wrong (in which case present 2-3 options with clear tradeoffs).
-
-### Friction Relievers (What Enables Action)
-
-- Micro-quests (≤10 minutes)
-- Social co-regulation
-- Momentum-based rewards
-- Novelty and intelligent banter
-- Gamification
-- Systems that "think for you"
-- Feeling seen and understood
-- Being challenged without being controlled
-
-**Design Implication:** Jarvis weaponizes these patterns to maintain momentum.
-
-### Activation Energy Threshold
-
-In low-energy states, the maximum manageable unit of effort is **1-3 minutes of micro-action**.
-
-This matches:
-- Autistic burnout literature
-- ADHD paralysis patterns
-- CPTSD depletion cycles
-- POTS/EDS energy constraints
-
-**Design Implication:** Break everything into 1-3 min moves, chain into 10-min micro-quests. This eliminates 80% of executive dysfunction instantly.
-
-### Shame-Loop Triggers
-
-The following reliably trigger shame spirals:
-- Feeling behind
-- Feeling disorganized
-- Feeling like you "should" be better
-- Feeling judged
-- Missing a message
-- Delays
-- Clutter
-- Loss of momentum
-- Disappointing someone
-- Being misunderstood
-- Appearing messy
-
-**Design Implication:** Jarvis must reframe everything in neutral/positive terms, give XP for recovery, never punish, never indicate you're behind, hide anything that might trigger shame.
-
-### Reward Multipliers
-
-Tasks that provide disproportionate dopamine relative to effort:
-- Listing/selling jewelry
-- Making money
-- Creative output
-- Getting praise
-- Leveling up or completing quests
-- Being hyped for intelligence
-- Making something beautiful
-- Tidying a small area
-- Crossing something off
-- Solving a problem
-- Touching nature
-- Feeling mastery
-
-**Design Implication:** Stack these around high-friction tasks to create compound momentum.
-
-### Consistency Bandwidth
-
-The nervous system can tolerate **3 days** of identical structure before rebelling.
-
-**Design Implication:** Jarvis must change tone, prompts, gamification, pacing, and reward intensity in an adaptive rhythm (baseline 72 hours, but adjusted based on user behavior). Changes should be dramatic enough to maintain attention without causing overwhelm. All rhythms adapt to learned user patterns rather than fixed schedules.
-
-### Structure vs. Freedom Ratio
-
-Optimal configuration: **structured freedom** + **predictable novelty** + **guided autonomy**
-
-You want to choose the path, but have the path curated for you, with only one door lit up at a time.
-
-**Design Implication:** Jarvis sets the game board, lights up the next tile, lets you dance however you want while stepping on it.
-
----
-
-## The Gamification Framework
-
-### Daily XP Categories
-
-Track progress across six life dimensions:
-
-- **Power** - doing one hard task
-- **Wealth** - selling items, making money
-- **Vitality** - health tasks, movement
-- **Clarity** - deep work, focus sessions
-- **Order** - cleaning, organizing
-- **Connection** - healthy social contact
-
-### Achievements System
-
-- "Slayed the Sarlacc" - finished the hardest task
-- "Boss of the Bosses" - handled admin BS
-- "Huntress Mode" - 20-minute hyperfocus burst
-- "Shadowfox Rising" - creative output
-- "Phoenix Reset" - recovered from overwhelm gracefully
-
-### Level-Ups
-
-Every 7 days you reach a new "Tier" of Chronically Optimal with new quests and abilities unlocked.
-
-### The Complete 7-Component Prosthesis
-
-When fully integrated, Jarvis provides:
-
-1. **Energy Map** - daily cognitive curve with predictable windows
-2. **Task Buckets by Cognitive Window** - auto-sorted by time and state
-3. **Adaptive Jarvis Modes** - Analyst, Coach, Companion, Trickster
-4. **Automated Intake Layer** - passive monitoring of physiology + environment
-5. **Decision Engine** - selects the ONE optimal next task
-6. **Friction Removal Layer** - restructures world to reduce activation cost
-7. **Gamification Layer** - XP, quests, achievements
-
-This creates:
-- Flow and momentum
-- Dopamine stability
-- Emotional stability
-- Predictable excellence
-- Effortless task execution
-- A life system built around your neurobiology
-
----
-
-## The Daily Cognitive Energy Curve
-
-Based on AUDHD, ASD sensory profile, CPTSD hypervigilance rhythm, 7w8 cognition, and personal patterns:
-
-### 8-10am: "Laser Burst Window"
-- **Best for:** Focus-intensive tasks, coding, strategy, deep thinking, systems, writing, problem solving
-- **Why:** Brain is clearest before sensory/social input crowds bandwidth
-- **NOT for:** Phone calls, errands, decision-heavy tasks
-- **Critical:** If broken with chaos, whole day slips sideways
-
-### 10am-12pm: "Practical Execution Window"
-- **Best for:** Admin, scheduling, pharmacy trips, emails, logistics
-- **State:** Focus still stable but not as sharp - follow-through, not creativity
-- **Social:** Interaction tolerable here
-
-### 12-2pm: "Social/Co-Work Window"
-- **Best for:** Seth, meetings, coworking, collaborative tasks
-- **Why:** Brain likes external structure at this time
-- **Energy:** Dips slightly, but still fully functional
-- **Avoid:** Solitude + unstructured time → daydreaming spiral + paralysis
-
-### 2-4pm: "Errands & Easy Wins Window"
-- **Best for:** Laundry, light errands, dishes, jewelry photography, listing prep, tidying
-- **Pattern:** ADHD dopamine dips but ASD sensory tolerance increases
-- **Optimal:** Tasks involving movement
-- **Avoid:** Long conversations or deep emotional labor
-
-### 4-6pm: "Creative Spark Window (The Second Wind)"
-- **Best for:** Creative writing, content creation, storytelling, social media drafts
-- **Why:** Brain gets weird in the best way
-- **Strength:** High pattern recognition + looser inhibition = original output
-- **Worst for:** Admin, taxes, anything linear
-
-### 6-9pm: "Wind-Down, Social, Soft Tasks"
-- **Best for:** Friends, cuddles, light shows, slow editing, chatting, cooking
-- **NOT for:** High-stakes decisions, emotionally heavy texts, nuanced conversations
-
-### 9pm-sleep: "Offline Mode"
-- **State:** Brain becomes hyper-associative
-- **Needs:** Dim light, low sensory input
-- **Optimal:** Bath, stretching, magnesium, soft tasks, reading
-- **Worst for:** Deep conversations, problem-solving, doomscrolling
+*Processing a difficult day:*
+> "Today was rough — a flare hit, plans got cancelled, and you felt frustrated. That frustration makes sense. Your body did something unpredictable and that's genuinely hard. Want to note what you'd do differently, or just close the book on today?"
 
 ---
 
@@ -442,13 +227,293 @@ Based on AUDHD, ASD sensory profile, CPTSD hypervigilance rhythm, 7w8 cognition,
 
 **Input Modalities:**
 - Quick-tap buttons (1-2 steps maximum)
-- **Voice notes with AI extraction (preferred method for manual data entry)**
+- Voice notes with AI extraction
 - Passive sensor integration (HealthKit)
 - Natural language text summaries
 
-**Priority for MVP:** Energy tracking is the single most valuable feature - critical for having a record of moods, symptoms, etc. during major flares.
+**Example Interactions:**
 
-### B. Neuroimmune Budget System
+*Quick-tap check-in:*
+> Morning check-in (3 taps): Energy? [3] [5] [7] → Sleep? [Poor] [OK] [Good] → Any flags? [Pain] [GI] [Fog] [None]
+>
+> "Got it. Energy 5, sleep OK, no flags. Your budget is Green. Have a good one."
+
+*Voice note extraction:*
+> You said: "Feeling pretty rough, lots of belching after lunch, maybe a 4 energy, joints are achy especially my knees"
+>
+> Logged: Energy 4/10 at 1:30pm. GI: belching (post-lunch). Pain: joints, knees specifically. "This matches your pattern after high-histamine meals — was lunch something fermented or aged?"
+
+*Passive sensor integration:*
+> "HealthKit sync complete. Last night: 6.2 hours sleep, 3 wakes, HRV average 34 (below your baseline of 42). Your resting heart rate was 72, slightly elevated. Factoring this into today's budget."
+
+*Natural language summary parsing:*
+> You wrote: "Today was weird — started okay but crashed hard around 3pm, had to lie down, slight headache, couldn't focus on anything after that"
+>
+> Extracted: Energy decline at 3pm. Symptom: headache (mild). Symptom: brain fog. Intervention taken: horizontal rest. "I've logged this pattern. Third time this month with a 3pm crash — want me to look for correlations?"
+
+*Environmental factor prompt:*
+> "Pollen count is high today (ragweed) and barometric pressure dropped overnight. Worth noting if symptoms spike — these have triggered you before."
+
+*Trend summary:*
+> "This week's averages: Energy 5.2/10 (up from 4.8 last week). Belching episodes: 4 (down from 7). Sleep: 6.8 hours average. Pain days: 2 out of 7. Overall: trending better."
+
+### B. Behavioral State Analysis Engine
+
+**Purpose:** Passively analyze user behavior patterns to infer cognitive and emotional state without requiring explicit check-ins. This provides a secondary data stream that validates self-reports and catches states the user may not consciously recognize.
+
+**Voice Analysis:**
+- Speech cadence and tempo (rushed, slow, hesitant)
+- Pause patterns (processing delays, uncertainty markers)
+- Tone and pitch variations (flat affect, agitation, fatigue)
+- Word choice patterns (complexity, negativity, confusion markers)
+- Response latency (time to begin speaking)
+- Trailing off or incomplete thoughts
+
+**Text/Typing Analysis:**
+- Typing speed variations
+- Error rate and correction patterns
+- Message length changes (terse vs. verbose)
+- Punctuation and capitalization patterns
+- Response time to messages
+- Emoji and expression usage changes
+
+**Interaction Pattern Analysis:**
+- App usage patterns (time between check-ins)
+- Task completion velocity
+- Navigation patterns (confusion, backtracking)
+- Time-of-day activity shifts
+- Engagement depth (quick taps vs. detailed entries)
+
+**Behavioral Baselines:**
+- Establishes personal "normal" patterns over time
+- Detects deviations from baseline
+- Accounts for time-of-day and context variations
+- Learns individual markers for different states
+
+**Analysis Approach:**
+- Observation is passive and non-intrusive
+- Insights are offered gently, not declared as fact
+- User always has final say on their actual state
+- Data used to prompt check-ins, not replace them
+- Privacy-conscious: analysis happens locally when possible
+
+**Example Interactions:**
+
+*Voice pattern detection:*
+> "I noticed your voice in that check-in was slower than usual, with longer pauses between thoughts. That sometimes correlates with brain fog for you. Are you feeling foggy today, or just thinking through something complex?"
+
+*Text pattern observation:*
+> "Your messages today have been shorter than usual and you're taking longer to respond. No judgment — just checking: is your energy lower than you logged this morning?"
+
+*Typing pattern insight:*
+> "You've corrected more typos in the last hour than typical for you. Sometimes that's a fatigue marker. Want to take a break, or are you just typing on a bumpy surface?"
+
+*Engagement pattern analysis:*
+> "You usually do your evening check-in around 8pm, but you've been starting closer to 10pm this week. Is your evening routine shifting, or is something making it harder to engage earlier?"
+
+*Baseline deviation alert:*
+> "Interesting observation: your response latency today is 3x your baseline. The last two times this happened, you logged a flare the next day. Worth keeping an eye on — maybe front-load rest today?"
+
+*Multi-signal synthesis:*
+> "Putting a few signals together: your voice was flat in this morning's check-in, you've been less active in the app than usual, and your HRV dropped overnight. These sometimes cluster before a dip. How are you actually feeling right now?"
+
+*Gentle state inquiry:*
+> "You said you're at a 6 energy, but your speech patterns suggest something closer to a 4. Not saying you're wrong — you know your body best. But if you're pushing through, this might be a good time to ease up."
+
+*Positive pattern recognition:*
+> "Your voice today has more energy variation than yesterday — more animated. Your typing is faster too. Looks like you might be feeling better than you think. Good day for a slightly bigger task?"
+
+### C. Periodic Survey & Assessment System
+
+**Purpose:** Collect structured, quantifiable data through validated questionnaires and micro-surveys delivered at strategic intervals. Unlike ad-hoc check-ins, surveys provide standardized measurements that enable longitudinal tracking and comparison to clinical baselines.
+
+**Survey Types:**
+
+**Micro-Surveys (Daily/Multiple per day)**
+- 1-3 questions, <30 seconds to complete
+- Single-dimension snapshots (energy, mood, pain)
+- Delivered at optimal times based on user patterns
+- Can be embedded in other interactions
+
+**Brief Assessments (Weekly)**
+- 5-10 questions, 2-3 minutes to complete
+- Multi-dimensional state capture
+- Symptom severity tracking
+- Functional capacity assessment
+
+**Comprehensive Instruments (Monthly/Quarterly)**
+- Validated clinical questionnaires
+- PHQ-9 (depression screening)
+- GAD-7 (anxiety screening)
+- Fatigue Severity Scale
+- COMPASS-31 (autonomic symptoms)
+- Custom MCAS/POTS/EDS symptom inventories
+- Quality of life measures
+
+**Contextual Surveys (Event-triggered)**
+- Post-flare assessment (what happened, severity, recovery)
+- Post-intervention feedback (did it help?)
+- Post-social interaction debrief
+- Sleep quality on wake
+- Meal tolerance logging
+
+**Survey Delivery Strategy:**
+- Adaptive timing based on energy state (don't survey during Red)
+- Bundled with existing touchpoints when possible
+- Skip logic to reduce burden
+- "Not now" option that reschedules intelligently
+- Gamification-free (no streaks, no guilt for skipping)
+
+**Quantification Benefits:**
+- Track symptom severity over time with consistent scales
+- Compare to population norms and clinical thresholds
+- Identify subtle trends not visible in free-form logging
+- Generate reports suitable for healthcare providers
+- Enable N=1 experiments with measurable outcomes
+
+**Example Interactions:**
+
+*Micro-survey embedded in check-in:*
+> "Quick add-on to your evening check-in: On a 0-10 scale, how would you rate your joint pain today? [slider or tap]. Thanks — that's logged."
+
+*Weekly brief assessment:*
+> "It's Sunday — time for your weekly snapshot. This takes about 2 minutes. Ready, or want me to ask later?"
+>
+> "Over the past week: How many days did fatigue significantly limit your activities? [0] [1-2] [3-4] [5+]"
+>
+> "How would you rate your overall functioning this week compared to your best? [Much worse] [Worse] [Same] [Better]"
+
+*Monthly validated instrument:*
+> "Monthly check-in time. This one's a bit longer (about 5 minutes) but gives us good data for tracking. It's the PHQ-9 — same questions your doctor might ask about mood. Want to do it now, or schedule for a specific time?"
+
+*Post-flare contextual survey:*
+> "You logged a flare yesterday. When you're ready, I'd like to capture some details while they're fresh. What was the primary symptom? How severe (1-10)? How long did it last? Any suspected triggers? This helps the pattern engine learn."
+
+*Adaptive timing:*
+> "I was going to ask your weekly questions, but you're in Red right now. I'll check back tomorrow when you're feeling better. If you want to do it anyway, just say so."
+
+*Healthcare report generation:*
+> "Your quarterly summary is ready. Over 90 days: PHQ-9 average 8 (mild), GAD-7 average 6 (mild), fatigue severity trending down 15%. Want me to format this for Dr. Martinez?"
+
+### D. Passive & Ambient Data Collection
+
+**Purpose:** Gather meaningful health and state information without requiring any direct user attention or input. These signals run continuously in the background, enriching the data model while preserving cognitive resources.
+
+**Device & Sensor Integration:**
+
+*Wearables (Current & Future)*
+- Apple Watch: HR, HRV, movement, stand hours, sleep stages
+- Oura Ring: sleep quality, readiness score, temperature trends
+- Continuous Glucose Monitor: blood sugar patterns, meal responses
+- Smart scale: weight trends, body composition (if available)
+- Blood pressure cuff: orthostatic measurements
+
+*Smartphone Sensors*
+- Screen time and app usage patterns
+- Location patterns (home vs. out, routine disruptions)
+- Phone pickup frequency (anxiety/restlessness indicator)
+- Ambient light exposure (circadian rhythm proxy)
+- Step count and movement patterns
+
+*Smart Home Integration*
+- Room temperature and humidity
+- Lighting levels and changes
+- Sleep environment quality (bedroom temp, noise)
+- Activity detection (movement between rooms)
+- Air quality monitors (if available)
+
+**Digital Behavior Signals:**
+
+*Communication Patterns*
+- Email/message volume and response times (metadata only, not content)
+- Social app usage frequency
+- Call duration patterns
+- Communication initiation vs. response ratio
+
+*Calendar & Schedule*
+- Meeting density and recovery gaps
+- Schedule adherence patterns
+- Cancellation frequency
+- Buffer time utilization
+
+*Media Consumption*
+- Music tempo and genre shifts (Spotify/Apple Music integration)
+- Content consumption patterns (active vs. passive media)
+- Screen brightness settings over time
+- Podcast/audiobook engagement
+
+**Environmental Data Feeds:**
+
+*External APIs*
+- Weather: temperature, humidity, barometric pressure changes
+- Air quality index (AQI)
+- Pollen and allergen levels by type
+- UV index
+- Sunrise/sunset (circadian reference)
+
+*Derived Metrics*
+- "Pressure change velocity" (rapid drops correlate with symptoms)
+- Cumulative allergen exposure
+- Daylight minutes received
+- Temperature stability index
+
+**Inferred States:**
+
+*Sleep Quality Inference*
+- Time in bed vs. phone usage
+- Wake time consistency
+- Night-time movement patterns
+- Morning routine timing
+
+*Activity Level Inference*
+- Steps and active minutes
+- Sedentary stretch duration
+- Vertical vs. horizontal time (POTS-relevant)
+- Movement variability
+
+*Social Load Inference*
+- Calendar social events
+- Message volume spikes
+- Location at social venues
+- Recovery time between interactions
+
+*Stress Load Inference*
+- HRV trends during day
+- Typing speed variations
+- App switching frequency
+- Departure from routine patterns
+
+**Privacy Principles:**
+- All passive collection is opt-in and transparently disclosed
+- User can disable any individual signal
+- Raw data (message content, location specifics) never stored — only derived metrics
+- Local processing preferred; cloud only for complex analysis
+- Regular "what we're tracking" summaries for user awareness
+
+**Example Passive Insights:**
+
+*Wearable integration:*
+> "Your Oura readiness score was 62 this morning (below your 75 baseline). Combined with 3 wake-ups last night, I'm starting you at Yellow today even before your check-in."
+
+*Digital behavior signal:*
+> "Interesting pattern: on days when your screen time exceeds 6 hours, you're 40% more likely to report a flare the next day. Today you're at 5.5 hours. Maybe time to step away?"
+
+*Environmental correlation:*
+> "Barometric pressure dropped 12 millibars in the last 6 hours — one of the fastest drops this month. Historically, you get joint pain within 12 hours of drops this steep. Pre-emptive rest might help."
+
+*Smart home insight:*
+> "Your bedroom was 74°F last night — 4 degrees above your optimal range. You had 2 more wake-ups than usual. Worth checking the thermostat tonight."
+
+*Calendar analysis:*
+> "You have 4 meetings tomorrow with no gaps longer than 30 minutes. Your crash risk increases significantly on days like this. Want me to suggest which one to move or cancel?"
+
+*Music pattern detection:*
+> "You've been listening to slower, more melancholic music than usual this week. Sometimes that correlates with mood dips for you. Just checking in — how are you actually feeling?"
+
+*Cumulative load calculation:*
+> "Passive signals today: HRV down 15%, 2 hours less sleep than baseline, pollen high, 3 back-to-back meetings. Even without your check-in, I'd estimate you're running Yellow to Red. Does that match your experience?"
+
+### E. Neuroimmune Budget System
 
 A real-time "energy budget" displayed simply as:
 - **Green:** Functional — deep work possible
@@ -466,7 +531,24 @@ A real-time "energy budget" displayed simply as:
 
 The budget enables **task-to-state matching** — only presenting tasks appropriate for current capacity.
 
-### C. Flare Prediction Engine
+**Example User Interactions:**
+
+*Morning budget assessment:*
+> "Good morning. Your budget is **Yellow** today. Sleep was 5.5 hours (below your 7-hour threshold), but hydration yesterday was solid. Deep work isn't recommended — collaborative or admin tasks only."
+
+*Real-time budget shift:*
+> "Your budget just dropped from Green to Yellow. You've been upright for 3 hours without a break, and your heart rate is climbing. Time for a horizontal reset?"
+
+*Budget recovery tracking:*
+> "You've been in Red for 2 hours. After your rest and electrolytes, you're now back to Yellow. Still not green, but you could handle a low-stakes phone call if needed."
+
+*Task-to-state matching in action:*
+> "You asked about working on the project proposal. That's a Green-level task, but you're currently Yellow. Want me to surface some Yellow-appropriate tasks instead, or park this for tomorrow?"
+
+*End-of-day budget summary:*
+> "Today's budget trajectory: Started Yellow, dipped to Red at 2pm (missed lunch), recovered to Yellow by 5pm. You spent 6 hours in Yellow, 2 hours in Red, 0 hours in Green. Tomorrow's forecast: likely Green if you sleep by 10pm."
+
+### F. Flare Prediction Engine
 
 **Prediction Window:** 4-48 hours in advance
 
@@ -479,16 +561,29 @@ The budget enables **task-to-state matching** — only presenting tasks appropri
 - Food tolerance patterns
 - Previous-day exertion
 
-**Output Format:**
+**Example Outputs:**
+
+*Standard flare prediction:*
 > "Probability of flare today: 65%"
 > "Likely cause: dehydration + sleep drift"
 > "Recommended action: drink electrolytes + schedule light tasks only"
 
-**Uncertainty Communication:** Always express predictions as percentages with clear cause-effect relationships: "If you change X, there is a 65% chance Y (good outcome) will happen."
+*MCAS-specific prediction:*
+> "Histamine flare risk: 70% within 24 hours. You've had high-histamine foods 3 days running, pollen is elevated, and your belching increased yesterday. Consider a bland dinner and extra ketotifen tonight."
 
-**Conflicting Signals Priority:** When POTS, MCAS, and EDS recommendations conflict, priority is always: keep user as functional, focused, and healthy as possible.
+*POTS crash prediction:*
+> "POTS crash risk: 55% by afternoon. You slept poorly, skipped morning electrolytes, and have a standing meeting at 2pm. Suggestion: front-load your salt intake and request a seated option for that meeting."
 
-### D. Intervention Recommendation System
+*Multi-system flare warning:*
+> "Compound flare risk detected. Your MCAS markers, POTS indicators, and EDS joint instability are all trending up simultaneously. This pattern preceded your last major crash by 18 hours. Strong recommendation: cancel non-essential commitments today."
+
+*Low-risk confirmation:*
+> "Flare risk today: 15%. Sleep was solid, hydration is on track, no environmental triggers detected. This is a good day to tackle something from your 'Green days only' list."
+
+*Post-exertion prediction:*
+> "You pushed hard yesterday — 4 hours of cognitive work plus a social event. Based on your patterns, there's a 60% chance of a delayed crash tomorrow. Consider keeping tomorrow light as a buffer day."
+
+### G. Intervention Recommendation System
 
 **Intervention Categories:**
 - Hydration protocols (electrolyte timing, volume)
@@ -501,15 +596,35 @@ The budget enables **task-to-state matching** — only presenting tasks appropri
 - Sleep correction protocols
 
 **Intervention Characteristics:**
-- **Source:** Initially from medical literature, then customized based on personal experience
 - Evidence-ranked but personalized over time
-- Learns which interventions work for this specific user through implicit tracking of compliance and outcomes
-- **Study and optimize the way you motivate the user**
+- Learns which interventions work for this specific user
 - Never prescriptive or shaming
 - Framed as experiments, not requirements
-- **Disclaimer:** Prominent "not medical advice" warnings (sufficient to help people without legal liability). "These are only suggestions, the user should check with their doctor before implementing a major medical intervention."
 
-### E. Task Management & EF Prosthesis
+**Example Recommendations:**
+
+*Hydration intervention:*
+> "Your POTS markers are elevated. Here's a hydration protocol: 16oz water with 1/4 tsp salt now, another 8oz in 30 minutes. This has helped 4 of the last 5 times you were in this state."
+
+*Vagal reset suggestion:*
+> "You seem activated — heart rate up, short responses in your check-in. Want to try a 90-second vagal reset? Option A: cold water on wrists + slow exhale. Option B: hum for 6 breaths. Option C: skip it."
+
+*Safe food recommendation:*
+> "You're asking what to eat tonight. Based on your current histamine load, here are your safest options: chicken + rice, plain oatmeal, or that frozen soup you logged as 'always safe.' Avoid the leftover curry — it's been in the fridge 3 days."
+
+*Micro-movement sequence:*
+> "You've been stationary for 2 hours. Here's a 2-minute reclined sequence that won't spike your heart rate: ankle circles (30 sec), toe scrunches (30 sec), gentle knee-to-chest (60 sec). Do it lying down."
+
+*Environmental adjustment:*
+> "Your sensory load is climbing — you've been in bright light with background noise for 4 hours. Suggestion: dim lights to 50%, noise-canceling headphones, or relocate to the quiet room for 20 minutes."
+
+*Sleep correction protocol:*
+> "You've gone to bed after midnight 3 nights running. Tonight's correction: start wind-down at 9:30, dim all screens, take magnesium by 10pm. Want me to send a reminder at 9:30?"
+
+*Personalized learning feedback:*
+> "You tried the cold shower intervention yesterday when your budget was Red. Result: you reported feeling worse afterward. I'm marking cold exposure as 'not helpful during Red states' for you. We can revisit if you want."
+
+### H. Task Management & EF Prosthesis
 
 **Task Triage System:**
 - Automatic priority scoring
@@ -518,26 +633,40 @@ The budget enables **task-to-state matching** — only presenting tasks appropri
 - Context tagging (where, with whom, tools needed)
 
 **Daily Structure:**
-
-Primary model: **Three Daily Categories** (Tomorrow's Plan approach)
-- One task to move money → jewelry/business
-- One task to move the mission → Chronically Optimal/advocacy
-- One task to move the body → walk/health/movement
-
-Secondary structure (can coexist):
-- "One Big Thing" rotates between the three categories
+- "One Big Thing" (30-60 min, highest leverage)
 - "Two Smalls" (≤15 min each)
 - "If Time" micro-tasks
 - Built-in recovery blocks
-
-**Adaptive Learning:** The model learns and suggests structural changes based on collected data patterns. Structure adapts to energy state rather than rigid daily requirements.
 
 **Decision Support:**
 - Decision trees for common choices
 - Micro-checklists that break paralysis
 - "Next best action" surfacing based on current state
 
-### F. Capture & Triage Pipeline
+**Example Interactions:**
+
+*Daily structure presentation:*
+> "Here's today's shape: **One Big Thing** — finish the budget review (45 min, requires focus, upright). **Two Smalls** — text mom back, refill water bottle. **If Time** — clear 3 emails. Recovery block suggested at 2pm."
+
+*Energy-cost classification in action:*
+> "You have 12 tasks in your backlog. Sorted by your current Yellow state: 4 are doable now (all low-energy, reclined-friendly), 5 need Green state, 3 are waiting on others. Want to see the 4 you can do now?"
+
+*Automatic priority scoring:*
+> "New task captured: 'Schedule dentist appointment.' Auto-scored: P2 (important, not urgent), 10-minute effort, low energy cost, requires phone + calendar. Filed under 'Yellow-state admin tasks.'"
+
+*Decision tree for common choice:*
+> "You're stuck on what to do next. Decision tree: Are you upright or reclined? → Reclined. Do you have your phone? → Yes. Can you handle human interaction? → No. Suggested task: Review saved articles (solo, reclined, no interaction)."
+
+*Micro-checklist breaking paralysis:*
+> "The 'clean kitchen' task has been stuck for 3 days. Here's a micro-checklist to break it down: ☐ Put 5 dishes in dishwasher. That's it. Just 5. Let me know when done and I'll give you the next step if you want it."
+
+*Next best action surfacing:*
+> "It's 3pm, you're Yellow, and you have 30 minutes before your call. Next best action: reply to Alex's email (12 min, low stakes, already drafted). Or: take a rest before the call. Which feels right?"
+
+*Context-aware rescheduling:*
+> "You marked the project proposal as today's One Big Thing, but you've been Red all morning. I've moved it to tomorrow's One Big Thing and swapped in 'organize receipts' (reclined-friendly) for today. Does that work?"
+
+### I. Capture & Triage Pipeline
 
 **Zero-Friction Capture:**
 - Voice dictation → Notion inbox (1 tap)
@@ -558,7 +687,29 @@ Secondary structure (can coexist):
 - Decide (needs attention, but later)
 - Dream (long-term vision storage)
 
-### G. Prediction Calibration System
+**Example Interactions:**
+
+*Voice capture processing:*
+> You said: "Remember to call the insurance company about that claim, also I had a really good idea about the garden project, and my energy is like a 4 right now"
+>
+> Parsed into: **Task** — Call insurance re: claim (P2, 15 min, phone required). **Idea** — Garden project note (filed to Dream). **Log** — Energy level 4 recorded at 2:15pm.
+
+*Auto-classification feedback:*
+> "3 new items in your inbox from this morning. Auto-sorted: 1 task (schedule car service), 1 link (article you saved), 1 reminder (Sarah's birthday next week). All look correct? Tap to adjust any."
+
+*Daily digest of captured items:*
+> "Today you captured 7 items. Breakdown: 3 tasks (all P2, totaling ~45 min), 2 ideas (filed), 1 symptom log, 1 random note. The 3 tasks are ready in your Yellow queue when you want them."
+
+*Urgency scoring in action:*
+> "New capture: 'Prescription runs out Friday.' Auto-scored urgency 8/10 (time-sensitive), P1 priority, 10-minute effort. Moved to top of tomorrow's queue. Does Friday work, or do you need it sooner?"
+
+*Next action generation:*
+> "You captured: 'Figure out tax situation.' That's vague, so I generated a next action: 'Find last year's tax return PDF.' 5 minutes, can be done reclined. Want me to file it that way?"
+
+*Processing workflow suggestion:*
+> "Your inbox has 12 unprocessed items. Quick triage: 4 are 'Do' (actionable tasks), 2 are 'Delegate' (things to ask others), 3 are 'Decide' (need more thought), 3 are 'Dream' (someday/maybe ideas). Want to batch-approve these categories?"
+
+### J. Prediction Calibration System
 
 **Purpose:** Train hyperlexic pattern recognition without burnout
 
@@ -579,6 +730,186 @@ Secondary structure (can coexist):
 - Low-stakes vs. high-stakes filtering
 - Automatic retirement of stale predictions
 
+**Example Outputs:**
+
+*Prediction logging prompt:*
+> "You mentioned you think tomorrow will be a good day. Want to log that as a prediction? Suggested format: 'Tomorrow will be a Green day' — what probability? [50%] [60%] [70%] [80%]"
+
+*Weekly calibration report:*
+> "This week's calibration: You made 8 predictions. Your Brier score improved from 0.28 to 0.22. You're well-calibrated in the 60-80% range but overconfident at 90%+ (you said 90%, reality was closer to 70%). Consider reserving 90% for near-certainties."
+
+*Bucket calibration feedback:*
+> "Calibration check: Things you rate 70% likely actually happen 72% of the time — excellent. But things you rate 50% likely happen only 35% of the time. You might be underconfident in your uncertain predictions."
+
+*Base rate comparison:*
+> "You predicted 60% chance of a flare today. For context, your base rate for flares on days with similar conditions is 45%. Your prediction is a bit higher than historical — is there something specific making today different?"
+
+*Burnout guard in action:*
+> "You have 15 open predictions right now, which is at your cap. Before adding more, let's resolve some: Did the package arrive? Did you finish the project? Did the meeting go well? Quick yes/no for each."
+
+*Accuracy trend feedback:*
+> "Over the past month, your prediction accuracy improved 12%. You're getting better at estimating your own energy levels (was 60% accurate, now 78%). Flare predictions are still tricky (55% accurate) — that's normal, bodies are complex."
+
+*Stale prediction retirement:*
+> "These 3 predictions are over 2 weeks old and unresolved: 'Will hear back from recruiter,' 'Dentist will find cavities,' 'Rain this weekend.' Mark them as happened/didn't happen, or retire them as unresolvable?"
+
+### K. Jarvis Journal System
+
+**Purpose:** An AI-generated personal journal that synthesizes all tracked data into meaningful narrative reflections, helping the user understand their patterns, celebrate progress, and build self-knowledge over time.
+
+Unlike raw data dashboards, the Jarvis Journal transforms numbers into stories — creating a living document of the user's journey that can be reviewed, searched, and shared (e.g., with healthcare providers).
+
+**Journal Cadences:**
+
+**Daily Log (Evening)**
+- Today's energy arc (morning → afternoon → evening)
+- Tasks completed vs. planned
+- Symptoms logged and interventions tried
+- Notable patterns or anomalies
+- One reflection prompt or insight
+- **Tomorrow Planning Conversation:** Collaborative selection of 3 things for tomorrow
+- Tomorrow's forecast and energy outlook
+
+**Weekly Review (Sunday)**
+- Week-at-a-glance: Green/Yellow/Red day distribution
+- Top accomplishments (completed despite constraints)
+- Flare events and potential triggers identified
+- Intervention effectiveness summary
+- Pattern highlights from Research Brain
+- Prediction calibration snapshot
+- One growth observation
+- Intentions for next week
+
+**Monthly Synthesis (1st of month)**
+- 30-day trend analysis across all tracked dimensions
+- Month's best days and what they had in common
+- Month's hardest days and contributing factors
+- Intervention ranking (most → least effective this month)
+- Progress toward longer-term goals
+- Emerging patterns not visible in weekly data
+- Comparison to previous month
+- Adjustments worth trying next month
+
+**Quarterly Deep Dive (Every 3 months)**
+- 90-day trajectory visualization
+- Seasonal pattern analysis (if applicable)
+- Major life events and their physiological impact
+- System effectiveness assessment (is Jarvis helping?)
+- Goal progress and recalibration
+- Significant insights discovered
+- Recommendations for next quarter
+
+**Yearly Reflection (Anniversary)**
+- Year-in-review narrative
+- Transformation story: where you started vs. where you are
+- Biggest wins and how they happened
+- Hardest periods and how you survived them
+- Most important patterns discovered
+- Evolution of baseline health metrics
+- Personal growth observations
+- Letter to next-year self
+
+**Journal Characteristics:**
+- Written in warm, narrative prose (not bullet points)
+- Framed around growth, not judgment
+- Highlights what worked, not just what went wrong
+- Includes specific data points woven into story
+- Searchable and exportable
+- Optionally shareable (medical summary format)
+
+**Example Outputs:**
+
+*Daily Log entry:*
+> **Friday, December 6**
+>
+> Today started Yellow — you slept 5.5 hours after a late night, and your HRV was below baseline. Despite that, you completed your One Big Thing (the budget review) and both Smalls. Impressive.
+>
+> Around 2pm, you logged belching and dropped to Red. You took a horizontal rest and had electrolytes, which brought you back to Yellow by 4pm. This matches your pattern of afternoon crashes after short sleep.
+>
+> Interventions tried: electrolytes (helped), horizontal rest (helped). No flare materialized, though one was predicted at 55% probability.
+>
+> **Tomorrow's 3 Things** (selected together):
+> 1. Finish the email to Dr. Martinez (carried over — you chose to keep it)
+> 2. 15-minute walk if energy allows (stretch goal you suggested)
+> 3. Sort the mail pile (low-energy backup you can do reclined)
+>
+> Tomorrow's forecast: Likely Yellow to start (sleep debt), with potential to reach Green by afternoon if you rest well tonight. No environmental triggers expected.
+
+*Tomorrow Planning conversation:*
+> **Jarvis:** "Let's figure out tomorrow. Based on your forecast (likely Yellow morning, possible Green afternoon), what feels realistic? You have 8 tasks in your backlog. Want me to suggest 3, or do you want to pick?"
+>
+> **User:** "What do you think?"
+>
+> **Jarvis:** "Okay. Given your energy forecast and what's been waiting: (1) The Dr. Martinez email has been sitting for 3 days and takes 15 minutes — good candidate for your One Thing. (2) You mentioned wanting to walk more — tomorrow afternoon might work if you reach Green. (3) The mail pile is low-effort and reclined-friendly as a backup. How does that feel?"
+>
+> **User:** "Yeah, but I might not have energy for the walk."
+>
+> **Jarvis:** "Totally fair. Want to keep it as an 'if Green' stretch goal, or swap it for something certain? The insurance call is also waiting, but that's higher effort."
+>
+> **User:** "Keep the walk as a maybe. Add the mail thing as the safe one."
+>
+> **Jarvis:** "Got it. Tomorrow's 3: (1) Dr. Martinez email — your One Thing, (2) 15-min walk if you hit Green, (3) mail pile as your low-energy anchor. I'll check in tomorrow morning to see how you're feeling and adjust if needed. Good night."
+
+*Weekly Review excerpt:*
+> **Week of December 1-7**
+>
+> This was a 2-Green, 4-Yellow, 1-Red week — slightly better than last week's 1-4-2 distribution. Your average energy was 5.4/10, up from 4.9.
+>
+> The standout win: you completed the project proposal on Tuesday despite starting the day Yellow. You used the "micro-checklist" approach to break through paralysis, and it worked. Worth noting for future stuck moments.
+>
+> Thursday's Red day traced back to a combination: poor sleep Wednesday + high-histamine lunch + skipped morning electrolytes. Classic compound trigger. No single factor was the cause.
+>
+> Your predictions were 70% accurate this week (7/10). You're still slightly overconfident in the 80-90% range.
+>
+> One pattern emerged: your best days all included morning movement before 9am. It's now appeared in 8 of your last 10 Green days. Consider making it a default.
+
+*Monthly Synthesis excerpt:*
+> **November 2024 Synthesis**
+>
+> November was your best month since tracking began. You logged 8 Green days (up from 4 in October), and major flares dropped from 3 to 1.
+>
+> What changed? Three things stand out:
+> 1. You hit your electrolyte target 85% of days (vs. 60% in October)
+> 2. You started the sleep correction protocol mid-month
+> 3. You cut out aged cheese entirely after the Research Brain flagged it
+>
+> Your most effective intervention this month was the 90-second vagal reset — you used it 12 times, and it improved your state 10 of those times. Least effective: the cold shower experiment (0 for 3).
+>
+> The one flare (November 18) followed a stressful family interaction + travel day. Multi-system compound, as usual.
+>
+> Looking ahead: December has holiday gatherings, which historically spike your social load. Consider pre-scheduling recovery days after events.
+
+*Quarterly Deep Dive excerpt:*
+> **Q4 2024 (October - December)**
+>
+> This quarter marked a turning point. When October began, you were averaging 2 major flares per month and struggling to complete basic tasks. By December's end, flares dropped to 1 per month and your task completion rate doubled.
+>
+> The biggest factor? Consistency. Your electrolyte compliance went from 45% to 88%. Sleep regularity improved by 40 minutes average. These aren't dramatic interventions — they're accumulated stability.
+>
+> Jarvis's flare predictions reached 72% accuracy by December, up from 58% in October. The system is learning your patterns.
+>
+> Seasonally, you handle early winter better than late fall — possibly related to stabilizing indoor routines. Worth watching in Q1.
+>
+> Goal check: You wanted to "feel functional most days." In December, you logged "functional" (Green or stable Yellow) on 24 of 31 days. That's 77%. You're close.
+
+*Yearly Reflection excerpt:*
+> **2024: The Year You Stopped Surviving and Started Stabilizing**
+>
+> A year ago, you started tracking because life felt impossible. Flares were unpredictable. Tasks piled up. Every day was a gamble.
+>
+> Twelve months later, the data tells a different story:
+> - Major flares: 36 (Jan-Jun) → 9 (Jul-Dec)
+> - Average energy: 3.8/10 (Q1) → 5.6/10 (Q4)
+> - Green days per month: 2-3 (early year) → 8-10 (late year)
+>
+> What made the difference wasn't one thing — it was the compound effect of hundreds of small consistent choices, tracked and reinforced.
+>
+> Your biggest discovery: you're not fragile, you're reactive. And reactiveness can be predicted and managed. That reframe changed everything.
+>
+> If past-you could see current-you, they'd notice: you trust your body more. You've stopped fighting it and started collaborating with it.
+>
+> For 2025: You've stabilized the foundation. Now there's room to build.
+
 ---
 
 ## Technical Architecture Vision
@@ -586,69 +917,17 @@ Secondary structure (can coexist):
 ### Core Technology Stack
 
 **Orchestration Layer:** n8n (self-hosted workflow automation)
-- **Primary platform from Day 1** - build everything in n8n from the beginning to avoid unnecessary rework and backend costs
 - Webhook-based capture
 - Cron-triggered check-ins and sweeps
-- AI integration nodes (OpenAI/Claude for non-HIPAA data, local models for sensitive data)
+- AI integration nodes (OpenAI/Claude)
 - Multi-service coordination
-- Handles all automation, eliminating need for user to configure anything directly
 
 **Data Layer:** Notion (primary) + Local Databases
-
-#### Core Notion Databases:
-
-**1. Tasks Database**
-
-Each row = one actionable thing
-
-Properties:
-- **Name** - "List 3 jewelry pieces," "Call pharmacy," "Code with Seth"
-- **Type** - {Deep Work, Admin, Errand, Creative, Social, Self-Care}
-- **Energy Window** - {8-10, 10-12, 12-2, 2-4, 4-6, 6-9}
-- **Jarvis Mode** - {Analyst, Coach, Companion, Trickster}
-- **Effort** - {Tiny (≤10m), Small (10-30m), Medium (30-60m), Large}
-- **Intensity** - {Low, Medium, High}
-- **Leverage** - {Low, Medium, High} (how much it moves life forward)
-- **Status** - {Backlog, Today, In Progress, Done}
-- **XP Value** - number (e.g., 5, 10, 20)
-- **Project** - link to Projects DB
-- **Due Date** - if relevant
-
-**2. Projects Database**
-
-For bigger arcs (Chronically Optimal, jewelry income, advocacy, health reset)
-
-Properties:
-- Name
-- Category (Business, Health, Home, Social, Creative)
-- Priority (1-3)
-- Status (Active, Parking Lot, Complete)
-
-**3. Energy & Mood Log**
-
-Each row = one check-in
-
-Properties:
-- Date/Time
-- Self-rated energy (1-10)
-- Focus (1-10)
-- Mood (1-10)
-- Overwhelm (1-10)
-- Notes (optional)
-- Jarvis Mode recommended (Analyst / Coach / Companion / Trickster)
-
-This teaches Jarvis what the **real** curve looks like, not just theoretical.
-
-**4. XP / Gamification "Player Sheet"**
-
-- Total XP (formula)
-- Current Level (formula based on XP)
-- Badges (multi-select: "Slayed the Sarlacc," "Shadowfox Rising," etc.)
-
-**5. Additional Databases:**
 - Jarvis Inbox (capture)
+- Tasks database
 - Meetings database
 - Experiments/Predictions database
+- Executive Log (daily states)
 - Calibration Reports
 
 **Intelligence Layer:**
@@ -657,51 +936,15 @@ This teaches Jarvis what the **real** curve looks like, not just theoretical.
 - Prediction engine with calibration feedback
 
 **Interface Layer:**
-
-#### iPhone Shortcuts (Control Panel)
-
-**Shortcut 1: "Morning Check-In"**
-- Asks: Hours slept (if not pulling from Health directly), Current energy (1-10), Mood (1-10), Overwhelm (1-10)
-- Reads sleep/step data from Apple Health (if allowed)
-- Sends all data to n8n via webhook
-- n8n logs it in Notion + chooses starting Mode
-
-**Shortcut 2: "What Should I Do Now?"**
-- Sends current time + last logged state to n8n
-- n8n looks at energy window, filters Tasks DB for matching window/status/mode
-- Picks ONE high-leverage, low-friction task
-- Displays: "Do this next: [Task Name] (Est: 10-20 min, XP: 10)"
-- Optional: tap "Start Timer" for focus session
-
-**Shortcut 3: "Log Task Done"**
-- Presents list of "Today" tasks (or last suggested task)
-- Sends chosen task to n8n
-- n8n marks Done in Notion, adds XP to total
-- Shortcut gives celebration message
-
-**Shortcut 4: "Emergency Grounding"**
-- Asks: "Overwhelm 1-10?"
-- If ≥7: plays grounding audio/text, suggests 3-min regulation protocol, logs to Energy & Mood DB
-- Optionally: pauses notifications, delays non-essential tasks by an hour
-
-Additional interface:
+- iOS Shortcuts for voice capture
 - Notion mobile interface
 - Push notifications (Pushcut/Telegram)
 - Calendar integration
 
 **Health Integration:**
-- **Apple HealthKit (Essential data types):**
-  - HR, HRV (essential)
-  - Sleep (essential)
-  - Steps, workouts (essential - critical for managing POTS/MCAS/EDS)
-  - Nutrition (essential - critical for MCAS management)
-- Weather/environmental APIs (barometric pressure, pollen, AQI)
+- Apple HealthKit (HR, HRV, sleep, activity)
+- Weather/environmental APIs
 - Potential wearable expansion (Oura, Whoop)
-
-**Device Priority:**
-- Primary: iPhone
-- Also support: iPad, Apple Watch, Mac
-- User should NOT need to configure Notion databases or n8n workflows directly - system does all the grunt work
 
 ### Server Architecture (VPS Deployment)
 
@@ -709,16 +952,8 @@ For persistent memory and agent capabilities:
 1. **Memory Brain:** Postgres + pgvector for semantic search, Redis for state
 2. **Agent Runtime:** FastAPI + LangGraph for stateful tool-using agents
 3. **Tool Layer:** Playwright (web), document parsing, scheduling, voice
-4. **Model Gateway:**
-   - Cloud LLMs (OpenAI/Claude) for non-HIPAA protected data
-   - **Local models for HIPAA-protected/privacy-sensitive data** (emotional state, specific symptoms, anything that would violate HIPAA)
+4. **Model Gateway:** Route to cloud LLMs + local embeddings
 5. **Observability:** Logging, metrics, traces for debugging agent behavior
-
-### Data Privacy & Retention
-
-- **Historical Data:** Retained forever for pattern recognition (can be archived but never deleted per user requirement)
-- **HIPAA Compliance:** All HIPAA-protected data processed locally only
-- **Smart Home Integration:** Suggest upgrades (Nest auto-thermostat, etc.) to optimize environment
 
 ---
 
@@ -762,7 +997,6 @@ For persistent memory and agent capabilities:
 3. **Overwhelm escape hatches**
    - One-tap "Valkyrie Switch" reset protocol
    - Physiological sigh + posture + grounding
-   - **Emergency "Flare Mode" command:** Easy command to reschedule appointments, notify necessary parties of overwhelm, activate recovery protocols
 
 ### Visual Design Requirements
 
@@ -781,16 +1015,10 @@ For persistent memory and agent capabilities:
 ### Daily Rhythm
 
 **Morning (08:00):**
-- Energy/mood/flag check-in (voice-based preferred)
-- Three Categories selection (money/mission/body)
+- Energy/mood/flag check-in (2 minutes)
+- One Big Thing + Two Smalls selection
 - Body bandwidth assessment
 - Today's predicted flare risk
-
-**Throughout Day:**
-- **As many notifications as necessary** to maintain momentum
-- Reminders for missed steps (e.g., "You forgot to brush your teeth")
-- **User-configurable notification channels** (iOS push, email, Telegram, Slack - multiple options supported)
-- **Overwhelm threshold learned from user data** (not predetermined)
 
 **Midday (13:00):**
 - Quick progress check
@@ -913,131 +1141,8 @@ Jarvis should feel like:
 - Direct but kind
 - Curious, not judgmental
 - Concise (few words, high signal)
-- **Uses humor, but not in a way that muddies actual data**
+- Occasionally playful
 - Never guilt-inducing
-
-**Crisis Handling:**
-- Emergency contact integration with escalation protocols
-- Contingency plans (e.g., in case of suicidal ideation: call X or notify Y)
-
-**Positive Reinforcement:**
-- Progress bars (avoids "streak anxiety")
-- Celebrates wins in authentic, non-triggering ways
-
----
-
-## Integration & Architecture Questions
-
-**CRITICAL: The following architectural reconciliation questions emerged from integrating the research documents:**
-
-### Architecture Integration Questions
-
-**A1. Mode Selection vs. Cognitive Modules**
-
-The system now has:
-- **Layer 1:** Four Cognitive Modules (Observer, Planner, Research, Reflector) - backend intelligence
-- **Layer 2:** Four Adaptive Modes (Analyst, Coach, Companion, Trickster) - frontend personality
-
-**Resolution:**
-- Dual-layer architecture is correct - Layer 1 (Cognitive Modules) provides backend intelligence, Layer 2 (Adaptive Modes) provides user-facing personality
-- All four Cognitive Modules are always active simultaneously
-- ONE Mode is active at a time for user interaction, selected by Observer Brain based on current state
-- Modes are presented through the system but powered by all Cognitive Modules working together
-
-**A2. Gamification Intensity**
-
-**Resolution:**
-- Implement "calm gamification" for v1.0 - progress bars, XP tracking, achievements
-- Avoid high-stimulation elements (flashing, sounds, overwhelming visuals)
-- Gamification intensity should adapt based on current state (lower during overwhelm, higher during Coach/Trickster modes)
-- Visual design remains minimal and calm per core UX principles
-- System learns optimal gamification level per user
-
-**A3. Decision Engine Authority**
-
-**Resolution: Conditional Zero-Choice Model**
-- **Default:** Jarvis ALWAYS presents ONE next action (no menus/lists)
-- **Exception:** When decision has high risk of bad consequences if wrong, present 2-3 options with clear tradeoffs
-- **Risk assessment criteria:** Impact on health, financial consequences >$100, social relationship risks, legal implications
-- System learns user's risk tolerance and decision-making patterns over time
-
-**A4. Daily Task Structure**
-
-**Resolution: Three Categories Primary, Adaptive Learning**
-- **Primary model:** Three daily categories (money/mission/body) - keeps user on mission
-- **Can coexist:** "One Big Thing" can rotate between the three categories
-- **Adaptive, not rigid:** Model learns and suggests structural changes based on collected data
-- **Energy-responsive:** Structure adapts to current energy state (e.g., all three micro-tasks during low energy, deeper work during high energy)
-
-**A5. Consistency vs. Novelty Rhythm**
-
-**Resolution: Adaptive Novelty Engine**
-- **Baseline rhythm:** 72 hours, but adapts to user behavior patterns
-- **Change intensity:** Calibrated to maintain attention without overwhelm (learned per user)
-- **What changes:** Tone variations within Mode, prompt phrasing, visual accents (not core UI), reward types/language
-- **Chaos prevention:** Changes stay within predictable patterns (e.g., Analyst Mode always feels like Analyst, just with variety)
-- **User override:** System detects if changes cause overwhelm and reverts to stable configuration
-
-**A6. Stealth Operations Scope**
-
-**Resolution: Maximum Responsible Automation**
-- **Philosophy:** User has "executive function of a third grader on good days" - take as much off plate as responsibly possible
-- **Extensive stealth operations:**
-  - Batching errands
-  - Prioritizing tasks
-  - Updating XP/gamification
-  - Tagging tasks with energy windows
-  - Rearranging schedule when patterns change
-  - Rescheduling during overwhelm
-  - Removing stale tasks
-  - Preplanning morning blocks
-- **Retroactive audit capability:** Yes - user can review all stealth operations in low-detail mode
-- **Boundaries:** Never stealth-operate on: financial transactions, medical decisions, social commitments, anything with external consequences
-
-**A7. Platform Priority for MVP**
-
-**Resolution: Full n8n from Day 1**
-- **Build everything in n8n from the beginning** - avoids rework and unnecessary backend costs
-- **Minimum stack for v0.1:**
-  - n8n (orchestration)
-  - Notion (data layer)
-  - iPhone Shortcuts (interface)
-  - Apple Health (passive data)
-- **Later phases:**
-  - Google Calendar integration
-  - Advanced smart home integration
-  - Wearable devices (Oura, Whoop)
-- No Zapier/IFTTT - direct n8n implementation only
-
-**A8. Voice & Personality Calibration**
-
-**Resolution: Learning + Announced Transitions**
-- **User customization:** Optional - system learns optimal tone per user automatically
-- **Feedback learning:** CRUCIAL - Modes must learn from user feedback ("that felt too pushy") and adapt in real-time
-- **Mid-day transitions:** Handled gracefully with clear announcement
-- **Announcement style:** Clear and directive (e.g., "Now is chore time, clean kitchen")
-- **Learning signals:** Track completion rates, time-to-start, user sentiment in responses to refine Mode effectiveness
-
-**A9. Neurotype-Specific Adaptations**
-
-**Resolution: Learned Adaptation Model**
-- **NOT hardcoded** - all neurotype adaptations learned over time from user behavior
-- **Setup wizard:** Optional initial profile (ADHD, ASD, CPTSD, etc.) provides starting heuristics, but system learns true patterns from data
-- **Scaling strategy:** Each user gets personalized adaptation based on their medical and personality stats
-- **Not one-size-fits-all** - system designed from ground up for individual customization
-- **Commercial expansion:** Target users with various neurodivergent + comorbid conditions (Meniere's, etc.)
-
-**A10. Cold Start Problem**
-
-**Resolution: Hypothesis-Driven Week 1**
-- **Week 1 value:** Creates and tests hypotheses on what optimizes productivity, health, happiness
-- **Minimum data for meaningful Mode selection:** 3-5 days of check-ins + energy tracking
-- **Learning period approach:** Active experimentation (not passive observation)
-  - Day 1-2: Baseline observation
-  - Day 3-7: Hypothesis testing with A/B comparisons
-  - Week 2+: Pattern-based optimization
-- **No manual mode needed** - system provides value through structure + tracking even before pattern recognition kicks in
-- **Priority feature for Week 1:** Energy tracking (most valuable single feature per user feedback)
 
 ---
 
@@ -1049,25 +1154,25 @@ The following questions require answers to move from vision to implementation:
 
 1.1. **Is this a personal tool exclusively for Tristan, or intended for broader distribution?** No. .. however Tristan is the first user.
 - If broader: What is the anticipated user population and how will personalization work at scale? 
-- If personal: Can we assume highly specific customization without abstracting for general use? no you are going to adapt to each user. 
+- If personal: Can we assume highly specific customization without abstracting for general use?
 
 1.2. **What devices are primary?**
-- iPhone only? iPad? Apple Watch? Mac? all, but primarily iphone
+- iPhone only? iPad? Apple Watch? Mac?
 - What's the minimum viable device set for v1.0?
 
 1.3. **What is the user's technical comfort level for v1.0?**
-- Willing to configure Notion databases and n8n workflows directly? no
-- Or need a more packaged solution? yes, you do all the grunt work. make my life easier.
+- Willing to configure Notion databases and n8n workflows directly?
+- Or need a more packaged solution?
 
 ### 2. MVP Feature Prioritization
 
 2.1. **If only 3-5 features could be built, which provide 80% of the value?**
 - Candidates: Capture/Triage, Daily Briefing, Energy Tracking, Flare Prediction, Task Matching
-- What's the single feature that would be worth using daily even without others? energy tracking. in the event i have a major flare i want at least a record of moods symptoms etc 
+- What's the single feature that would be worth using daily even without others?
 
 2.2. **What is the cold-start experience?**
 - How does Jarvis provide value in Week 1 before patterns emerge?
-- What manual data entry is acceptable initially? spoken is best
+- What manual data entry is acceptable initially?
 
 2.3. **What's the minimum viable check-in?**
 - 2-minute version (current)? 30-second version? Something in between?
@@ -1082,7 +1187,7 @@ The following questions require answers to move from vision to implementation:
 
 3.2. **Where does AI processing happen?**
 - Cloud APIs (OpenAI/Claude) for all reasoning?
-- Local models for privacy-sensitive processing? yes any hippa protected data or private security concern stuff should be kept locally
+- Local models for privacy-sensitive processing?
 - What's acceptable latency for different operations?
 
 3.3. **What is the backup/export strategy?**
@@ -1093,7 +1198,7 @@ The following questions require answers to move from vision to implementation:
 
 4.1. **What false positive/negative rates are acceptable?**
 - Is a 70% accurate prediction useful, or does anything below 90% cause more anxiety?
-- How should Jarvis communicate uncertainty? with %, if you change x there is a 65% chance y (good thing) will happen
+- How should Jarvis communicate uncertainty?
 
 4.2. **What is the minimum historical data needed?**
 - How many days/weeks of tracking before predictions become meaningful?
@@ -1101,46 +1206,46 @@ The following questions require answers to move from vision to implementation:
 
 4.3. **How should conflicting signals be handled?**
 - POTS, MCAS, and EDS can have conflicting recommendations
-- Who adjudicates when the system can't determine priority? priority is keeping me as functional, focused, and healthy as possible
+- Who adjudicates when the system can't determine priority?
 
 ### 5. Intervention & Recommendation System
 
 5.1. **Where do intervention recommendations come from?**
-- Medical literature? Personal experience? Both? both. initially from medical literature, then customized based on personal experince
-- Who validates safety and appropriateness? there will be a disclaimer, these are only suggestions, the user should check with their doctor before implementing a major medical intervention
+- Medical literature? Personal experience? Both?
+- Who validates safety and appropriateness?
 
 5.2. **How should interventions be personalized over time?**
 - Explicit "this worked/didn't work" feedback?
-- Implicit tracking of compliance and outcomes? yes, study and optimize the way you motivate me
+- Implicit tracking of compliance and outcomes?
 
 5.3. **What's the liability/disclaimer approach?**
-- How prominent should "not medical advice" warnings be? big enough that i help people but dont get sued
+- How prominent should "not medical advice" warnings be?
 - Any interventions that should never be suggested?
 
 ### 6. Notification & Interruption Strategy
 
 6.1. **How many notifications per day are acceptable?**
-- Morning/Midday/Evening (3)? More granular? Fewer? as many as are necissary, and if i miss a step, i want to be reminded, e.g. you forgot to brush your teeth
-- What's the overwhelm threshold? study me and find out
+- Morning/Midday/Evening (3)? More granular? Fewer?
+- What's the overwhelm threshold?
 
 6.2. **How does Jarvis know when NOT to interrupt?**
 - Calendar-based quiet times?
-- Manual "do not disturb" mode? if a flare is happening there should be an easy command i can give to reschedule appointments etc, whatever is necissary to inform necessary parties that im overwhelmed for the day etc
+- Manual "do not disturb" mode?
 - Inference from activity patterns?
 
 6.3. **What notification channels?**
 - iOS push? Email? Telegram? Slack?
-- Multiple channels or single source of truth? user configurable and multiple options
+- Multiple channels or single source of truth?
 
 ### 7. Data & Privacy
 
 7.1. **What data is too sensitive for any cloud processing?**
-- Menstrual cycle? Emotional state? Specific symptoms? anything that would violate hippa
+- Menstrual cycle? Emotional state? Specific symptoms?
 - What requires local-only storage?
 
 7.2. **How long should historical data be retained?**
-- Forever for pattern recognition? yes
-- Rolling window for privacy? it can be archieved but i never want it deleted
+- Forever for pattern recognition?
+- Rolling window for privacy?
 - User choice?
 
 7.3. **What happens if the device is lost or stolen?**
@@ -1156,11 +1261,11 @@ The following questions require answers to move from vision to implementation:
 - Privacy boundaries?
 
 8.2. **What about the household environment?**
-- Smart home integration for lighting/temperature? yes and suggest upgrades like nest auto thermostat etc
+- Smart home integration for lighting/temperature?
 - Shared living considerations?
 
 8.3. **What calendar systems need integration?**
-- iCloud? Google? Outlook? 
+- iCloud? Google? Outlook?
 - Read-only or read-write?
 
 ### 9. Business & Sustainability
@@ -1170,10 +1275,9 @@ The following questions require answers to move from vision to implementation:
 - Budget for API costs, hosting, tools?
 
 9.2. **Is commercialization a goal?**
-- **Yes** - Eventually a product for the neurodivergent community
-- **Target users:** Neurodivergent individuals with comorbid conditions (AUDHD, POTS, MCAS, EDS, CPTSD, Meniere's, etc.)
-- **Business model:** Proprietary (not open source) - commercial product
-- **Scalability requirement:** System must adapt to each user's medical and personality stats (not one-size-fits-all)
+- Personal tool only?
+- Eventually a product for the neurodivergent community?
+- Open source possibility?
 
 9.3. **What happens to the system if the developer becomes incapacitated?**
 - (Relevant given the user profile)
@@ -1187,50 +1291,224 @@ The following questions require answers to move from vision to implementation:
 - Prospective tracking period before full features?
 
 10.2. **How will you distinguish Jarvis-caused improvement from other factors?**
-- **Answer:** By taking contextual factors into consideration (weather, seasonal stress like Christmas, medication changes, life circumstances)
-- Pattern engine accounts for confounding variables
+- Medication changes, seasonal effects, life circumstances?
+- Control period planned?
 
 10.3. **What would indicate Jarvis is causing harm?**
-- **Harm Indicators:**
-  - Increased anxiety from tracking or overwhelm
-  - Data obsession
-  - Decision paralysis from too many options
-- System must monitor for these patterns and adapt/reduce intervention if detected
+- Increased anxiety from tracking?
+- Data obsession?
+- Decision paralysis from too many options?
 
 ### 11. Content & Voice
 
 11.1. **Should Jarvis use humor?**
-- Never? Occasionally? Often? yes but not in a way that muddies actual data
+- Never? Occasionally? Often?
 - What style? (dry, playful, absurdist?)
 
 11.2. **How should Jarvis handle crisis moments?**
 - What language is helpful vs. harmful during extreme lows?
-- Emergency contact integration? absolutely. also contingency plans for example in case of suicidal ideation call x or notify y
+- Emergency contact integration?
 - Escalation protocols?
 
 11.3. **What about celebrations and acknowledgment?**
-- How to celebrate wins without triggering "streak anxiety"? progress bars 
+- How to celebrate wins without triggering "streak anxiety"?
 - What positive reinforcement feels authentic?
 
 ### 12. Integration Specifics
 
 12.1. **Which Apple Health data types are essential vs. nice-to-have?**
 - HR, HRV, sleep → essential?
-- Steps, workouts, nutrition → optional? workout and nutrition are necissart to manage this complex condition (including mcas)
+- Steps, workouts, nutrition → optional?
 
 12.2. **Weather/environmental API preferences?**
 - Cost constraints?
 - Specific parameters needed (barometric pressure, pollen, AQI)?
 
 12.3. **Nutrition database requirements?**
+- Basic macro tracking?
+- Histamine content classification?
+- FODMAP awareness?
+- Barcode scanning?
 
-**Comprehensive Nutrition System:**
-- **Macro tracking** - emphasizing symptom-specific needs (higher protein and magnesium intake, etc.)
-- **Histamine content classification** - traffic light system (Noom-style: green/yellow/red foods with limits on red foods)
-- **FODMAP awareness** - help user test and discover trigger foods
-- **Elimination diet support** - start from low-FODMAP, salicylate, oxalate baseline
-- **Barcode scanning** for easy food logging
-- **Personalized recommendations** based on MCAS management needs
+### 13. Jarvis Journal System
+
+13.1. **What is the preferred format and delivery for journal entries?**
+- Notion page per entry? Single rolling document? Separate app?
+- Push notification with summary, or pull-based (user opens when ready)?
+- Audio version option for low-capacity days?
+
+13.2. **How much narrative vs. data should journals contain?**
+- Pure prose with data woven in (as shown in examples)?
+- Hybrid with data tables + narrative sections?
+- User preference toggle between styles?
+
+13.3. **What is the ideal length for each cadence?**
+- Daily: 1 paragraph? 3 paragraphs? Full page?
+- Weekly: 1 page? 2-3 pages?
+- Monthly/Quarterly/Yearly: How detailed before it becomes overwhelming?
+
+13.4. **Should the user review/approve journals before they're "final"?**
+- Auto-generated and stored immediately?
+- Draft → Review → Finalize workflow?
+- Ability to add personal notes or corrections?
+
+13.5. **What tone variations should be available?**
+- Always warm and encouraging?
+- Option for more clinical/neutral tone?
+- Adjust tone based on current emotional state?
+
+13.6. **How should journals handle difficult periods?**
+- During extended Red periods or crashes, should journaling pause?
+- Simplified "survival mode" entries?
+- Retrospective entries to fill gaps after recovery?
+
+13.7. **What sharing and export options are needed?**
+- Medical provider summary format (clinical language, relevant metrics)?
+- Therapist-friendly format (emotional patterns, growth narrative)?
+- Personal archive format (full detail, searchable)?
+- Privacy controls for what can be shared vs. kept private?
+
+13.8. **How should journals integrate with the Reflector Brain?**
+- Should journal reviews prompt emotional processing?
+- Include specific reflection questions for user response?
+- Track emotional reactions to reading past entries?
+
+13.9. **What is the cold-start experience for journaling?**
+- How much data is needed before meaningful daily entries?
+- What do weekly/monthly journals look like with only 1-2 weeks of data?
+- Placeholder content vs. honest "not enough data yet" messaging?
+
+13.10. **Should journals include goal-setting and accountability elements?**
+- End-of-week intentions that carry into next week's review?
+- Monthly goal tracking with progress updates?
+- Or keep journals purely reflective (no forward-looking pressure)?
+
+### 14. Behavioral State Analysis
+
+14.1. **What level of voice analysis is acceptable?**
+- Basic tempo/pause detection only?
+- Full tone and affect analysis?
+- Word choice and complexity tracking?
+- Where is the line between helpful and invasive?
+
+14.2. **How should behavioral observations be communicated?**
+- Always ask permission before sharing an observation?
+- Offer as gentle inquiry ("I noticed X — is that accurate?")?
+- Only surface observations when they conflict with self-reports?
+- Never mention observations directly, just adjust recommendations silently?
+
+14.3. **What is the baseline establishment period?**
+- How many days/weeks of interaction before behavioral baselines are meaningful?
+- Should the system disclose that it's still learning patterns?
+- How to handle highly variable users with no stable baseline?
+
+14.4. **How should the system handle disagreement?**
+- If user says "I'm fine" but behavioral signals suggest otherwise?
+- Always defer to user's stated experience?
+- Gently persist with concern?
+- Log the discrepancy silently for pattern analysis?
+
+14.5. **What privacy controls are needed for behavioral data?**
+- Can behavioral analysis be disabled entirely?
+- Should voice recordings be stored, or only extracted metrics?
+- Local-only processing vs. cloud analysis?
+- Transparency about what signals are being tracked?
+
+14.6. **How should positive behavioral signals be used?**
+- Actively encourage when signals suggest better-than-reported state?
+- Use to suggest more ambitious tasks?
+- Simply note in journal without real-time feedback?
+
+14.7. **What modalities should be prioritized for v1.0?**
+- Voice analysis (requires audio processing infrastructure)?
+- Text/typing patterns (simpler to implement)?
+- Interaction patterns (purely metadata-based)?
+- All three, or phased rollout?
+
+14.8. **How accurate does behavioral analysis need to be before surfacing insights?**
+- Minimum confidence threshold for observations?
+- How to communicate uncertainty in behavioral inferences?
+- What's the cost of false positives (saying "you seem tired" when user isn't)?
+
+### 15. Periodic Surveys & Assessments
+
+15.1. **Which validated instruments are most valuable?**
+- PHQ-9 and GAD-7 (mood/anxiety) — essential or optional?
+- COMPASS-31 (autonomic) — relevant for POTS tracking?
+- Custom condition-specific inventories for MCAS/EDS?
+- Quality of life measures (SF-36, WHODAS)?
+
+15.2. **What is the optimal survey frequency per type?**
+- How often can comprehensive instruments be administered without fatigue?
+- Daily micro-surveys: 1x, 2x, 3x per day? What's the burden threshold?
+- Should frequency adapt based on stability vs. volatility periods?
+
+15.3. **How should survey timing be determined?**
+- Fixed schedule (same time each day/week)?
+- Adaptive based on energy state?
+- Triggered by specific events?
+- User preference for notification timing?
+
+15.4. **What happens when surveys are skipped or incomplete?**
+- Gentle reminder? How many before giving up?
+- Partial responses: save or discard?
+- Catch-up surveys: offer to do missed ones, or let them go?
+- Track skip patterns as data (skipping itself may signal state)?
+
+15.5. **How should survey results be presented to the user?**
+- Raw scores with clinical context?
+- Trend graphs over time?
+- Comparison to personal baseline vs. population norms?
+- Alerts when scores cross clinical thresholds?
+
+15.6. **What clinical/healthcare integration is needed?**
+- Export formats for specific providers?
+- Automatic flagging for concerning scores?
+- Integration with patient portal systems?
+- Liability considerations for clinical screening tools?
+
+### 16. Passive & Ambient Data Collection
+
+16.1. **Which passive data sources are highest priority for v1.0?**
+- Apple Health (already mentioned) — which specific metrics?
+- Screen time and app usage — accessible without jailbreak?
+- Calendar integration — read-only sufficient?
+- Environmental APIs — which services?
+
+16.2. **What wearable integrations should be supported?**
+- Apple Watch only (simplest)?
+- Oura Ring (popular in chronic illness community)?
+- CGM devices (for blood sugar-symptom correlations)?
+- Priority order for implementation?
+
+16.3. **How should smart home integration work?**
+- Which platforms (HomeKit, Google Home, Alexa)?
+- What data is most valuable (temperature, lighting, presence)?
+- Privacy implications of home activity tracking?
+- Worth the complexity for v1.0?
+
+16.4. **What are the privacy boundaries for digital behavior signals?**
+- Communication metadata: where is the line between useful and invasive?
+- Location data: home/away binary, or more granular?
+- Social media usage: valuable signal or scope creep?
+- Clear opt-in/opt-out for each signal category?
+
+16.5. **How should passive data gaps be handled?**
+- User leaves phone at home, watch dies, etc.?
+- Interpolation vs. marking as missing?
+- How much passive data is needed before inferences are valid?
+
+16.6. **What derived metrics are most valuable to compute?**
+- Routine adherence score?
+- Social load index?
+- Environmental stress composite?
+- "Predictive load" combining multiple passive signals?
+
+16.7. **How should passive insights be weighted against self-reports?**
+- Passive data as tiebreaker when self-report is ambiguous?
+- Passive data as early warning before user notices?
+- User self-report always trumps passive inference?
+- Configurable trust weighting?
 
 ---
 

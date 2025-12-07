@@ -323,7 +323,197 @@ Based on research into metacognitive frameworks and neurodivergent support needs
 *Positive pattern recognition:*
 > "Your voice today has more energy variation than yesterday — more animated. Your typing is faster too. Looks like you might be feeling better than you think. Good day for a slightly bigger task?"
 
-### C. Neuroimmune Budget System
+### C. Periodic Survey & Assessment System
+
+**Purpose:** Collect structured, quantifiable data through validated questionnaires and micro-surveys delivered at strategic intervals. Unlike ad-hoc check-ins, surveys provide standardized measurements that enable longitudinal tracking and comparison to clinical baselines.
+
+**Survey Types:**
+
+**Micro-Surveys (Daily/Multiple per day)**
+- 1-3 questions, <30 seconds to complete
+- Single-dimension snapshots (energy, mood, pain)
+- Delivered at optimal times based on user patterns
+- Can be embedded in other interactions
+
+**Brief Assessments (Weekly)**
+- 5-10 questions, 2-3 minutes to complete
+- Multi-dimensional state capture
+- Symptom severity tracking
+- Functional capacity assessment
+
+**Comprehensive Instruments (Monthly/Quarterly)**
+- Validated clinical questionnaires
+- PHQ-9 (depression screening)
+- GAD-7 (anxiety screening)
+- Fatigue Severity Scale
+- COMPASS-31 (autonomic symptoms)
+- Custom MCAS/POTS/EDS symptom inventories
+- Quality of life measures
+
+**Contextual Surveys (Event-triggered)**
+- Post-flare assessment (what happened, severity, recovery)
+- Post-intervention feedback (did it help?)
+- Post-social interaction debrief
+- Sleep quality on wake
+- Meal tolerance logging
+
+**Survey Delivery Strategy:**
+- Adaptive timing based on energy state (don't survey during Red)
+- Bundled with existing touchpoints when possible
+- Skip logic to reduce burden
+- "Not now" option that reschedules intelligently
+- Gamification-free (no streaks, no guilt for skipping)
+
+**Quantification Benefits:**
+- Track symptom severity over time with consistent scales
+- Compare to population norms and clinical thresholds
+- Identify subtle trends not visible in free-form logging
+- Generate reports suitable for healthcare providers
+- Enable N=1 experiments with measurable outcomes
+
+**Example Interactions:**
+
+*Micro-survey embedded in check-in:*
+> "Quick add-on to your evening check-in: On a 0-10 scale, how would you rate your joint pain today? [slider or tap]. Thanks — that's logged."
+
+*Weekly brief assessment:*
+> "It's Sunday — time for your weekly snapshot. This takes about 2 minutes. Ready, or want me to ask later?"
+>
+> "Over the past week: How many days did fatigue significantly limit your activities? [0] [1-2] [3-4] [5+]"
+>
+> "How would you rate your overall functioning this week compared to your best? [Much worse] [Worse] [Same] [Better]"
+
+*Monthly validated instrument:*
+> "Monthly check-in time. This one's a bit longer (about 5 minutes) but gives us good data for tracking. It's the PHQ-9 — same questions your doctor might ask about mood. Want to do it now, or schedule for a specific time?"
+
+*Post-flare contextual survey:*
+> "You logged a flare yesterday. When you're ready, I'd like to capture some details while they're fresh. What was the primary symptom? How severe (1-10)? How long did it last? Any suspected triggers? This helps the pattern engine learn."
+
+*Adaptive timing:*
+> "I was going to ask your weekly questions, but you're in Red right now. I'll check back tomorrow when you're feeling better. If you want to do it anyway, just say so."
+
+*Healthcare report generation:*
+> "Your quarterly summary is ready. Over 90 days: PHQ-9 average 8 (mild), GAD-7 average 6 (mild), fatigue severity trending down 15%. Want me to format this for Dr. Martinez?"
+
+### D. Passive & Ambient Data Collection
+
+**Purpose:** Gather meaningful health and state information without requiring any direct user attention or input. These signals run continuously in the background, enriching the data model while preserving cognitive resources.
+
+**Device & Sensor Integration:**
+
+*Wearables (Current & Future)*
+- Apple Watch: HR, HRV, movement, stand hours, sleep stages
+- Oura Ring: sleep quality, readiness score, temperature trends
+- Continuous Glucose Monitor: blood sugar patterns, meal responses
+- Smart scale: weight trends, body composition (if available)
+- Blood pressure cuff: orthostatic measurements
+
+*Smartphone Sensors*
+- Screen time and app usage patterns
+- Location patterns (home vs. out, routine disruptions)
+- Phone pickup frequency (anxiety/restlessness indicator)
+- Ambient light exposure (circadian rhythm proxy)
+- Step count and movement patterns
+
+*Smart Home Integration*
+- Room temperature and humidity
+- Lighting levels and changes
+- Sleep environment quality (bedroom temp, noise)
+- Activity detection (movement between rooms)
+- Air quality monitors (if available)
+
+**Digital Behavior Signals:**
+
+*Communication Patterns*
+- Email/message volume and response times (metadata only, not content)
+- Social app usage frequency
+- Call duration patterns
+- Communication initiation vs. response ratio
+
+*Calendar & Schedule*
+- Meeting density and recovery gaps
+- Schedule adherence patterns
+- Cancellation frequency
+- Buffer time utilization
+
+*Media Consumption*
+- Music tempo and genre shifts (Spotify/Apple Music integration)
+- Content consumption patterns (active vs. passive media)
+- Screen brightness settings over time
+- Podcast/audiobook engagement
+
+**Environmental Data Feeds:**
+
+*External APIs*
+- Weather: temperature, humidity, barometric pressure changes
+- Air quality index (AQI)
+- Pollen and allergen levels by type
+- UV index
+- Sunrise/sunset (circadian reference)
+
+*Derived Metrics*
+- "Pressure change velocity" (rapid drops correlate with symptoms)
+- Cumulative allergen exposure
+- Daylight minutes received
+- Temperature stability index
+
+**Inferred States:**
+
+*Sleep Quality Inference*
+- Time in bed vs. phone usage
+- Wake time consistency
+- Night-time movement patterns
+- Morning routine timing
+
+*Activity Level Inference*
+- Steps and active minutes
+- Sedentary stretch duration
+- Vertical vs. horizontal time (POTS-relevant)
+- Movement variability
+
+*Social Load Inference*
+- Calendar social events
+- Message volume spikes
+- Location at social venues
+- Recovery time between interactions
+
+*Stress Load Inference*
+- HRV trends during day
+- Typing speed variations
+- App switching frequency
+- Departure from routine patterns
+
+**Privacy Principles:**
+- All passive collection is opt-in and transparently disclosed
+- User can disable any individual signal
+- Raw data (message content, location specifics) never stored — only derived metrics
+- Local processing preferred; cloud only for complex analysis
+- Regular "what we're tracking" summaries for user awareness
+
+**Example Passive Insights:**
+
+*Wearable integration:*
+> "Your Oura readiness score was 62 this morning (below your 75 baseline). Combined with 3 wake-ups last night, I'm starting you at Yellow today even before your check-in."
+
+*Digital behavior signal:*
+> "Interesting pattern: on days when your screen time exceeds 6 hours, you're 40% more likely to report a flare the next day. Today you're at 5.5 hours. Maybe time to step away?"
+
+*Environmental correlation:*
+> "Barometric pressure dropped 12 millibars in the last 6 hours — one of the fastest drops this month. Historically, you get joint pain within 12 hours of drops this steep. Pre-emptive rest might help."
+
+*Smart home insight:*
+> "Your bedroom was 74°F last night — 4 degrees above your optimal range. You had 2 more wake-ups than usual. Worth checking the thermostat tonight."
+
+*Calendar analysis:*
+> "You have 4 meetings tomorrow with no gaps longer than 30 minutes. Your crash risk increases significantly on days like this. Want me to suggest which one to move or cancel?"
+
+*Music pattern detection:*
+> "You've been listening to slower, more melancholic music than usual this week. Sometimes that correlates with mood dips for you. Just checking in — how are you actually feeling?"
+
+*Cumulative load calculation:*
+> "Passive signals today: HRV down 15%, 2 hours less sleep than baseline, pollen high, 3 back-to-back meetings. Even without your check-in, I'd estimate you're running Yellow to Red. Does that match your experience?"
+
+### E. Neuroimmune Budget System
 
 A real-time "energy budget" displayed simply as:
 - **Green:** Functional — deep work possible
@@ -358,7 +548,7 @@ The budget enables **task-to-state matching** — only presenting tasks appropri
 *End-of-day budget summary:*
 > "Today's budget trajectory: Started Yellow, dipped to Red at 2pm (missed lunch), recovered to Yellow by 5pm. You spent 6 hours in Yellow, 2 hours in Red, 0 hours in Green. Tomorrow's forecast: likely Green if you sleep by 10pm."
 
-### D. Flare Prediction Engine
+### F. Flare Prediction Engine
 
 **Prediction Window:** 4-48 hours in advance
 
@@ -393,7 +583,7 @@ The budget enables **task-to-state matching** — only presenting tasks appropri
 *Post-exertion prediction:*
 > "You pushed hard yesterday — 4 hours of cognitive work plus a social event. Based on your patterns, there's a 60% chance of a delayed crash tomorrow. Consider keeping tomorrow light as a buffer day."
 
-### E. Intervention Recommendation System
+### G. Intervention Recommendation System
 
 **Intervention Categories:**
 - Hydration protocols (electrolyte timing, volume)
@@ -434,7 +624,7 @@ The budget enables **task-to-state matching** — only presenting tasks appropri
 *Personalized learning feedback:*
 > "You tried the cold shower intervention yesterday when your budget was Red. Result: you reported feeling worse afterward. I'm marking cold exposure as 'not helpful during Red states' for you. We can revisit if you want."
 
-### F. Task Management & EF Prosthesis
+### H. Task Management & EF Prosthesis
 
 **Task Triage System:**
 - Automatic priority scoring
@@ -476,7 +666,7 @@ The budget enables **task-to-state matching** — only presenting tasks appropri
 *Context-aware rescheduling:*
 > "You marked the project proposal as today's One Big Thing, but you've been Red all morning. I've moved it to tomorrow's One Big Thing and swapped in 'organize receipts' (reclined-friendly) for today. Does that work?"
 
-### G. Capture & Triage Pipeline
+### I. Capture & Triage Pipeline
 
 **Zero-Friction Capture:**
 - Voice dictation → Notion inbox (1 tap)
@@ -519,7 +709,7 @@ The budget enables **task-to-state matching** — only presenting tasks appropri
 *Processing workflow suggestion:*
 > "Your inbox has 12 unprocessed items. Quick triage: 4 are 'Do' (actionable tasks), 2 are 'Delegate' (things to ask others), 3 are 'Decide' (need more thought), 3 are 'Dream' (someday/maybe ideas). Want to batch-approve these categories?"
 
-### H. Prediction Calibration System
+### J. Prediction Calibration System
 
 **Purpose:** Train hyperlexic pattern recognition without burnout
 
@@ -563,7 +753,7 @@ The budget enables **task-to-state matching** — only presenting tasks appropri
 *Stale prediction retirement:*
 > "These 3 predictions are over 2 weeks old and unresolved: 'Will hear back from recruiter,' 'Dentist will find cavities,' 'Rain this weekend.' Mark them as happened/didn't happen, or retire them as unresolvable?"
 
-### I. Jarvis Journal System
+### K. Jarvis Journal System
 
 **Purpose:** An AI-generated personal journal that synthesizes all tracked data into meaningful narrative reflections, helping the user understand their patterns, celebrate progress, and build self-knowledge over time.
 
@@ -1239,6 +1429,86 @@ The following questions require answers to move from vision to implementation:
 - Minimum confidence threshold for observations?
 - How to communicate uncertainty in behavioral inferences?
 - What's the cost of false positives (saying "you seem tired" when user isn't)?
+
+### 15. Periodic Surveys & Assessments
+
+15.1. **Which validated instruments are most valuable?**
+- PHQ-9 and GAD-7 (mood/anxiety) — essential or optional?
+- COMPASS-31 (autonomic) — relevant for POTS tracking?
+- Custom condition-specific inventories for MCAS/EDS?
+- Quality of life measures (SF-36, WHODAS)?
+
+15.2. **What is the optimal survey frequency per type?**
+- How often can comprehensive instruments be administered without fatigue?
+- Daily micro-surveys: 1x, 2x, 3x per day? What's the burden threshold?
+- Should frequency adapt based on stability vs. volatility periods?
+
+15.3. **How should survey timing be determined?**
+- Fixed schedule (same time each day/week)?
+- Adaptive based on energy state?
+- Triggered by specific events?
+- User preference for notification timing?
+
+15.4. **What happens when surveys are skipped or incomplete?**
+- Gentle reminder? How many before giving up?
+- Partial responses: save or discard?
+- Catch-up surveys: offer to do missed ones, or let them go?
+- Track skip patterns as data (skipping itself may signal state)?
+
+15.5. **How should survey results be presented to the user?**
+- Raw scores with clinical context?
+- Trend graphs over time?
+- Comparison to personal baseline vs. population norms?
+- Alerts when scores cross clinical thresholds?
+
+15.6. **What clinical/healthcare integration is needed?**
+- Export formats for specific providers?
+- Automatic flagging for concerning scores?
+- Integration with patient portal systems?
+- Liability considerations for clinical screening tools?
+
+### 16. Passive & Ambient Data Collection
+
+16.1. **Which passive data sources are highest priority for v1.0?**
+- Apple Health (already mentioned) — which specific metrics?
+- Screen time and app usage — accessible without jailbreak?
+- Calendar integration — read-only sufficient?
+- Environmental APIs — which services?
+
+16.2. **What wearable integrations should be supported?**
+- Apple Watch only (simplest)?
+- Oura Ring (popular in chronic illness community)?
+- CGM devices (for blood sugar-symptom correlations)?
+- Priority order for implementation?
+
+16.3. **How should smart home integration work?**
+- Which platforms (HomeKit, Google Home, Alexa)?
+- What data is most valuable (temperature, lighting, presence)?
+- Privacy implications of home activity tracking?
+- Worth the complexity for v1.0?
+
+16.4. **What are the privacy boundaries for digital behavior signals?**
+- Communication metadata: where is the line between useful and invasive?
+- Location data: home/away binary, or more granular?
+- Social media usage: valuable signal or scope creep?
+- Clear opt-in/opt-out for each signal category?
+
+16.5. **How should passive data gaps be handled?**
+- User leaves phone at home, watch dies, etc.?
+- Interpolation vs. marking as missing?
+- How much passive data is needed before inferences are valid?
+
+16.6. **What derived metrics are most valuable to compute?**
+- Routine adherence score?
+- Social load index?
+- Environmental stress composite?
+- "Predictive load" combining multiple passive signals?
+
+16.7. **How should passive insights be weighted against self-reports?**
+- Passive data as tiebreaker when self-report is ambiguous?
+- Passive data as early warning before user notices?
+- User self-report always trumps passive inference?
+- Configurable trust weighting?
 
 ---
 

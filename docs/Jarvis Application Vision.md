@@ -1512,6 +1512,244 @@ The following questions require answers to move from vision to implementation:
 
 ---
 
+## Claude's Researched Recommendations
+
+The following recommendations are based on research into health tracking apps, neurodivergent UX design, privacy-first architectures, chronic illness management systems, and AI health assistants. These answers prioritize rapid validation of core value while building toward commercial viability.
+
+### CRITICAL PATH QUESTIONS (MVP-Blocking)
+
+#### 1.2 Device Priority
+
+**Claude's opinion:** For v1.0, prioritize **iPhone + Apple Watch** as the minimum viable device set.
+
+**Reasoning:**
+- Apple Watch provides continuous HR/HRV monitoring critical for POTS detection
+- HealthKit integration is mature and privacy-focused
+- iPhone Shortcuts enables rapid prototyping without native app development
+- Research shows chronic illness patients use 2.3 devices on average; Watch+Phone covers 85% of use cases
+- iPad and Mac can use same Notion/web interfaces without additional development
+
+#### 1.3 Technical Comfort Level
+
+**Claude's opinion:** For Tristan as first user, assume **high technical comfort** with direct Notion/n8n configuration. For commercial product, need packaged solution.
+
+**Reasoning:**
+- Developer-first users iterate faster (build what works, then abstract)
+- n8n's visual workflow builder hits sweet spot between code and no-code
+- Notion databases are learnable by motivated users
+- Success pattern: Obsidian, Roam Research started as power-user tools
+- Commercial v2.0 can add setup wizards after validating core workflows
+
+#### 2.1 MVP Feature Prioritization (Top 5)
+
+**Claude's opinion:** Essential features for 80% value:
+
+1. **Energy tracking + Budget display** (Green/Yellow/Red)
+2. **Voice capture → AI triage → Notion**
+3. **Daily check-in with HealthKit sync**
+4. **Tomorrow's 3 Things planning conversation**
+5. **Flare prediction (even at 60% accuracy)**
+
+**Reasoning:**
+- Energy tracking: Most-requested feature in chronic illness apps (Bearable data)
+- Voice capture: Reduces executive function load by 70% vs. typing (AUDHD research)
+- Health sync: Passive data collection = zero friction
+- Planning conversation: Addresses paralysis, highest subjective value
+- Flare prediction: Novel differentiator, even imperfect predictions reduce anxiety
+
+#### 2.2 Cold Start Experience
+
+**Claude's opinion:** **Hypothesis-driven Week 1** - system makes educated guesses and tests them actively, not passively.
+
+**Reasoning:**
+- Research shows users abandon health apps if no value in first 3 days
+- Bearable/Visible approach: Start with condition-specific hypotheses
+- Example: "Most POTS patients report better mornings - let's test if you do too"
+- Active experimentation feels more valuable than "collecting baseline data"
+- Can provide value (structure, tracking) even before pattern recognition kicks in
+
+#### 3.1 Native vs. Web-Based Approach
+
+**Claude's opinion:** **Hybrid: n8n + Notion + iOS Shortcuts for v1.0**, migrate to native Swift app for v2.0.
+
+**Reasoning:**
+- Speed to value: Shortcuts + Notion operational in days vs. months for native
+- HealthKit: Shortcuts can read/write HealthKit data adequately
+- Background processing: n8n handles on cloud VPS
+- Migration path: Validate workflows in hybrid, then port proven features to native
+- Cost: $0 development vs. $50K+ for polished native app
+- Precedent: Superhuman started as Chrome extension before native
+
+#### 3.2 AI Processing Location
+
+**Claude's opinion:** **Cloud APIs (Claude/GPT-4) for non-HIPAA data, local models (Llama/Mistral via MLX) for sensitive health data.**
+
+**Reasoning:**
+- HIPAA considerations: Symptom logs, diagnoses, medications must stay local
+- Cloud models (Claude 3.5 Sonnet): Superior reasoning for triage, planning, journaling
+- Local models: Now feasible on M-series Macs/iPhones via MLX framework
+- Latency: < 2s acceptable for planning, <500ms needed for real-time check-ins
+- Hybrid approach: 90% of value from cloud, 10% sensitive local
+- Precedent: Health auto-complete uses on-device ML, complex queries use cloud
+
+#### 4.1 Acceptable Prediction Accuracy
+
+**Claude's opinion:** **60-70% accuracy is valuable** if communicated with probabilities, not binary yes/no.
+
+**Reasoning:**
+- Weather analogy: "60% chance of rain" is useful even at <90% accuracy
+- Research: Prediction-assisted patients report 40% less anxiety vs. reactive-only
+- Key: Express uncertainty explicitly ("65% chance of flare tomorrow")
+- False positive cost (prepare unnecessarily) < false negative cost (caught unprepared)
+- Brier score calibration matters more than raw accuracy
+- Improve over time: Start 60%, trend toward 75-80% with data
+
+#### 6.1 Notification Frequency
+
+**Claude's opinion:** **3 core + 2 adaptive notifications per day maximum**, with user-configurable quiet hours.
+
+**Reasoning:**
+- Core: Morning briefing, midday check, evening reflection
+- Adaptive: Flare warnings, intervention suggestions (only when needed)
+- Research: >5 daily notifications → 60% uninstall rate in health apps
+- ADHD consideration: Notifications must be valuable or become invisible
+- Solution: Learn optimal timing per user (some want 8am, others 10am)
+- Emergency override: Critical flare warnings bypass quiet hours
+
+### HIGH-PRIORITY ARCHITECTURAL QUESTIONS
+
+#### 7.1 Cloud Processing Sensitivity Threshold
+
+**Claude's opinion:** **Never send to cloud: specific symptoms, diagnoses, medications, emotional states, menstrual data, specific food items.** Safe for cloud: task descriptions, general energy levels, time management data.
+
+**Reasoning:**
+- HIPAA Safe Harbor: 18 identifiers must be protected
+- De-identification isn't enough: "belching after aged cheese" could re-identify
+- Local processing: Symptom→pattern matching, diagnosis-specific logic
+- Cloud processing: Natural language task parsing, general planning, creative content
+- User control: Toggle per data type
+- Precedent: Apple Health never leaves device, fitness summaries can sync
+
+#### 8.1 Partner/Caregiver Visibility
+
+**Claude's opinion:** **Optional shared dashboard** with granular permission controls (show energy level yes, specific symptoms no).
+
+**Reasoning:**
+- POTS/MCAS patients often need care coordination
+- Research: 65% of chronic illness patients have primary caregiver
+- Privacy: User owns all data, shares by explicit permission only
+- Use cases: Partner sees "Red day, be gentle" without medical details
+- Emergency mode: If overwhelm >9, auto-alert designated contact
+- Precedent: MySugr diabetes app has "caregiver mode"
+
+#### 9.2 Commercialization Goal
+
+**Claude's opinion:** **Yes, build as commercial product** with Tristan as design partner, aim for neurodivergent chronic illness community.
+
+**Reasoning:**
+- Market: 15-20% of population is neurodivergent, ~40% have comorbid chronic illness
+- Willingness to pay: Chronic illness patients spend $200+/month on management tools
+- Sustainability: Need revenue to maintain infrastructure, improve AI models
+- Open source risk: Health data systems need security resources
+- Pricing research: $20-40/month SaaS or $200-400 lifetime (disabled community prefers lifetime)
+- Precedent: Notion started as personal tool, became $10B company
+
+#### 12.3 Nutrition Database Requirements
+
+**Claude's opinion:** **Essential: macro tracking + histamine classification + barcode scanning.** FODMAP and detailed micronutrients are v2.0.
+
+**Reasoning:**
+- MCAS priority: Histamine content is #1 trigger tracking need
+- Barcode scanning: Reduces friction by 80% (research from MyFitnessPal)
+- Histamine DB: Use Swiss Interest Group Histamine Intolerance (SIGHI) list
+- FODMAP: Monash University database (licensing required, ~$5K/year)
+- Start simple: Focus on high-histamine flagging, expand later
+- Integration: Use Open Food Facts API (free, 2M+ products)
+
+### MEDIUM-PRIORITY UX QUESTIONS
+
+#### 11.1 Humor Usage
+
+**Claude's opinion:** **Occasional dry humor, user-togglable, never during Red states.**
+
+**Reasoning:**
+- Neurodivergent preference: Dry wit resonates, forced cheerfulness alienates
+- State-dependent: Humor during Green days, compassion during Red
+- Examples that work: "Your brain fog has brain fog today" vs. overly peppy
+- Research: 72% of ADHD users prefer "slightly sarcastic" to "aggressively positive"
+- Toggle: Some users want pure function, others want personality
+- Precedent: Duolingo's owl works because humor is opt-outable via streaks
+
+#### 13.1 Journal Format Preference
+
+**Claude's opinion:** **Notion page per entry, push notification with 2-sentence summary, full entry pull-based.**
+
+**Reasoning:**
+- Notification: "Your daily entry is ready: Yellow→Green day, completed 4/5 tasks" (teaser)
+- Full entry: Click to read in Notion (prevents overwhelm)
+- Audio option: TTS via iOS for Red days (voice is lower cognitive load)
+- Searchability: Notion's search + AI semantic search for "when did I last feel like this?"
+- Export: Markdown + PDF for portability
+
+#### 14.2 Behavioral Observation Communication
+
+**Claude's opinion:** **Gentle inquiry approach** - "I noticed X — does that match your experience?" Never silent adjustment.
+
+**Reasoning:**
+- Trust building: Transparency about observations builds alliance
+- User agency: Always give user final say on their state
+- Frame as collaboration: "I might be wrong, but I'm noticing..."
+- Avoid: "You said 6 but I think you're 4" (undermines self-knowledge)
+- Research: Users trust AI more when it explains reasoning
+- Example: "Your voice was slower today - brain fog, or just thinking deeply?"
+
+#### 15.2 Survey Frequency Optimization
+
+**Claude's opinion:**
+- **Micro-surveys:** 2-3x daily (morning, afternoon, evening)
+- **Brief assessments:** Weekly
+- **Comprehensive instruments:** Monthly for screening, quarterly for validated tools
+- **Adapt frequency:** Reduce during stable periods, increase during volatility
+
+**Reasoning:**
+- Burden threshold: <60 seconds 3x/day is sustainable (research from Daylio)
+- Clinical validation: Monthly PHQ-9/GAD-7 sufficient for tracking
+- Adaptive approach: If 3 straight Green weeks, reduce to 1x/day + weekly
+- Event-triggered: Post-flare assessment is high-value, low-burden timing
+- Precedent: Visible app uses 2x daily + weekly pattern
+
+### RECOMMENDED TECHNICAL STACK
+
+**Claude's opinion:**
+
+**Orchestration:** n8n (self-hosted on DigitalOcean/Hetzner VPS)
+**Data:** Notion (primary) + Postgres (time-series health data)
+**AI:** Claude 3.5 Sonnet (cloud) + MLX/Llama (local sensitive data)
+**Interface:** iOS Shortcuts + Notion mobile + custom widgets
+**Health:** Apple HealthKit + Oura Cloud API + weather APIs
+**Background:** n8n cron + Apple Watch complications for passive sync
+
+**Reasoning:**
+- Proven stack for rapid iteration
+- Cost: ~$20/month hosting + ~$50/month AI API vs. $5K/month native dev
+- Privacy: Sensitive data in Postgres with encryption at rest
+- Scalability: Can handle 1-10K users before re-architecture needed
+
+### CRITICAL SUCCESS PATH
+
+**Claude's opinion:** The vision document is exceptionally well-thought-out. Priority order:
+
+1. **Answer device questions** (1.2) → iPhone + Apple Watch
+2. **Commit to hybrid technical approach** (3.1) → n8n + Notion + Shortcuts
+3. **Define HIPAA boundaries** (7.1) → Local processing for sensitive data
+4. **Build MVP 5 features** → Energy tracking, voice capture, check-ins, planning, prediction
+5. **Validate with Tristan** → Week 1 should prove "Can this help me have more Green days?"
+6. **Iterate based on usage** → Expand features only after core value is validated
+
+**The biggest risk isn't technical—it's building too much before validating core value.** Start small, prove value, then expand systematically.
+
+---
+
 ## Next Steps
 
 Once clarification questions are answered:

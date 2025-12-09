@@ -1160,27 +1160,31 @@ The following questions require answers to move from vision to implementation:
 - iPhone only? iPad? Apple Watch? Mac?
 - What's the minimum viable device set for v1.0?
 
-**Claude's opinion:** For v1.0, prioritize **iPhone + Apple Watch** as the minimum viable device set.
+**Claude's opinion:** For v1.0, prioritize **iPhone + Apple Watch** as the minimum viable device set **(pending Tristan's confirmation on iOS vs Android preference)**.
 
 **Reasoning:**
-- Apple Watch provides continuous HR/HRV monitoring critical for POTS detection
-- HealthKit integration is mature and privacy-focused
-- iPhone Shortcuts enables rapid prototyping without native app development
+- **If iOS:** Apple Watch provides continuous HR/HRV monitoring critical for POTS detection; HealthKit integration is mature and privacy-focused; iPhone Shortcuts enables rapid prototyping without native app development
+- **If Android:** Samsung Galaxy Watch or Fitbit provides similar health tracking; Google Fit or Samsung Health provide alternatives; different prototyping approach needed
 - Research shows chronic illness patients use 2.3 devices on average; Watch+Phone covers 85% of use cases
-- iPad and Mac can use same Notion/web interfaces without additional development
+- iPad/Mac (iOS) or tablets/desktop (Android) can use same Notion/web interfaces without additional development
+- Seth will need iPhone for app dev purposes eventually, but PoC should align with Tristan's current hardware
+
+**Seth note:** @tristan, are you ok with these or should we switch? I know you were talking about moving to Android/Samsung - however - I'm going to have to switch and get an iPhone at some point anyway (for app dev purposes).
 
 1.3. **What is the user's technical comfort level for v1.0?**
 - Willing to configure Notion databases and n8n workflows directly?
 - Or need a more packaged solution?
 
-**Claude's opinion:** For Tristan as first user, assume **high technical comfort** with direct Notion/n8n configuration. For commercial product, need packaged solution.
+**Claude's opinion:** For Tristan as first user, assume **high technical comfort** with direct Notion/n8n configuration. **Notion is exploratory and somewhat optional** but likely valuable for organization. n8n integration with Claude Code provides strong automation foundation. For commercial product, need packaged solution.
 
 **Reasoning:**
 - Developer-first users iterate faster (build what works, then abstract)
-- n8n's visual workflow builder hits sweet spot between code and no-code
-- Notion databases are learnable by motivated users
+- n8n's visual workflow builder hits sweet spot between code and no-code, integrates well with Claude Code
+- Notion databases are learnable by motivated users and provide excellent organization, but can be supplemented/replaced as needed
 - Success pattern: Obsidian, Roam Research started as power-user tools
 - Commercial v2.0 can add setup wizards after validating core workflows
+
+**Seth note:** at first glance Notion is an interesting tool we should explore. It should help us get/stay organized. It may be somewhat optional though, probably also very useful. n8n works with Claude Code so we should be good there.
 
 ### 2. MVP Feature Prioritization
 
@@ -1207,7 +1211,7 @@ The following questions require answers to move from vision to implementation:
 - How does Jarvis provide value in Week 1 before patterns emerge?
 - What manual data entry is acceptable initially?
 
-**Claude's opinion:** **Hypothesis-driven Week 1** - system makes educated guesses and tests them actively, not passively.
+**Claude's opinion:** **Hypothesis-driven Week 1** - system makes educated guesses and tests them actively, not passively. **Agent trigger mechanisms should include timers, scheduled triggers, and event-based activation.**
 
 **Reasoning:**
 - Research shows users abandon health apps if no value in first 3 days
@@ -1215,6 +1219,9 @@ The following questions require answers to move from vision to implementation:
 - Example: "Most POTS patients report better mornings - let's test if you do too"
 - Active experimentation feels more valuable than "collecting baseline data"
 - Can provide value (structure, tracking) even before pattern recognition kicks in
+- **Agent architecture:** Agents can be triggered via scheduled timers (every X minutes), time-of-day triggers (e.g., morning check-in at 9am), or event-based (e.g., when energy drops below threshold)
+
+**Seth note:** I like where this is going... Agreed that it must be/seem active. We should consider how to make it do this.. the agents can be triggered in different ways. For example, they can be put on a timer and triggered every x minutes or at a time per day.
 
 2.3. **What's the minimum viable check-in?**
 - 2-minute version (current)? 30-second version? Something in between?
@@ -1237,45 +1244,53 @@ The following questions require answers to move from vision to implementation:
 - Web/PWA is faster to develop but limited in background processing
 - Hybrid approach using Shortcuts + Notion + n8n?
 
-**Claude's opinion:** **Hybrid: n8n + Notion + iOS Shortcuts for v1.0**, migrate to native Swift app for v2.0.
+**Claude's opinion:** **Hybrid: n8n + Notion + platform-specific automation (iOS Shortcuts OR Android equivalent) for v1.0**, migrate to native app for v2.0. **(Conditional on device choice confirmation from Tristan.)**
 
 **Reasoning:**
-- Speed to value: Shortcuts + Notion operational in days vs. months for native
-- HealthKit: Shortcuts can read/write HealthKit data adequately
-- Background processing: n8n handles on cloud VPS
-- Migration path: Validate workflows in hybrid, then port proven features to native
+- **If iOS:** Shortcuts + Notion operational in days vs. months for native; HealthKit integration is straightforward; Apple ecosystem benefits
+- **If Android:** Tasker/Automate + Notion provides similar automation; Google Fit or Samsung Health integration; different but comparable approach
+- Background processing: n8n handles on cloud VPS regardless of mobile platform
+- Migration path: Validate workflows in hybrid, then port proven features to native app
 - Cost: $0 development vs. $50K+ for polished native app
 - Precedent: Superhuman started as Chrome extension before native
+
+**Seth note:** Only if @tristan confirms that we should go with iOS devices... if not we'll switch.
+
 
 3.2. **Where does AI processing happen?**
 - Cloud APIs (OpenAI/Claude) for all reasoning?
 - Local models for privacy-sensitive processing?
 - What's acceptable latency for different operations?
 
-**Claude's opinion:** **Cloud APIs (Claude/GPT-4) for non-HIPAA data, local models (Llama/Mistral via MLX) for sensitive health data.**
+**Claude's opinion:** **Cloud APIs (Claude/GPT-4) for non-HIPAA data, local models (Llama/Mistral) for sensitive health data. Consider running Llama on Seth's machine for PoC/MVP testing.**
 
 **Reasoning:**
 - HIPAA considerations: Symptom logs, diagnoses, medications must stay local
 - Cloud models (Claude 3.5 Sonnet): Superior reasoning for triage, planning, journaling
-- Local models: Now feasible on M-series Macs/iPhones via MLX framework
+- Local models: Now feasible on M-series Macs/iPhones via MLX framework, or via Llama on development machine
+- **PoC approach:** For private/MVP testing with Tristan, can run Llama on Seth's machine as proof of concept before deciding on production architecture
 - Latency: < 2s acceptable for planning, <500ms needed for real-time check-ins
-- Hybrid approach: 90% of value from cloud, 10% sensitive local
+- Hybrid approach: 90% of value from cloud, 10% sensitive local - determine optimal agent/model pairing iteratively based on use case
 - Precedent: Health auto-complete uses on-device ML, complex queries use cloud
+
+**Seth note:** This is do-able of course. For a private/MVP test we might try running it from one of my machines (llama is a local AI engine), but that will only be good for proof of concept. We'll want to figure out which agents/models make the most sense for discrete cases as we go, and likely many will be via the standard cloud/online providers.
 
 3.3. **What is the backup/export strategy?**
 - How is data preserved if Notion or n8n become unavailable?
 - What format should exports take for medical professionals?
 
-**Claude's opinion:** **Daily automated backups to encrypted local storage + iCloud**, with medical exports in PDF and CSV formats.
+**Claude's opinion:** **Daily automated backups to encrypted local storage + cloud backup solution (TBD research)**, with medical exports in PDF and CSV formats.
 
 **Reasoning:**
 - Notion risk: Third-party service could change pricing, shut down, or have outages
-- Local backup: Use iOS Files app + encrypted SQLite export daily
-- iCloud: E2E encrypted backup for disaster recovery
+- Local backup: Encrypted SQLite or similar format, stored locally on device
+- Cloud backup: **TBD - research platform-appropriate options** (iCloud if iOS, Google Drive/Dropbox if Android, or platform-agnostic solution like encrypted S3)
 - Medical exports: PDF for providers (human-readable), CSV for researchers/analysts
-- HIPAA compliance: Encrypted at rest and in transit
-- Automation: n8n workflow runs nightly export to user's iCloud Drive
-- Precedent: Health Export app does this for Apple Health data
+- HIPAA compliance: Encrypted at rest and in transit regardless of platform
+- Automation: n8n workflow runs nightly export to user's preferred backup location
+- Precedent: Health Export app does this for Apple Health data; similar approaches exist for Android
+
+**Seth note:** Agree with frequency, but not iCloud. TBD research options.
 
 ### 4. Flare Prediction Requirements
 
@@ -1283,7 +1298,7 @@ The following questions require answers to move from vision to implementation:
 - Is a 70% accurate prediction useful, or does anything below 90% cause more anxiety?
 - How should Jarvis communicate uncertainty?
 
-**Claude's opinion:** **60-70% accuracy is valuable** if communicated with probabilities, not binary yes/no.
+**Claude's opinion:** **60-70% accuracy is valuable** if communicated with probabilities, not binary yes/no. **Monitor and adjust expectations iteratively based on measured performance.**
 
 **Reasoning:**
 - Weather analogy: "60% chance of rain" is useful even at <90% accuracy
@@ -1292,12 +1307,15 @@ The following questions require answers to move from vision to implementation:
 - False positive cost (prepare unnecessarily) < false negative cost (caught unprepared)
 - Brier score calibration matters more than raw accuracy
 - Improve over time: Start 60%, trend toward 75-80% with data
+- **Continuous improvement:** Measure actual prediction accuracy, adjust algorithms and user communication based on real performance data
+
+**Seth note:** Seems like something we'll want to measure and adjust on as we iterate.
 
 4.2. **What is the minimum historical data needed?**
 - How many days/weeks of tracking before predictions become meaningful?
 - What's the fallback experience during the learning period?
 
-**Claude's opinion:** **14 days minimum for basic patterns, 30 days for confidence, 90 days for accuracy** - During learning period, use population-level heuristics + active hypothesis testing.
+**Claude's opinion:** **14 days minimum for basic patterns, 30 days for confidence, 90 days for accuracy** - During learning period, use population-level heuristics + active hypothesis testing. **Set clear user expectations that the system becomes more helpful over time.**
 
 **Reasoning:**
 - Week 1-2: Establish baseline energy rhythm, sleep patterns, common symptoms
@@ -1305,14 +1323,17 @@ The following questions require answers to move from vision to implementation:
 - Month 2-3: Multi-factor pattern recognition, compound triggers
 - Fallback: Generic POTS/MCAS/AUDHD guidance ("Most people with POTS crash when...")
 - Active learning: "Let's test: do mornings work better for you?" vs. passive waiting
+- **User communication:** Transparent messaging from Day 1 that "Jarvis learns your unique patterns over time - expect increasing accuracy and personalization over your first 30-90 days"
 - Precedent: Oura Ring requires 90 days for accurate readiness scores
 - Research: Chronic illness patterns stabilize around 30-day windows
+
+**Seth note:** Hm.  This is interesting. Another thing we'll want to monitor and measure. It will be good to set the expectation to new users that the model will become more helpful over time rather than being a godsend up front.
 
 4.3. **How should conflicting signals be handled?**
 - POTS, MCAS, and EDS can have conflicting recommendations
 - Who adjudicates when the system can't determine priority?
 
-**Claude's opinion:** **User adjudicates with AI presenting tradeoffs** - System explains conflicting recommendations and asks which to prioritize.
+**Claude's opinion:** **User adjudicates with AI presenting tradeoffs** - System explains conflicting recommendations and asks which to prioritize. **Learn user-specific patterns and adapt to how their condition evolves over time.**
 
 **Reasoning:**
 - Example conflict: POTS says "increase salt," MCAS says "avoid processed foods with additives"
@@ -1320,8 +1341,11 @@ The following questions require answers to move from vision to implementation:
 - User learns decision-making pattern, system learns user's priority hierarchy
 - Default hierarchy when user can't decide: Safety > Comfort > Performance
 - Over time, system learns: "User prioritizes POTS management 70% of the time"
+- **Personalization is key:** Each user's priority hierarchy is unique; the system must learn individual patterns and remain flexible as conditions evolve (e.g., POTS severity may change seasonally, requiring priority adjustments)
 - Never silently choose for user on health decisions
 - Precedent: Clinical decision support systems use "shared decision-making" model
+
+**Seth note:** This seems like something that will be unique to each user. The system should learn and adapt to each person, and also be flexible to the way that their condition evolves over time.
 
 ### 5. Intervention & Recommendation System
 
@@ -1329,16 +1353,20 @@ The following questions require answers to move from vision to implementation:
 - Medical literature? Personal experience? Both?
 - Who validates safety and appropriateness?
 
-**Claude's opinion:** **Evidence-based library + user experience + medical review** - Start with peer-reviewed interventions, personalize through tracking, validate with medical advisory board.
+**Claude's opinion:** **Evidence-based library + user experience + medical review** - Start with peer-reviewed interventions, personalize through tracking, validate with medical advisory board. **Incorporate academic references in UX for validity; include disclaimer about experiential learning from user community.**
 
 **Reasoning:**
 - Foundation: PubMed research on POTS/MCAS/EDS management (e.g., Levine Protocol, low-histamine diets)
 - Personalization: Track what works for this user (e.g., cold water helps 80% of the time)
 - Safety validation: Medical advisory board reviews intervention library quarterly
+- **Reference visibility:** Show users the research backing recommendations (e.g., "Based on study: Smith et al. 2023 - 78% of POTS patients...") to build trust and credibility
+- **Dual-source transparency:** Clear disclaimer that recommendations come from both (1) peer-reviewed academic sources AND (2) experiential/anecdotal learnings from user community and system observations - not purely academic
 - User discretion: Always frame as "evidence suggests" not "you must"
 - Contraindication screening: Check against user's known conditions/meds
 - Liability: Clear disclaimers, logged consent, never diagnostic
 - Precedent: UpToDate medical DB uses evidence grading + expert review
+
+**Seth note:** Can we somehow incorporate these references in the user experience to add validity and gain trust of users? Also, should we also include some kind of disclaimer that we're developing recommendations experientaially in our system over time, that is based on anecdotal experience from our users and systemic learnings, rather than purely from academic and scientific sources?
 
 5.2. **How should interventions be personalized over time?**
 - Explicit "this worked/didn't work" feedback?
@@ -1376,7 +1404,7 @@ The following questions require answers to move from vision to implementation:
 - Morning/Midday/Evening (3)? More granular? Fewer?
 - What's the overwhelm threshold?
 
-**Claude's opinion:** **3 core + 2 adaptive notifications per day maximum**, with user-configurable quiet hours.
+**Claude's opinion:** **3 core + 2 adaptive notifications per day maximum**, with user-configurable quiet hours. **Notification frequency and timing should be adaptive per user.**
 
 **Reasoning:**
 - Core: Morning briefing, midday check, evening reflection
@@ -1384,23 +1412,30 @@ The following questions require answers to move from vision to implementation:
 - Research: >5 daily notifications → 60% uninstall rate in health apps
 - ADHD consideration: Notifications must be valuable or become invisible
 - Solution: Learn optimal timing per user (some want 8am, others 10am)
+- **User variation:** Some users will prefer more frequent check-ins, others fewer - system should adapt to individual preferences and observed engagement patterns
 - Emergency override: Critical flare warnings bypass quiet hours
+
+**Seth note:** This might be an adaptive thing. Some users will want more than others.
 
 6.2. **How does Jarvis know when NOT to interrupt?**
 - Calendar-based quiet times?
 - Manual "do not disturb" mode?
 - Inference from activity patterns?
 
-**Claude's opinion:** **All three: calendar integration + manual override + learned patterns** - Respect calendar busy times, honor DND, learn user's focus periods.
+**Claude's opinion:** **All three: calendar integration + manual override + learned patterns** - Respect calendar busy times, honor DND, learn user's focus periods. **System should learn individual user patterns over time and discover population-level patterns.**
 
 **Reasoning:**
 - Calendar: If meeting/focus block scheduled, suppress non-urgent notifications
 - Manual DND: One-tap "Quiet mode" for 1hr/4hr/rest of day
 - Pattern learning: If user dismisses notifications 80% of the time between 2-4pm, auto-quiet that window
+- **Individual learning:** Each user has unique rhythms and preferences for when to check in vs. when to be left alone - system should observe and adapt to these patterns
+- **Population insights:** Over time, may discover general patterns across user populations (e.g., "most users prefer not to be interrupted during typical meal times") that inform defaults for new users
 - Emergency override: Critical flare warnings (>80% prediction) bypass quiet mode
-- Focus mode sync: Integrate with iOS Focus modes
+- Focus mode sync: Integrate with iOS Focus modes (or Android equivalent)
 - Time-of-day defaults: No notifications before user's typical wake time or after sleep time
 - Precedent: Superhuman email learns when you check email, adjusts notifications
+
+**Seth note:** And, I think it should probably learn when to check in and when to be quiet. This is a pattern that could be developed for each user over time (and perhaps there's some general patterns that could be learned over time across population(s) of users).
 
 6.3. **What notification channels?**
 - iOS push? Email? Telegram? Slack?
@@ -1423,47 +1458,56 @@ The following questions require answers to move from vision to implementation:
 - Menstrual cycle? Emotional state? Specific symptoms?
 - What requires local-only storage?
 
-**Claude's opinion:** **Never send to cloud: specific symptoms, diagnoses, medications, emotional states, menstrual data, specific food items.** Safe for cloud: task descriptions, general energy levels, time management data.
+**Claude's opinion:** **Protect all health data as PII/HIPAA-regulated information regardless of storage location.** Apply appropriate security controls, encryption, and access restrictions to all sensitive data whether processed locally or in cloud.
 
 **Reasoning:**
-- HIPAA Safe Harbor: 18 identifiers must be protected
-- De-identification isn't enough: "belching after aged cheese" could re-identify
-- Local processing: Symptom→pattern matching, diagnosis-specific logic
-- Cloud processing: Natural language task parsing, general planning, creative content
-- User control: Toggle per data type
-- Precedent: Apple Health never leaves device, fitness summaries can sync
+- **Mindset shift:** Rather than "never send X to cloud," focus on "protect all health data with appropriate security controls"
+- HIPAA Safe Harbor: 18 identifiers must be protected wherever data resides
+- **Security-first approach:** Encrypt at rest and in transit, use appropriate access controls, maintain audit logs, implement data minimization
+- **Flexible architecture:** Allows cloud processing where beneficial (e.g., superior AI models) while maintaining HIPAA-level protection
+- Local processing: Can be used for maximum privacy (e.g., symptom→pattern matching) but not mandated for all sensitive data
+- Cloud processing: Permitted with appropriate safeguards (e.g., BAA with cloud provider, encryption, de-identification where appropriate)
+- User control: Toggle per data type, clear transparency about where data is processed
+- Precedent: Modern HIPAA-compliant telehealth platforms process sensitive data in cloud with proper safeguards
+
+**Seth note:** Perhaps we should switch criteria here. Rather than "never send to cloud x, y, z" it should be "protect as if PII, HIPPA".
 
 7.2. **How long should historical data be retained?**
 - Forever for pattern recognition?
 - Rolling window for privacy?
 - User choice?
 
-**Claude's opinion:** **Retain forever by default, with user-controlled archival and deletion** - Pattern recognition benefits from longitudinal data, but user owns deletion rights.
+**Claude's opinion:** **Retain forever by default, with user-controlled archival and deletion** - Pattern recognition benefits from longitudinal data, but user owns deletion rights. **Implement data grooming strategy (hot/cold/glacier storage tiers) over time.**
 
 **Reasoning:**
 - Long-term value: Year-over-year comparisons, seasonal patterns require >12 months data
 - Granularity aging: Keep detailed data for 90 days, summarized for 1 year, aggregated beyond
+- **Data lifecycle management:** As system matures, implement tiered storage strategy - recent data in hot storage (fast access), older data in cold storage (slower, cheaper), very old data in glacier/archival (rare access, lowest cost)
 - User control: "Delete all data before [date]" or "Export and purge" options
 - Automatic expiry: Option to auto-delete data >X years old (user configurable)
 - Legal compliance: GDPR "right to be forgotten" requires deletion capability
-- Storage efficiency: Summarization reduces storage while preserving insights
+- Storage efficiency: Summarization reduces storage while preserving insights; data grooming further optimizes cost and performance
 - Precedent: Apple Health keeps unlimited history, user can delete any range
+
+**Seth note:** Agree with this recommendation... with a caveat: we will likely groom data over time, retain what's useful, and manage hot vs cold (vs glacier), etc.
 
 7.3. **What happens if the device is lost or stolen?**
 - Encryption requirements?
 - Remote wipe capability?
 - Biometric unlock required?
 
-**Claude's opinion:** **AES-256 encryption at rest, biometric unlock required, remote wipe via iCloud** - Military-grade security for sensitive health data.
+**Claude's opinion:** **AES-256 encryption at rest, biometric unlock required, remote wipe via platform-appropriate service** - Military-grade security for sensitive health data. **(iCloud if iOS; research alternatives for other platforms.)**
 
 **Reasoning:**
-- Encryption: iOS FileVault + app-level encryption for Jarvis data
-- Biometric: Face ID/Touch ID required to open app (no passcode fallback without delay)
+- Encryption: Platform-level encryption (iOS FileVault, Android file-based encryption) + app-level encryption for Jarvis data
+- Biometric: Face ID/Touch ID (iOS) or fingerprint/face unlock (Android) required to open app (no passcode fallback without delay)
 - Auto-lock: App locks after 5 minutes inactive
-- Remote wipe: Leverage iOS Find My for device wipe, Notion/n8n data deletable via web
-- Backup protection: iCloud backups are E2E encrypted if user enables Advanced Data Protection
+- Remote wipe: **iOS - Leverage Find My**; **Android - Use Find My Device**; **Platform-agnostic - research additional options**
+- Backup protection: E2E encryption for cloud backups (iCloud Advanced Data Protection if iOS; research Android equivalent)
 - Offline access: Critical features work offline with local encrypted cache
-- Precedent: 1Password security model (zero-knowledge, biometric unlock)
+- Precedent: 1Password security model (zero-knowledge, biometric unlock) works cross-platform
+
+**Seth note:** iCloud only if apple... if other device we'll have to research and implement strategies for that hardware.
 
 ### 8. Relationship & Environment Context
 
@@ -1472,7 +1516,7 @@ The following questions require answers to move from vision to implementation:
 - Emergency alerts?
 - Privacy boundaries?
 
-**Claude's opinion:** **Optional shared dashboard** with granular permission controls (show energy level yes, specific symptoms no).
+**Claude's opinion:** **Optional shared dashboard** with granular permission controls (show energy level yes, specific symptoms no). **LOVE THIS FEATURE - but scope out of first PoC/MVP due to added complexity.**
 
 **Reasoning:**
 - POTS/MCAS patients often need care coordination
@@ -1480,22 +1524,28 @@ The following questions require answers to move from vision to implementation:
 - Privacy: User owns all data, shares by explicit permission only
 - Use cases: Partner sees "Red day, be gentle" without medical details
 - Emergency mode: If overwhelm >9, auto-alert designated contact
+- **Implementation timing:** This is a valuable feature that adds meaningful user value, but significantly increases technical complexity (authentication, permissions, data sharing, real-time sync). Better to validate core single-user functionality first, then add multi-user features in v1.5 or v2.0
 - Precedent: MySugr diabetes app has "caregiver mode"
+
+**Seth note:**  LOVE THIS IDEA! However, consider scoping it out of the first PoC/MVP as it adds some complexity.
 
 8.2. **What about the household environment?**
 - Smart home integration for lighting/temperature?
 - Shared living considerations?
 
-**Claude's opinion:** **HomeKit integration for v2.0, focus on individual user for v1.0** - Smart home adds value but increases complexity significantly.
+**Claude's opinion:** **Smart home integration for v2.0, focus on individual user for v1.0** - Smart home adds value but increases complexity significantly. **TBD research options; HomeKit might be best starting point for iOS, but many alternatives exist.**
 
 **Reasoning:**
-- HomeKit capabilities: Auto-dim lights in Red state, adjust temperature for sleep optimization
+- Smart home capabilities: Auto-dim lights in Red state, adjust temperature for sleep optimization
 - Value vs. complexity: 30% of users have smart home, adds 3-6 months dev time
+- **Platform options:** HomeKit (iOS), Google Home (Android), Samsung SmartThings, Home Assistant (platform-agnostic open source), IFTTT/Zapier webhooks (universal but less integrated)
 - v1.0 workaround: Manual logging of environment ("Too bright? Too loud?") without automation
-- v2.0 roadmap: Once core tracking works, add HomeKit scenes triggered by state
+- v2.0 roadmap: Once core tracking works, research and choose smart home integration approach based on user platform distribution and technical constraints
 - Shared living: Respect privacy (don't announce "User is in Red state" to smart speakers)
 - Use cases: "Entering Red mode" → lights dim, temperature drops, notifications silence
 - Precedent: Sleep Cycle integrates HomeKit in later versions, not v1
+
+**Seth note:** TBD, research options. Homekit might be the best to begin with, and there are many out there.
 
 8.3. **What calendar systems need integration?**
 - iCloud? Google? Outlook?
@@ -1534,31 +1584,37 @@ The following questions require answers to move from vision to implementation:
 - Eventually a product for the neurodivergent community?
 - Open source possibility?
 
-**Claude's opinion:** **Yes, build as commercial product** with Tristan as design partner, aim for neurodivergent chronic illness community.
+**Claude's opinion:** **Yes, build as commercial product** with Tristan as design partner, aim for neurodivergent chronic illness community. **First validate personal-level usefulness, then scale appropriately.**
 
 **Reasoning:**
 - Market: 15-20% of population is neurodivergent, ~40% have comorbid chronic illness
 - Willingness to pay: Chronic illness patients spend $200+/month on management tools
-- Sustainability: Need revenue to maintain infrastructure, improve AI models
+- **Validation-first approach:** Prove the system delivers real value to Tristan (and Seth) at personal level before investing in commercial infrastructure, marketing, or scale
+- Sustainability: Need revenue to maintain infrastructure, improve AI models - but only after validation
 - Open source risk: Health data systems need security resources
 - Pricing research: $20-40/month SaaS or $200-400 lifetime (disabled community prefers lifetime)
 - Precedent: Notion started as personal tool, became $10B company
+
+**Seth note:** Agree with the above. We need to validate it and see if it can be made useful at a personal level first, then take the next steps as appropriate.
 
 9.3. **What happens to the system if the developer becomes incapacitated?**
 - (Relevant given the user profile)
 - Documentation requirements?
 - Handoff plan?
 
-**Claude's opinion:** **Bus factor mitigation: extensive documentation + code escrow + trusted technical contact** - Plan for continuity given health realities.
+**Claude's opinion:** **Bus factor mitigation: extensive documentation + code escrow + trusted technical contact** - Plan for continuity given health realities. **Good risk mitigation; not needed day 1 but should be discussed and planned.**
 
 **Reasoning:**
 - Documentation: Maintain living technical wiki (Notion/GitHub) with architecture, workflows, API keys
 - Code escrow: Use Iron Mountain or Built-in to hold credentials/code for designated beneficiary
 - Trusted contact: Designate technical friend/colleague with read-only access to documentation
 - Notification system: If no activity for 30 days, auto-email trusted contact with access instructions
+- **Implementation timing:** Not critical for initial PoC/MVP with single user, but becomes important as system proves valuable and additional users rely on it. Recommend documenting plan by v1.0 or earlier if health concerns warrant
 - Simplicity advantage: n8n + Notion stack is maintainable by generalist developers (not proprietary)
 - User data protection: Automated exports ensure users can recover their data independently
 - Precedent: Aaron Swartz's death highlighted need for digital continuity plans
+
+**Seth note:** Good risk mitigation, probably not needed day 1, but we could discuss.
 
 ### 10. Measurement & Validation
 
@@ -1566,16 +1622,20 @@ The following questions require answers to move from vision to implementation:
 - Retrospective estimation?
 - Prospective tracking period before full features?
 
-**Claude's opinion:** **2-week prospective baseline before activating AI features** - Track without intervention to establish true baseline, then activate intelligence layer.
+**Claude's opinion:** **Scoped activation plan with easy wins from Day 1, progressive AI feature activation as patterns are learned** - Rather than waiting for full baseline, deliver immediate value while learning.
 
 **Reasoning:**
-- Retrospective bias: "How did you feel last month?" is notoriously inaccurate
-- Baseline period: Weeks 1-2 = passive tracking only (check-ins, symptom logs, no predictions/interventions)
-- Activation: Week 3+ = turn on AI recommendations, predictions, interventions
-- Comparison: Compare Weeks 3-8 metrics to Weeks 1-2 baseline
-- User experience: Frame baseline as "teaching Jarvis about you" not "no value yet"
-- Statistical validity: 14 days captures weekly patterns (weekend vs. weekday)
-- Precedent: Clinical trials use 2-4 week run-in periods before intervention
+- **Day 1 value:** Provide structure, tracking tools, organization, and basic population-level guidance immediately (easy wins)
+- **Week 1-2:** Simple pattern detection and correlation suggestions ("You seem to feel better on days you sleep 7+ hours")
+- **Week 3-4:** More sophisticated recommendations and early predictions based on emerging personal patterns
+- **Month 2-3:** Full AI prediction, intervention optimization, multi-factor analysis
+- **Progressive disclosure:** Frame as "Jarvis learns more about you over time and unlocks new capabilities"
+- User experience: Continuous value from day 1, increasing sophistication over time, no "dead baseline period"
+- Retrospective bias acknowledgment: "How did you feel last month?" is inaccurate, but waiting 2 weeks for any value risks abandonment
+- Statistical validity: Can still compare later periods to earlier periods for improvement measurement
+- Precedent: Oura Ring shows basic metrics immediately, gradually unlocks advanced insights
+
+**Seth note:** I think we should see if there's more like a scoped plan of activation. Like, some easy wins can be had day 1, then over time more AI features/systems come online as a user's patterns are learned.
 
 10.2. **How will you distinguish Jarvis-caused improvement from other factors?**
 - Medication changes, seasonal effects, life circumstances?
@@ -1614,15 +1674,19 @@ The following questions require answers to move from vision to implementation:
 - Never? Occasionally? Often?
 - What style? (dry, playful, absurdist?)
 
-**Claude's opinion:** **Occasional dry humor, user-togglable, never during Red states.**
+**Claude's opinion:** **Adjustable personality/tone setting similar to Interstellar's TARS** - User-configurable "temperature" control from purely functional to warm/humorous.
 
 **Reasoning:**
-- Neurodivergent preference: Dry wit resonates, forced cheerfulness alienates
-- State-dependent: Humor during Green days, compassion during Red
-- Examples that work: "Your brain fog has brain fog today" vs. overly peppy
+- Neurodivergent preference varies: Dry wit resonates with some, others prefer functional-only
+- State-dependent: System can auto-adjust (humor during Green days, compassion during Red) OR user can set fixed preference
+- **Interstellar model:** TARS had adjustable humor/honesty settings (0-100%) - excellent UX pattern for personality configuration
+- **Default recommendation:** Start at moderate level (~40-50% warmth/humor) that works for most users, make easy to adjust
+- Examples that work: "Your brain fog has brain fog today" vs. overly peppy  (for higher settings) vs. pure data (for lower settings)
 - Research: 72% of ADHD users prefer "slightly sarcastic" to "aggressively positive"
-- Toggle: Some users want pure function, others want personality
-- Precedent: Duolingo's owl works because humor is opt-outable via streaks
+- Toggle accessibility: Easily findable in settings, can adjust per-state if desired (e.g., "Green = 60%, Red = 20%")
+- Precedent: Duolingo's owl works because humor is opt-outable via streaks; voice assistants allow formality levels
+
+**Seth note:** I'd make this a setting similar to Interstellar's AIs. Like a temperature that can be turned up and down per user.
 
 11.2. **How should Jarvis handle crisis moments?**
 - What language is helpful vs. harmful during extreme lows?
@@ -1709,14 +1773,18 @@ The following questions require answers to move from vision to implementation:
 - Push notification with summary, or pull-based (user opens when ready)?
 - Audio version option for low-capacity days?
 
-**Claude's opinion:** **Notion page per entry, push notification with 2-sentence summary, full entry pull-based.**
+**Claude's opinion:** **Notion page per entry for PoC/evaluation with Tristan, then build into native app for broader release.** Push notification with 2-sentence summary, full entry pull-based.
 
 **Reasoning:**
+- **PoC phase:** Notion provides rapid prototyping and flexibility for initial validation with Tristan
+- **Post-validation:** Build journal system into native app for better UX, offline access, and integration
 - Notification: "Your daily entry is ready: Yellow→Green day, completed 4/5 tasks" (teaser)
-- Full entry: Click to read in Notion (prevents overwhelm)
-- Audio option: TTS via iOS for Red days (voice is lower cognitive load)
-- Searchability: Notion's search + AI semantic search for "when did I last feel like this?"
-- Export: Markdown + PDF for portability
+- Full entry: Click to read (prevents overwhelm) - in Notion for PoC, in-app for production
+- Audio option: TTS via platform for Red days (voice is lower cognitive load)
+- Searchability: Notion's search for PoC; full-text search + AI semantic search in app for "when did I last feel like this?"
+- Export: Markdown + PDF for portability (both phases)
+
+**Seth note:** Notion may be fine for the PoC/eval with Tristan. However we'll want to build it into an app after that.
 
 13.2. **How much narrative vs. data should journals contain?**
 - Pure prose with data woven in (as shown in examples)?
@@ -1771,16 +1839,20 @@ The following questions require answers to move from vision to implementation:
 - Option for more clinical/neutral tone?
 - Adjust tone based on current emotional state?
 
-**Claude's opinion:** **State-adaptive tone by default, with manual override** - Warm during Red, balanced during Yellow, analytical during Green.
+**Claude's opinion:** **State-adaptive tone by default, with manual override** - Warm during Red, balanced during Yellow, analytical during Green. **Find a default tone that works for most users when starting out.**
 
 **Reasoning:**
 - State-adaptive: Red state = maximum compassion, Green state = more data/analysis
 - User override: Settings toggle for "Always clinical" or "Always warm"
+- **Default calibration:** Research and test to find optimal default tone (likely ~40-50% warmth) that resonates with majority of neurodivergent users without alienating those who prefer more functional communication
 - Example Red: "Today was rough. You survived it, and that's enough."
 - Example Green: "Interesting pattern: your best work happens between 10am-2pm on 7+ hour sleep nights"
 - Consistency: Don't switch tone mid-entry (jarring)
 - Preference learning: If user always edits warm→clinical, learn that preference
+- Onboarding: Consider brief tone preference question during setup ("How would you like Jarvis to communicate?")
 - Precedent: Replika AI adjusts tone based on user mood
+
+**Seth note:** I like the idea of each user being able to adjust the tone. I think we should find a default that works for most users when they're starting out.
 
 13.6. **How should journals handle difficult periods?**
 - During extended Red periods or crashes, should journaling pause?
@@ -1804,7 +1876,7 @@ The following questions require answers to move from vision to implementation:
 - Personal archive format (full detail, searchable)?
 - Privacy controls for what can be shared vs. kept private?
 
-**Claude's opinion:** **Three export formats: Medical (clinical metrics), Therapeutic (emotional patterns), Personal (full narrative)** - User controls what sections are included.
+**Claude's opinion:** **Three export formats: Medical (clinical metrics), Therapeutic (emotional patterns), Personal (full narrative)** - User controls what sections are included. **Punt to later iterations (v1.5+); not critical for first release.**
 
 **Reasoning:**
 - Medical format: PDF with charts, symptom frequencies, validated instrument scores
@@ -1813,14 +1885,17 @@ The following questions require answers to move from vision to implementation:
 - Privacy controls: Checkboxes for "Include: [Symptoms] [Mood] [Predictions] [Interventions]"
 - HIPAA-ready: Medical exports formatted for EMR compatibility
 - Date range selection: Export any custom time period
+- **Implementation timing:** Nice-to-have for provider sharing, but not essential for validating core value proposition with Tristan. Can add after proving journaling system is useful and worth sharing.
 - Precedent: Apple Health exports with granular privacy controls
+
+**Seth note:** This is very TBD ... I think we should punt on this until later. We'll want it, just not in the first iteration or two.
 
 13.8. **How should journals integrate with the Reflector Brain?**
 - Should journal reviews prompt emotional processing?
 - Include specific reflection questions for user response?
 - Track emotional reactions to reading past entries?
 
-**Claude's opinion:** **Journal ends with optional reflection prompt**, not required - "Want to add thoughts on this week?" with easy skip.
+**Claude's opinion:** **Journal ends with optional reflection prompt**, not required - "Want to add thoughts on this week?" with easy skip. **Reflector Brain should also consider journals (especially user-modified ones) as input for learning.**
 
 **Reasoning:**
 - Optional prompts: Weekly journal ends with "Anything you'd add to this?" text box
@@ -1828,8 +1903,11 @@ The following questions require answers to move from vision to implementation:
 - Specific questions: Rotate prompts ("What surprised you?" vs "What would you change?")
 - Emotional tracking: If user adds reflections, analyze sentiment to track processing over time
 - Reflector integration: Deep reflections can trigger Reflector Brain compassionate response
+- **Bidirectional data flow:** Reflector Brain uses journals as input (especially user edits/annotations) to better understand user's emotional patterns, self-perception, and processing style. User engagement with journals (reading, editing, annotating) provides high-quality signal about what resonates.
 - Avoid overwhelm: Max 1 reflection prompt per journal (not multiple questions)
 - Precedent: Headspace meditations end with "How are you feeling?" optional note
+
+**Seth note:** Well, the reflector brain might consider journals as an input too, especially if those jornals are being managed and modified by the user. The system will learn better with more (good) data.
 
 13.9. **What is the cold-start experience for journaling?**
 - How much data is needed before meaningful daily entries?
@@ -2091,16 +2169,67 @@ The following questions require answers to move from vision to implementation:
 - Integration with patient portal systems?
 - Liability considerations for clinical screening tools?
 
-**Claude's opinion:** **PDF exports for providers, flagging for severe scores, no EHR integration v1.0** - Provider-friendly without complex technical integration.
+**Claude's opinion:** **PDF exports for providers, flagging for severe scores, no EHR integration v1.0** - Provider-friendly without complex technical integration. **TBD for later iterations; research thoroughly before implementing clinical integration.**
 
 **Reasoning:**
 - PDF export: Clean summary with graphs + scores, ready to share at appointments
 - Flagging: If PHQ-9 >20, GAD-7 >15, or COMPASS-31 severe → "Share with your provider" prompt
 - No EHR integration: Epic/Cerner integration is 6-12 month project, manual sharing sufficient for v1.0
+- **Phased approach:** Validate core tracking value first, add clinical integration features only after thorough research of regulatory, legal, and ethical requirements
 - Liability: Clear disclaimer "screening tool, not diagnosis" on all clinical instruments
 - Emergency escalation: If PHQ-9 question 9 (self-harm) >1, immediate crisis resource offer
 - Provider education: Include brief guide "How to read this report" in exports
 - Precedent: MyTherapy app provides PDF summaries without direct EHR integration
+
+**Seth note:** TBD... later iterations of the product. We will want to research this before doing anything with a clinical integration.
+
+15.7. **What guardrails and protections are needed for users experiencing severe depression or suicidal ideation?**
+- What should the system do to guard against misuse by users?
+- What should the system do to guard against severely depressed users/situations and keep from giving bad advice in those scenarios?
+- What are the ethical and legal implications we should consider when opening this up to users beyond the PoC/MVP?
+
+**Claude's opinion:** **Multi-layered safety system with immediate crisis escalation, AI response limitations, and continuous monitoring** - CRITICAL for any release beyond PoC. Must be designed, tested, and validated before broader user access.
+
+**Reasoning:**
+- **Crisis detection triggers:** PHQ-9 Q9 (self-harm) score >1, explicit keywords ("suicide", "end it", "not worth living"), severe emotional state persisting >7 days, sudden dramatic mood shifts
+- **Immediate response protocol:**
+  - Display crisis resources immediately (988 Suicide & Crisis Lifeline, Crisis Text Line)
+  - Offer to contact designated emergency contact
+  - NO AI counseling attempts - connect to humans only
+  - Log all crisis events for review and safety monitoring
+- **AI limitations during crisis:**
+  - Disable AI recommendations/suggestions when crisis detected
+  - Switch to validation-only mode ("I hear that this is really hard")
+  - No task suggestions, interventions, or optimization advice
+  - Focus on safety and connection to professional help
+- **Preventive measures:**
+  - Regular check-ins on system helpfulness vs. harm
+  - Monitor for concerning usage patterns (isolation increasing, engagement with crisis content)
+  - Gradual degradation of AI features if user condition worsens
+- **Content restrictions:**
+  - Never suggest stopping medication without provider consultation
+  - Never provide advice on means of self-harm (obvious, but must be explicit in system design)
+  - Escalate rather than attempt to manage severe psychiatric symptoms
+- **Legal & ethical compliance:**
+  - Consult with mental health legal experts before broader release
+  - Clear Terms of Service disclaimers about system limitations
+  - Emergency contact designation during onboarding (opt-in)
+  - Regular third-party safety audits
+  - Incident response plan for worst-case scenarios
+- **Training data curation:**
+  - Exclude harmful content from training data
+  - Test extensively for prompt injection attacks that could elicit harmful responses
+  - Red team testing by mental health professionals
+- **Monitoring & accountability:**
+  - Anonymous aggregate reporting on crisis event frequency
+  - Regular review by mental health advisory board
+  - Transparent incident reporting procedures
+- **User safeguards:**
+  - Cannot be only support system - requires acknowledgment of other support structures
+  - Regular prompts to maintain connection with healthcare providers
+  - System degradation warnings if over-reliance detected
+
+**Seth note:** These are CRITICAL to anything we ship. The media loves to gobble up on use cases where anything AI has somehow harmed individuals, and rightly so. The bar is high. So we must treat this with care.
 
 ### 16. Passive & Ambient Data Collection
 
